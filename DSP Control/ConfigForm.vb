@@ -36,6 +36,30 @@ Public Class ConfigForm
 
     Private Sub ConfigForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        LoginTabPage.Show()
+        MapTabPage.Show()
+        SearchTabPage.Show()
+        SettingsluaTabPage.Show()
+        DatabaseSettingsTabPage.Show()
+        MiscTabPage.Show()
+        LoginTabPage1.Show()
+        LoginTabPage2.Show()
+        MapTabPage1.Show()
+        MapTabPage2.Show()
+        MapTabPage3.Show()
+        MapTabPage4.Show()
+        MapTabPage5.Show()
+        MapTabPage6.Show()
+        SettingsTabPage1.Show()
+        SettingsTabPage2.Show()
+        SettingsTabPage3.Show()
+        SettingsTabPage4.Show()
+        SettingsTabPage5.Show()
+        SettingsTabPage6.Show()
+        SettingsTabPage7.Show()
+        SettingsTabPage8.Show()
+        SettingsTabPage9.Show()
+
         timestamp_formatLoginTextBox.Text = My.Settings.timestamp_formatLogin
         stdout_with_ansisequenceLoginTextBox.Text = My.Settings.stdout_with_ansisequenceLogin
         console_silentLoginNumericUpDown.Text = My.Settings.console_silentLogin
@@ -263,11 +287,6 @@ Public Class ConfigForm
 
         LoginExpansionControlTextBox.Text = My.Settings.LoginExpansionControl
 
-        If OldSchoolG2CheckBox.Checked = True Then
-            FrigiciteDurationNumericUpDown.Enabled = True
-        Else
-            FrigiciteDurationNumericUpDown.Enabled = False
-        End If
     End Sub
 
     Private Sub COPCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles COPCheckBox.CheckedChanged
