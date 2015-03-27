@@ -1,0 +1,627 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="DSPPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AshitaPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mysql_host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="mysql_port" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="mysql_login" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="mysql_password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="mysql_database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dspdb</Value>
+    </Setting>
+    <Setting Name="ENABLE_COP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_TOAU" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_WOTG" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_ACP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_AMK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_ASA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_ABYSSEA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ENABLE_SOA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="timestamp_formatLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[%d/%b %H:%M]</Value>
+    </Setting>
+    <Setting Name="stdout_with_ansisequenceLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no</Value>
+    </Setting>
+    <Setting Name="console_silentLogin" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="search_server_port" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">54002</Value>
+    </Setting>
+    <Setting Name="servername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DarkStar</Value>
+    </Setting>
+    <Setting Name="expire_auctions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="expire_days" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="expire_interval" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="RESTRICT_BY_EXPANSION" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="timestamp_formatMap" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[%H:%M:%S]</Value>
+    </Setting>
+    <Setting Name="stdout_with_ansisequenceMap" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no</Value>
+    </Setting>
+    <Setting Name="console_silentMap" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="buff_maxsize" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1750</Value>
+    </Setting>
+    <Setting Name="max_time_lastupdate" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="lightluggage_block" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="vanadiel_time_offset" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CoP_Battle_cap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ENABLE_COP_ZONE_CAP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="exp_rate" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="exp_loss_rate" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="exp_party_gap_penalties" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="exp_retain" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="exp_loss_level" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="MAX_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">75</Value>
+    </Setting>
+    <Setting Name="speed_mod" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="level_sync_enable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="all_jobs_widescan" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="player_tp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="player_hp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="player_mp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="player_stat_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="sj_mp_divisor" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2.0</Value>
+    </Setting>
+    <Setting Name="START_GIL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="START_INVENTORY" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SUBJOB_QUEST_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="ADVANCED_JOB_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="UNLOCK_OUTPOST_WARPS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ALL_MAPS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_chat" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_say" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_shout" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_tell" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_yell" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_linkshell" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="audit_party" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="mob_tp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="mob_hp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="nm_hp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="mob_mp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="nm_mp_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="mob_stat_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="nm_stat_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="drop_rate_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="INITIAL_LEVEL_CAP" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="OPENING_CUTSCENE_ENABLE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="fov_party_gap_penalties" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="fov_allow_alliance" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="REGIME_WAIT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FIELD_MANUALS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LOW_LEVEL_REGIME" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GROUNDS_TOMES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="skillup_chance_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2.5</Value>
+    </Setting>
+    <Setting Name="craft_chance_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2.6</Value>
+    </Setting>
+    <Setting Name="skillup_amount_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="craft_amount_multiplier" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="craft_day_matters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="craft_moonphase_matters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="craft_direction_matters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="newstyle_skillups" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="FISHING_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="WOODWORKING_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="SMITHING_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="GOLDSMITHING_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="CLOTHCRAFT_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="LEATHERCRAFT_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="BONECRAFT_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="ALCHEMY_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="COOKING_GUILD_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="DISABLE_GUILD_CONTRACTS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HARVESTING_BREAK_CHANCE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="EXCAVATION_BREAK_CHANCE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="LOGGING_BREAK_CHANCE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="MINING_BREAK_CHANCE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="HARVESTING_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.50</Value>
+    </Setting>
+    <Setting Name="EXCAVATION_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.50</Value>
+    </Setting>
+    <Setting Name="LOGGING_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.50</Value>
+    </Setting>
+    <Setting Name="MINING_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.50</Value>
+    </Setting>
+    <Setting Name="msg_server_port" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">54003</Value>
+    </Setting>
+    <Setting Name="all_mobs_gil_bonus" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="max_gil_bonus" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">9999</Value>
+    </Setting>
+    <Setting Name="map_port" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">54230</Value>
+    </Setting>
+    <Setting Name="Battle_cap_tweak" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="max_merit_points" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="yell_cooldown" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="NORMAL_MOB_MAX_LEVEL_RANGE_MIN" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">81</Value>
+    </Setting>
+    <Setting Name="NORMAL_MOB_MAX_LEVEL_RANGE_MAX" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">84</Value>
+    </Setting>
+    <Setting Name="EXP_RATEFOV" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="TABS_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="USE_ADOULIN_WEAPON_SKILL_CHANGES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SHOP_PRICE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="GIL_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="HOMEPOINT_HEAL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RIVERNE_PORTERS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="LANTERNS_STAY_LIT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1200</Value>
+    </Setting>
+    <Setting Name="TIMEZONE_OFFSET" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">9.0</Value>
+    </Setting>
+    <Setting Name="ALLOW_MULTIPLE_EXP_RINGS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BYPASS_EXP_RING_ONE_PER_WEEK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NUMBER_OF_DM_EARRINGS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="HOMEPOINT_TELEPORT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LandKingSystem_NQ" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="LandKingSystem_HQ" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SAN_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="BAS_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="WIN_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="NORG_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="JEUNO_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="CURE_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="SPELL_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="BLUE_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="DRAIN_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="ITEM_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="WEAPON_SKILL_POWER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="WEAPON_SKILL_POINTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.000</Value>
+    </Setting>
+    <Setting Name="VISITANT_BONUS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.00</Value>
+    </Setting>
+    <Setting Name="COFFER_MAX_ILLUSION_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="COFFER_MIN_ILLUSION_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1800</Value>
+    </Setting>
+    <Setting Name="CHEST_MAX_ILLUSION_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="CHEST_MIN_ILLUSION_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1800</Value>
+    </Setting>
+    <Setting Name="BETWEEN_2DYNA_WAIT_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DYNA_LEVEL_MIN" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">65</Value>
+    </Setting>
+    <Setting Name="TIMELESS_HOURGLASS_COST" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">500000</Value>
+    </Setting>
+    <Setting Name="CURRENCY_EXCHANGE_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="RELIC_2ND_UPGRADE_WAIT_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">604800</Value>
+    </Setting>
+    <Setting Name="RELIC_3RD_UPGRADE_WAIT_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">295200</Value>
+    </Setting>
+    <Setting Name="FREE_COP_DYNAMIS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WSNM_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="WSNM_SKILL_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">240</Value>
+    </Setting>
+    <Setting Name="AF1_QUEST_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="AF2_QUEST_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="AF3_QUEST_LEVEL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="AF1_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="AF2_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="AF3_FAME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="DEBUG_MODE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="QM_RESET_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="OldSchoolG1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OldSchoolG2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FrigiciteDuration" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SCAVENGE_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="STATUS_RESIST_MULTIPLIER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="CIRCLE_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="CIRCLE_KILLER_EFFECT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="KILLER_EFFECT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="BETWEEN_2COSMOCLEANSE_WAIT_TIME" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="DIMENSIONAL_PORTAL_UNLOCK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EXPLORER_MOOGLE_LEVELCAP" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="EXPLORER_MOOGLE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="JINX_MODE_2005" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="JINX_MODE_2008" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="JINX_MODE_2012" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SUMMERFEST_2004" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SUNBREEZE_2009" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SUNBREEZE_2011" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CHRISTMAS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HALLOWEEN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HALLOWEEN_2005" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HALLOWEEN_YEAR_ROUND" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MILK_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="JUICE_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DIA_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BIO_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BARELEMENT_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BARSTATUS_OVERWRITE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BARD_SONG_LIMIT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BARD_INSTRUMENT_LIMIT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ENHANCING_SONG_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="STONESKIN_CAP" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">350</Value>
+    </Setting>
+    <Setting Name="BLINK_SHADOWS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ENSPELL_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="SPIKE_EFFECT_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="ELEMENTAL_DEBUFF_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="STORM_DURATION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="KLIMAFORM_MACC" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="AQUAVEIL_INTERR_RATE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="ABSORB_SPELL_AMOUNT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="ABSORB_SPELL_TICK" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="SNEAK_INVIS_DURATION_MULTIPLIER" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="USE_OLD_CURE_FORMULA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="no_auction_limits" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BlueSpellGaplevelLearn" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="mob_speed_mod" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LoginExpansionControl" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

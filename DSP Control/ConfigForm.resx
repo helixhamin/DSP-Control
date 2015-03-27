@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TextBox23.Text" xml:space="preserve">
+    <value>#Makes server output more silent by ommitting certain types of messages:
+#Standard     = 1
+#Status       = 2
+#Info         = 4
+#Notice       = 8
+#Warn         = 16
+#Debug        = 32
+#Error        = 64
+#Fatal Error  = 128
+#SQL          = 256
+#Lua          = 512
+#Example: "console_silent: 7" Hides standard, status and information messages (1+2+4)</value>
+  </data>
+  <data name="TextBox11.Text" xml:space="preserve">
+    <value>#Time-stamp format which will be printed before all messages.
+#Can at most be 20 characters long.
+#Common formats:
+# %I:%M:%S %p (hour:minute:second 12 hour, AM/PM format)
+# %H:%M:%S (hour:minute:second, 24 hour format)
+# %d/%b/%Y (day/Month/year)
+#For full format information, consult the strftime() manual.</value>
+  </data>
+  <data name="TextBox34.Text" xml:space="preserve">
+    <value>#Expansion Icons - 2 Bytes
+#
+#Byte 1 - Zilart to A Shantotto Ascension
+#00000000 Bit0 - Not Used - Original FFXI bit
+#00000010 Bit1 - Enables Rise of Zilart Icon
+#00000100 Bit2 - Enables Chains of Promathia Icon
+#00001000 Bit3 - Enables Treasures of Aht Urhgan Icon
+#00010000 Bit4 - Enables Wings of The Goddess
+#00100000 Bit5 - Enables A Crystalline Prophecy Icon
+#01000000 Bit6 - Enables A Moogle Kupod'Etat Icon
+#10000000 Bit7 - Enables A Shantotto Ascension Icon
+#
+#Byte 2 - Vision of Abyssea to Seekers of Adoulin
+#00000001 Bit0 - Enables Vision of Abyssea
+#00000010 Bit1 - Enables Scars of Abyssea
+#00000100 Bit2 - Enables Heroes of Abyssea
+#00001000 Bit3 - Enables Seekers of Adoulin
+#00010000 Bit4 - Not Used - Future expansion
+#00100000 Bit5 - Not Used - Future expansion
+#01000000 Bit6 - Not Used - Future expansion
+#10000000 Bit7 - Not Used - Future expansion</value>
+  </data>
+  <data name="TextBox33.Text" xml:space="preserve">
+    <value>#Makes server output more silent by ommitting certain types of messages:
+#Standard     = 1
+#Status       = 2
+#Info         = 4
+#Notice       = 8
+#Warn         = 16
+#Debug        = 32
+#Error        = 64
+#Fatal Error  = 128
+#SQL          = 256
+#Lua          = 512
+#Example: "console_silent: 7" Hides standard, status and information messages (1+2+4)</value>
+  </data>
+  <data name="TextBox27.Text" xml:space="preserve">
+    <value>#Time-stamp format which will be printed before all messages.
+#Can at most be 20 characters long.
+#Common formats:
+# %I:%M:%S %p (hour:minute:second 12 hour, AM/PM format)
+# %H:%M:%S (hour:minute:second, 24 hour format)
+# %d/%b/%Y (day/Month/year)
+#For full format information, consult the strftime() manual.</value>
+  </data>
+  <data name="TextBox98.Text" xml:space="preserve">
+    <value>#Allows parry, block, and guard to skill up regardless of the action occuring.
+# Bin  Dec Note
+# 0000 0   Classic
+# 0001 1   Parry
+# 0010 2   Block
+# 0100 4   Guard
+# 0111 7   Parry, Block, &amp; Guard</value>
+  </data>
+  <data name="TextBox127.Text" xml:space="preserve">
+    <value>-- Setting to lock content more accurately to the expansions you have defined above
+-- This generally results in a more accurate presentation of your selected expansions
+-- as well as a less confusing player experience for things that are disabled (things that are disabled are not loaded)
+-- This feature correlates to the required_expansion column in the SQL files</value>
+  </data>
+  <data name="TextBox110.Text" xml:space="preserve">
+    <value>-----------------------------------------------
+-------------   GLOBAL SETTINGS   -------------
+-----------------------------------------------
+
+-- This is to allow server operators to further customize their servers.  As more features are added to pXI, the list will surely expand.
+-- Anything scripted can be customized with proper script editing.
+
+-- PLEASE REQUIRE THIS SCRIPT IN ANY SCRIPTS YOU DO: ADD THIS LINE TO THE TOP!!!!
+--     require("scripts/globals/settings");
+-- With this script added to yours, you can pull variables from it!!
+
+-- Always include status.lua, which defines mods
+-- require("scripts/globals/status");
+
+-- Common functions
+require("scripts/globals/common");</value>
+  </data>
+  <data name="TextBox222.Text" xml:space="preserve">
+    <value>-- SE implemented coffer/chest illusion time in order to prevent coffer farming. No-one in the same area can open a chest or coffer for loot (gil, gems &amp; items) till a random time between MIN_ILLSION_TIME and MAX_ILLUSION_TIME. During this time players can loot keyitem and item related to quests (AF, maps... etc.)</value>
+  </data>
+</root>

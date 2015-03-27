@@ -1,0 +1,9 @@
+﻿Note 1 code came from: https://pradeep1210.wordpress.com/2011/07/01/persisting-the-values-of-controls-on-your-form/
+Note 2: Hidden Windows demo: http://stackoverflow.com/questions/2048035/how-to-start-an-invisible-process-in-vb-net
+Note 3: Checkbox check: http://www.homeandlearn.co.uk/NET/nets4p14.html
+Note 4: Null String code found at: https://social.msdn.microsoft.com/Forums/vstudio/en-US/dd7bcfa5-d9d7-4914-a768-21f0aa0a0a7c/vbnet-check-to-see-if-my-applications-settings-are-null-or-empty?forum=vbgeneral
+Note 5: Check to see if process is running at: https://social.msdn.microsoft.com/Forums/vstudio/en-US/77153d31-a23f-48d0-a4c4-2a3867370af6/vbnet-check-to-see-if-a-process-is-running
+Note 6: Code for this located at: http://www.thewebflash.com/2011/11/folder-browse-dialog-coding-in-visual.html
+Note 7: Code from https://www.youtube.com/watch?v=EbUYvYQMZNA
+Note 8: Form cleanup from xdemolish https://github.com/xdemolish (Please see current pull)
+Note 9: View menu and hiding uneeded clutter from: http://www.homeandlearn.co.uk/NET/nets4p11.html

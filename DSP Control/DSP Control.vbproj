@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45525C7E-9CC5-4A9E-8FCC-7F426F09E264}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DSP_Control.My.MyApplication</StartupObject>
+    <RootNamespace>DSP_Control</RootNamespace>
+    <AssemblyName>DSP Control</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DSP Control.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DSP Control.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ability_TraitSettings.Designer.vb">
+      <DependentUpon>Ability_TraitSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ability_TraitSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AuditSettings.Designer.vb">
+      <DependentUpon>AuditSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CelebrationsSettings.Designer.vb">
+      <DependentUpon>CelebrationsSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CelebrationsSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterSettingsForm.Designer.vb">
+      <DependentUpon>CharacterSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffer_ChestSettings.Designer.vb">
+      <DependentUpon>Coffer_ChestSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Coffer_ChestSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigForm.Designer.vb">
+      <DependentUpon>ConfigForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigFormMap.Designer.vb">
+      <DependentUpon>ConfigFormMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigFormMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigFormSearch.Designer.vb">
+      <DependentUpon>ConfigFormSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigFormSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigFormSettings.Designer.vb">
+      <DependentUpon>ConfigFormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigFormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftingandSkillupsettings.Designer.vb">
+      <DependentUpon>CraftingandSkillupsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CraftingandSkillupsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSPControlForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSPControlForm.Designer.vb">
+      <DependentUpon>DSPControlForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigFormExpansions.Designer.vb">
+      <DependentUpon>ConfigFormExpansions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigFormExpansions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamisSettings.Designer.vb">
+      <DependentUpon>DynamisSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DynamisSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExperienceRates.Designer.vb">
+      <DependentUpon>ExperienceRates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExperienceRates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FameGainMultipliers.Designer.vb">
+      <DependentUpon>FameGainMultipliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FameGainMultipliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOVSettings.Designer.vb">
+      <DependentUpon>FOVSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FOVSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameLogs.Designer.vb">
+      <DependentUpon>GameLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuildPointssetting.Designer.vb">
+      <DependentUpon>GuildPointssetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GuildPointssetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimbusSettings.Designer.vb">
+      <DependentUpon>LimbusSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimbusSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LobbyLogs.Designer.vb">
+      <DependentUpon>LobbyLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LobbyLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialCollectingsettings.Designer.vb">
+      <DependentUpon>MaterialCollectingsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialCollectingsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonsterMultipliers.Designer.vb">
+      <DependentUpon>MonsterMultipliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterMultipliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonsterSettingsForm.Designer.vb">
+      <DependentUpon>MonsterSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PathLocations.Designer.vb">
+      <DependentUpon>PathLocations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PathLocations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerMultipliers.Designer.vb">
+      <DependentUpon>PlayerMultipliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerMultipliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest_MissionSettings.Designer.vb">
+      <DependentUpon>Quest_MissionSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quest_MissionSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SpellSettings.Designer.vb">
+      <DependentUpon>SpellSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpellSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spell_WeaponPower.Designer.vb">
+      <DependentUpon>Spell_WeaponPower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Spell_WeaponPower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartingPlayerSettings.Designer.vb">
+      <DependentUpon>StartingPlayerSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartingPlayerSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ability_TraitSettings.resx">
+      <DependentUpon>Ability_TraitSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditSettings.resx">
+      <DependentUpon>AuditSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CelebrationsSettings.resx">
+      <DependentUpon>CelebrationsSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterSettingsForm.resx">
+      <DependentUpon>CharacterSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffer_ChestSettings.resx">
+      <DependentUpon>Coffer_ChestSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFormExpansions.resx">
+      <DependentUpon>ConfigFormExpansions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFormMap.resx">
+      <DependentUpon>ConfigFormMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFormSearch.resx">
+      <DependentUpon>ConfigFormSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFormSettings.resx">
+      <DependentUpon>ConfigFormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CraftingandSkillupsettings.resx">
+      <DependentUpon>CraftingandSkillupsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSPControlForm.resx">
+      <DependentUpon>DSPControlForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamisSettings.resx">
+      <DependentUpon>DynamisSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExperienceRates.resx">
+      <DependentUpon>ExperienceRates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FameGainMultipliers.resx">
+      <DependentUpon>FameGainMultipliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOVSettings.resx">
+      <DependentUpon>FOVSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameLogs.resx">
+      <DependentUpon>GameLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuildPointssetting.resx">
+      <DependentUpon>GuildPointssetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimbusSettings.resx">
+      <DependentUpon>LimbusSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LobbyLogs.resx">
+      <DependentUpon>LobbyLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialCollectingsettings.resx">
+      <DependentUpon>MaterialCollectingsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonsterMultipliers.resx">
+      <DependentUpon>MonsterMultipliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonsterSettingsForm.resx">
+      <DependentUpon>MonsterSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathLocations.resx">
+      <DependentUpon>PathLocations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerMultipliers.resx">
+      <DependentUpon>PlayerMultipliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest_MissionSettings.resx">
+      <DependentUpon>Quest_MissionSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpellSettings.resx">
+      <DependentUpon>SpellSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spell_WeaponPower.resx">
+      <DependentUpon>Spell_WeaponPower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartingPlayerSettings.resx">
+      <DependentUpon>StartingPlayerSettings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reference list.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
