@@ -8,6 +8,7 @@ Public Class ConfigForm
     Dim SearchConfFile = My.Settings.DSPPath + "\conf\search_server.conf"
     Dim SettingsFile = My.Settings.DSPPath + "\scripts\globals\settings.lua"
     Dim AHCPP = My.Settings.DSPPath + "\src\map\packets\auction_house.cpp"
+    Dim BlueutilsCPP = My.Settings.DSPPath + "\src\map\utils\blueutils.cpp"
 
     Private Sub ConfigForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ApplySettingsSearchButton_Click(sender, e)
@@ -114,52 +115,29 @@ Public Class ConfigForm
         audit_linkshellCheckBox.Checked = My.Settings.audit_linkshell
         audit_partyCheckBox.Checked = My.Settings.audit_party
         VISITANT_BONUSNumericUpDown.Text = My.Settings.VISITANT_BONUS
-    End Sub
-
-    Private Sub ApplySettingsSearchButton_Click(sender As Object, e As EventArgs) Handles ApplySettingsSearchButton.Click
-
-        Dim expire_daysOutputLines As New List(Of String)()
-        Dim expire_intervalOutputLines As New List(Of String)()
-
-        'Handles activating/deactivating auction house expiration
-        If expire_auctionsCheckBox.Checked = True Then
-            My.Computer.FileSystem.WriteAllText(SearchConfFile, My.Computer.FileSystem.ReadAllText(SearchConfFile).Replace("expire_auctions: 0", "expire_auctions: 1"), False)
-        ElseIf expire_auctionsCheckBox.Checked = False Then
-            My.Computer.FileSystem.WriteAllText(SearchConfFile, My.Computer.FileSystem.ReadAllText(SearchConfFile).Replace("expire_auctions: 1", "expire_auctions: 0"), False)
-        End If
-
-        'Handles number of days before auction house expiration
-        If expire_daysNumericUpDown.Text.Length < 1 Then
-        Else
-            For Each line As String In System.IO.File.ReadAllLines(SearchConfFile)
-                Dim expire_daysMatch As Boolean
-                expire_daysMatch = line.Contains("expire_days:")
-                If expire_daysMatch Then
-                    ' Replace line with string
-                    expire_daysOutputLines.Add("expire_days: " + expire_daysNumericUpDown.Text)
-                Else
-                    expire_daysOutputLines.Add(line)
-                End If
-            Next
-            System.IO.File.WriteAllLines(SearchConfFile, expire_daysOutputLines.ToArray(), Encoding.UTF8)
-        End If
-
-        'Handles expiration interval
-        If expire_intervalNumericUpDown.Text.Length < 1 Then
-        Else
-            For Each line As String In System.IO.File.ReadAllLines(SearchConfFile)
-                Dim expire_intervalMatch As Boolean
-                expire_intervalMatch = line.Contains("expire_interval:")
-                If expire_intervalMatch Then
-                    ' Replace line with string
-                    expire_intervalOutputLines.Add("expire_interval: " + expire_intervalNumericUpDown.Text)
-                Else
-                    expire_intervalOutputLines.Add(line)
-                End If
-            Next
-            System.IO.File.WriteAllLines(SearchConfFile, expire_intervalOutputLines.ToArray(), Encoding.UTF8)
-        End If
-
+        CoP_Battle_capCheckBox.Checked = My.Settings.CoP_Battle_cap
+        BlueSpellGaplevelLearnNumericUpDown.Text = My.Settings.BlueSpellGaplevelLearn
+        MILK_OVERWRITECheckBox.Checked = My.Settings.MILK_OVERWRITE
+        JUICE_OVERWRITECheckBox.Checked = My.Settings.JUICE_OVERWRITE
+        DIA_OVERWRITECheckBox.Checked = My.Settings.DIA_OVERWRITE
+        BIO_OVERWRITECheckBox.Checked = My.Settings.BIO_OVERWRITE
+        BARELEMENT_OVERWRITECheckBox.Checked = My.Settings.BARELEMENT_OVERWRITE
+        BARSTATUS_OVERWRITECheckBox.Checked = My.Settings.BARSTATUS_OVERWRITE
+        USE_OLD_CURE_FORMULACheckBox.Checked = My.Settings.USE_OLD_CURE_FORMULA
+        BARD_SONG_LIMITNumericUpDown.Text = My.Settings.BARD_SONG_LIMIT
+        BARD_INSTRUMENT_LIMITNumericUpDown.Text = My.Settings.BARD_INSTRUMENT_LIMIT
+        ENHANCING_SONG_DURATIONNumericUpDown.Text = My.Settings.ENHANCING_SONG_DURATION
+        STONESKIN_CAPNumericUpDown.Text = My.Settings.STONESKIN_CAP
+        BLINK_SHADOWSNumericUpDown.Text = My.Settings.BLINK_SHADOWS
+        ENSPELL_DURATIONNumericUpDown.Text = My.Settings.ENSPELL_DURATION
+        SPIKE_EFFECT_DURATIONNumericUpDown.Text = My.Settings.SPIKE_EFFECT_DURATION
+        ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Text = My.Settings.ELEMENTAL_DEBUFF_DURATION
+        STORM_DURATIONNumericUpDown.Text = My.Settings.STORM_DURATION
+        KLIMAFORM_MACCNumericUpDown.Text = My.Settings.KLIMAFORM_MACC
+        AQUAVEIL_INTERR_RATENumericUpDown.Text = My.Settings.AQUAVEIL_INTERR_RATE
+        ABSORB_SPELL_AMOUNTNumericUpDown.Text = My.Settings.ABSORB_SPELL_AMOUNT
+        ABSORB_SPELL_TICKNumericUpDown.Text = My.Settings.ABSORB_SPELL_TICK
+        SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Text = My.Settings.SNEAK_INVIS_DURATION_MULTIPLIER
     End Sub
 
     Private Sub COPCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles COPCheckBox.CheckedChanged
@@ -356,13 +334,11 @@ Public Class ConfigForm
 
     Private Sub ApplySettingsMapPage2Button_Click(sender As Object, e As EventArgs) Handles ApplySettingsMapPage2Button.Click
 
-
         Dim buff_maxsizeOutputLines As New List(Of String)()
         Dim max_time_lastupdateOutputLines As New List(Of String)()
         Dim lightluggage_blockOutputLines As New List(Of String)()
         Dim exp_rateOutputLines As New List(Of String)()
         Dim exp_loss_rateOutputLines As New List(Of String)()
-        Dim exp_party_gap_penaltiesOutputLines As New List(Of String)()
         Dim vanadiel_time_offsetOutputLines As New List(Of String)()
         Dim exp_loss_levelOutputLines As New List(Of String)()
 
@@ -446,19 +422,19 @@ Public Class ConfigForm
         'Handles penalties for party level gap
         If exp_party_gap_penaltiesCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("exp_party_gap_penalties: 0", "exp_party_gap_penalties: 1"), False)
-        ElseIf exp_party_gap_penaltiesCheckBox.Checked = False Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("exp_party_gap_penalties: 1", "exp_party_gap_penalties: 0"), False)
         End If
 
         If fov_party_gap_penaltiesCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("fov_party_gap_penalties: 0", "fov_party_gap_penalties: 1"), False)
-        ElseIf fov_party_gap_penaltiesCheckBox.Checked = False Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("fov_party_gap_penalties: 1", "fov_party_gap_penalties: 0"), False)
         End If
 
         If fov_allow_allianceCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("fov_allow_alliance: 0", "fov_allow_alliance: 1"), False)
-        ElseIf fov_allow_allianceCheckBox.Checked = False Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("fov_allow_alliance: 1", "fov_allow_alliance: 0"), False)
         End If
 
@@ -514,13 +490,13 @@ Public Class ConfigForm
 
         If level_sync_enableCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("level_sync_enable: 0", "level_sync_enable: 1"), False)
-        ElseIf level_sync_enableCheckBox.Checked = False Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("level_sync_enable: 1", "level_sync_enable: 0"), False)
         End If
 
         If all_jobs_widescanCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("all_jobs_widescan: 0", "all_jobs_widescan: 1"), False)
-        ElseIf all_jobs_widescanCheckBox.Checked = False Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("all_jobs_widescan: 1", "all_jobs_widescan: 0"), False)
         End If
 
@@ -531,7 +507,7 @@ Public Class ConfigForm
                 Dim speed_modMatch As Boolean
                 Dim mob_speed_modMatch As Boolean
                 speed_modMatch = line.Contains("speed_mod:")
-                mob_speed_modMatch = line.Contains("mob_speed_mod:")
+                mob_speed_modMatch = line.Contains("mob_speed_mod")
                 If speed_modMatch And Not mob_speed_modMatch Then
                     speed_modOutputLines.Add("speed_mod: " + speed_modNumericUpDown.Text)
                 Else
@@ -931,7 +907,7 @@ Public Class ConfigForm
 
         If max_merit_pointsNumericUpDown.Value = 30 Then
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("max_merit_points: 10", "max_merit_points: 30"), False)
-        ElseIf max_merit_pointsNumericUpDown.Value = 10 Then
+        Else
             My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("max_merit_points: 30", "max_merit_points: 10"), False)
         End If
 
@@ -998,6 +974,52 @@ Public Class ConfigForm
         If all_mobs_gil_bonusNumericUpDown.Value > max_gil_bonusNumericUpDown.Value Then
             all_mobs_gil_bonusNumericUpDown.Value = max_gil_bonusNumericUpDown.Value
         End If
+    End Sub
+
+    Private Sub ApplySettingsSearchButton_Click(sender As Object, e As EventArgs) Handles ApplySettingsSearchButton.Click
+
+        Dim expire_daysOutputLines As New List(Of String)()
+        Dim expire_intervalOutputLines As New List(Of String)()
+
+        'Handles activating/deactivating auction house expiration
+        If expire_auctionsCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SearchConfFile, My.Computer.FileSystem.ReadAllText(SearchConfFile).Replace("expire_auctions: 0", "expire_auctions: 1"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SearchConfFile, My.Computer.FileSystem.ReadAllText(SearchConfFile).Replace("expire_auctions: 1", "expire_auctions: 0"), False)
+        End If
+
+        'Handles number of days before auction house expiration
+        If expire_daysNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SearchConfFile)
+                Dim expire_daysMatch As Boolean
+                expire_daysMatch = line.Contains("expire_days:")
+                If expire_daysMatch Then
+                    ' Replace line with string
+                    expire_daysOutputLines.Add("expire_days: " + expire_daysNumericUpDown.Text)
+                Else
+                    expire_daysOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SearchConfFile, expire_daysOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        'Handles expiration interval
+        If expire_intervalNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SearchConfFile)
+                Dim expire_intervalMatch As Boolean
+                expire_intervalMatch = line.Contains("expire_interval:")
+                If expire_intervalMatch Then
+                    ' Replace line with string
+                    expire_intervalOutputLines.Add("expire_interval: " + expire_intervalNumericUpDown.Text)
+                Else
+                    expire_intervalOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SearchConfFile, expire_intervalOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
     End Sub
 
     Private Sub ApplySettingPage1Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage1Button.Click
@@ -1149,6 +1171,258 @@ Public Class ConfigForm
 
     Private Sub ApplySettingPage7Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage7Button.Click
 
+        Dim BARD_SONG_LIMITOutputLines As New List(Of String)()
+        Dim BARD_INSTRUMENT_LIMITOutputLines As New List(Of String)()
+        Dim ENHANCING_SONG_DURATIONOutputLines As New List(Of String)()
+        Dim STONESKIN_CAPOutputLines As New List(Of String)()
+        Dim BLINK_SHADOWSOutputLines As New List(Of String)()
+        Dim ENSPELL_DURATIONOutputLines As New List(Of String)()
+        Dim SPIKE_EFFECT_DURATIONOutputLines As New List(Of String)()
+        Dim ELEMENTAL_DEBUFF_DURATIONOutputLines As New List(Of String)()
+        Dim STORM_DURATIONOutputLines As New List(Of String)()
+        Dim KLIMAFORM_MACCOutputLines As New List(Of String)()
+        Dim AQUAVEIL_INTERR_RATEOutputLines As New List(Of String)()
+        Dim ABSORB_SPELL_AMOUNTOutputLines As New List(Of String)()
+        Dim ABSORB_SPELL_TICKOutputLines As New List(Of String)()
+        Dim SNEAK_INVIS_DURATION_MULTIPLIEROutputLines As New List(Of String)()
+
+        If MILK_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("MILK_OVERWRITE = 0; --Set to 1 to allow Milk and Regen to overwrite each other.  Default is 1.", "MILK_OVERWRITE = 1; --Set to 1 to allow Milk and Regen to overwrite each other.  Default is 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("MILK_OVERWRITE = 1; --Set to 1 to allow Milk and Regen to overwrite each other.  Default is 1.", "MILK_OVERWRITE = 0; --Set to 1 to allow Milk and Regen to overwrite each other.  Default is 1."), False)
+        End If
+
+        If JUICE_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JUICE_OVERWRITE = 0; --Set to 1 to allow Juice and Refresh to overwrite each other.  Default is 1.", "JUICE_OVERWRITE = 1; --Set to 1 to allow Juice and Refresh to overwrite each other.  Default is 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JUICE_OVERWRITE = 1; --Set to 1 to allow Juice and Refresh to overwrite each other.  Default is 1.", "JUICE_OVERWRITE = 0; --Set to 1 to allow Juice and Refresh to overwrite each other.  Default is 1."), False)
+        End If
+
+        If DIA_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIA_OVERWRITE = 0; --Set to 1 to allow Bio to overwrite same tier Dia.  Default is 1.", "DIA_OVERWRITE = 1; --Set to 1 to allow Bio to overwrite same tier Dia.  Default is 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIA_OVERWRITE = 1; --Set to 1 to allow Bio to overwrite same tier Dia.  Default is 1.", "DIA_OVERWRITE = 0; --Set to 1 to allow Bio to overwrite same tier Dia.  Default is 1."), False)
+        End If
+
+        If BIO_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BIO_OVERWRITE = 0; --Set to 1 to allow Dia to overwrite same tier Bio.  Default is 0.", "BIO_OVERWRITE = 1; --Set to 1 to allow Dia to overwrite same tier Bio.  Default is 0."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BIO_OVERWRITE = 1; --Set to 1 to allow Dia to overwrite same tier Bio.  Default is 0.", "BIO_OVERWRITE = 0; --Set to 1 to allow Dia to overwrite same tier Bio.  Default is 0."), False)
+        End If
+
+        If BARELEMENT_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BARELEMENT_OVERWRITE = 0; --Set to 1 to allow Barelement spells to overwrite each other (prevent stacking).  Default is 1.", "BARELEMENT_OVERWRITE = 1; --Set to 1 to allow Barelement spells to overwrite each other (prevent stacking).  Default is 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BARELEMENT_OVERWRITE = 1; --Set to 1 to allow Barelement spells to overwrite each other (prevent stacking).  Default is 1.", "BARELEMENT_OVERWRITE = 0; --Set to 1 to allow Barelement spells to overwrite each other (prevent stacking).  Default is 1."), False)
+        End If
+
+        If BARSTATUS_OVERWRITECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BARSTATUS_OVERWRITE = 0; --Set to 1 to allow Barstatus spells to overwrite each other (prevent stacking).  Default is 1.", "BARSTATUS_OVERWRITE = 1; --Set to 1 to allow Barstatus spells to overwrite each other (prevent stacking).  Default is 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BARSTATUS_OVERWRITE = 1; --Set to 1 to allow Barstatus spells to overwrite each other (prevent stacking).  Default is 1.", "BARSTATUS_OVERWRITE = 0; --Set to 1 to allow Barstatus spells to overwrite each other (prevent stacking).  Default is 1."), False)
+        End If
+
+        If BARD_SONG_LIMITNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BARD_SONG_LIMITMatch As Boolean
+                BARD_SONG_LIMITMatch = line.Contains("BARD_SONG_LIMIT")
+                If BARD_SONG_LIMITMatch Then
+                    BARD_SONG_LIMITOutputLines.Add("BARD_SONG_LIMIT = " + BARD_SONG_LIMITNumericUpDown.Text + "; --Maximum amount of songs from a single Bard that can be granted to a single target at once.  Set between 1 and 31.")
+                Else
+                    BARD_SONG_LIMITOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BARD_SONG_LIMITOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If BARD_INSTRUMENT_LIMITNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BARD_INSTRUMENT_LIMITMatch As Boolean
+                BARD_INSTRUMENT_LIMITMatch = line.Contains("BARD_INSTRUMENT_LIMIT")
+                If BARD_INSTRUMENT_LIMITMatch Then
+                    BARD_INSTRUMENT_LIMITOutputLines.Add("BARD_INSTRUMENT_LIMIT = " + BARD_INSTRUMENT_LIMITNumericUpDown.Text + "; --Maximum amount of songs from a single Bard with an instrument that can be granted to a single target at once.  Set between 2 and 32.")
+                Else
+                    BARD_INSTRUMENT_LIMITOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BARD_INSTRUMENT_LIMITOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ENHANCING_SONG_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ENHANCING_SONG_DURATIONMatch As Boolean
+                ENHANCING_SONG_DURATIONMatch = line.Contains("ENHANCING_SONG_DURATION")
+                If ENHANCING_SONG_DURATIONMatch Then
+                    ENHANCING_SONG_DURATIONOutputLines.Add("ENHANCING_SONG_DURATION = " + ENHANCING_SONG_DURATIONNumericUpDown.Text + "; -- duration of enhancing bard songs such as Minuets, Ballads, etc.")
+                Else
+                    ENHANCING_SONG_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ENHANCING_SONG_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If STONESKIN_CAPNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim STONESKIN_CAPMatch As Boolean
+                STONESKIN_CAPMatch = line.Contains("STONESKIN_CAP")
+                If STONESKIN_CAPMatch Then
+                    STONESKIN_CAPOutputLines.Add("STONESKIN_CAP = " + STONESKIN_CAPNumericUpDown.Text + "; -- soft cap for hp absorbed by stoneskin")
+                Else
+                    STONESKIN_CAPOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, STONESKIN_CAPOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If BLINK_SHADOWSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BLINK_SHADOWSMatch As Boolean
+                BLINK_SHADOWSMatch = line.Contains("BLINK_SHADOWS")
+                If BLINK_SHADOWSMatch Then
+                    BLINK_SHADOWSOutputLines.Add("BLINK_SHADOWS = " + BLINK_SHADOWSNumericUpDown.Text + ";   -- number of shadows supplied by Blink spell")
+                Else
+                    BLINK_SHADOWSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BLINK_SHADOWSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ENSPELL_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ENSPELL_DURATIONMatch As Boolean
+                ENSPELL_DURATIONMatch = line.Contains("ENSPELL_DURATION")
+                If ENSPELL_DURATIONMatch Then
+                    ENSPELL_DURATIONOutputLines.Add("ENSPELL_DURATION = " + ENSPELL_DURATIONNumericUpDown.Text + "; -- duration of RDM en-spells")
+                Else
+                    ENSPELL_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ENSPELL_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SPIKE_EFFECT_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SPIKE_EFFECT_DURATIONMatch As Boolean
+                SPIKE_EFFECT_DURATIONMatch = line.Contains("SPIKE_EFFECT_DURATION")
+                If SPIKE_EFFECT_DURATIONMatch Then
+                    SPIKE_EFFECT_DURATIONOutputLines.Add("SPIKE_EFFECT_DURATION = " + SPIKE_EFFECT_DURATIONNumericUpDown.Text + "; -- the duration of RDM, BLM spikes effects (not Reprisal)")
+                Else
+                    SPIKE_EFFECT_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SPIKE_EFFECT_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ELEMENTAL_DEBUFF_DURATIONMatch As Boolean
+                ELEMENTAL_DEBUFF_DURATIONMatch = line.Contains("ELEMENTAL_DEBUFF_DURATION")
+                If ELEMENTAL_DEBUFF_DURATIONMatch Then
+                    ELEMENTAL_DEBUFF_DURATIONOutputLines.Add("ELEMENTAL_DEBUFF_DURATION = " + ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Text + "; -- base duration of elemental debuffs")
+                Else
+                    ELEMENTAL_DEBUFF_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ELEMENTAL_DEBUFF_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If STORM_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim STORM_DURATIONMatch As Boolean
+                STORM_DURATIONMatch = line.Contains("STORM_DURATION")
+                If STORM_DURATIONMatch Then
+                    STORM_DURATIONOutputLines.Add("STORM_DURATION = " + STORM_DURATIONNumericUpDown.Text + "; -- duration of Scholar storm spells")
+                Else
+                    STORM_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, STORM_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If KLIMAFORM_MACCNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim KLIMAFORM_MACCMatch As Boolean
+                KLIMAFORM_MACCMatch = line.Contains("KLIMAFORM_MACC")
+                If KLIMAFORM_MACCMatch Then
+                    KLIMAFORM_MACCOutputLines.Add("KLIMAFORM_MACC = " + KLIMAFORM_MACCNumericUpDown.Text + ";  -- magic accuracy added by Klimaform. 30 is just a guess.")
+                Else
+                    KLIMAFORM_MACCOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, KLIMAFORM_MACCOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AQUAVEIL_INTERR_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AQUAVEIL_INTERR_RATEMatch As Boolean
+                AQUAVEIL_INTERR_RATEMatch = line.Contains("AQUAVEIL_INTERR_RATE")
+                If AQUAVEIL_INTERR_RATEMatch Then
+                    AQUAVEIL_INTERR_RATEOutputLines.Add("AQUAVEIL_INTERR_RATE = " + AQUAVEIL_INTERR_RATENumericUpDown.Text + ";  -- percent spell interruption rate reduction from Aquaveil (see http://www.bluegartrls.com/forum/82143-spell-interruption-down-cap-aquaveil-tests.html)")
+                Else
+                    AQUAVEIL_INTERR_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AQUAVEIL_INTERR_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ABSORB_SPELL_AMOUNTNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ABSORB_SPELL_AMOUNTMatch As Boolean
+                ABSORB_SPELL_AMOUNTMatch = line.Contains("ABSORB_SPELL_AMOUNT")
+                If ABSORB_SPELL_AMOUNTMatch Then
+                    ABSORB_SPELL_AMOUNTOutputLines.Add("ABSORB_SPELL_AMOUNT = " + ABSORB_SPELL_AMOUNTNumericUpDown.Text + "; -- how much of a stat gets absorbed by DRK absorb spells - expected to be a multiple of 8.")
+                Else
+                    ABSORB_SPELL_AMOUNTOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ABSORB_SPELL_AMOUNTOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ABSORB_SPELL_TICKNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ABSORB_SPELL_TICKMatch As Boolean
+                ABSORB_SPELL_TICKMatch = line.Contains("ABSORB_SPELL_TICK")
+                If ABSORB_SPELL_TICKMatch Then
+                    ABSORB_SPELL_TICKOutputLines.Add("ABSORB_SPELL_TICK = " + ABSORB_SPELL_TICKNumericUpDown.Text + "; -- duration of 1 absorb spell tick")
+                Else
+                    ABSORB_SPELL_TICKOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ABSORB_SPELL_TICKOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SNEAK_INVIS_DURATION_MULTIPLIERMatch As Boolean
+                SNEAK_INVIS_DURATION_MULTIPLIERMatch = line.Contains("SNEAK_INVIS_DURATION_MULTIPLIER")
+                If SNEAK_INVIS_DURATION_MULTIPLIERMatch Then
+                    SNEAK_INVIS_DURATION_MULTIPLIEROutputLines.Add("SNEAK_INVIS_DURATION_MULTIPLIER = " + SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Text + "; -- multiplies duration of sneak,invis,deodorize to reduce player torture. 1 = retail behavior. MUST BE INTEGER.")
+                Else
+                    SNEAK_INVIS_DURATION_MULTIPLIEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SNEAK_INVIS_DURATION_MULTIPLIEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If USE_OLD_CURE_FORMULACheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("USE_OLD_CURE_FORMULA = false; -- true/false. if true, uses older cure formula (3*MND + VIT + 3*(healing skill/5)) // cure 6 will use the newer formula", "USE_OLD_CURE_FORMULA = true; -- true/false. if true, uses older cure formula (3*MND + VIT + 3*(healing skill/5)) // cure 6 will use the newer formula"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("USE_OLD_CURE_FORMULA = true; -- true/false. if true, uses older cure formula (3*MND + VIT + 3*(healing skill/5)) // cure 6 will use the newer formula", "USE_OLD_CURE_FORMULA = false; -- true/false. if true, uses older cure formula (3*MND + VIT + 3*(healing skill/5)) // cure 6 will use the newer formula"), False)
+        End If
     End Sub
 
     Private Sub ApplySettingPage8Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage8Button.Click
@@ -1172,17 +1446,6 @@ Public Class ConfigForm
             Next
             System.IO.File.WriteAllLines(SettingsFile, VISITANT_BONUSOutputLines.ToArray(), Encoding.UTF8)
         End If
-    End Sub
-
-    Private Sub ApplySettingsMiscButton_Click(sender As Object, e As EventArgs) Handles ApplySettingsMiscButton.Click
-
-        'Handles removing AH submission limits
-        If no_auction_limitsCheckBox.Checked = True Then
-            My.Computer.FileSystem.WriteAllText(AHCPP, My.Computer.FileSystem.ReadAllText(AHCPP).Replace("< 7", "< 9"), False)
-        ElseIf no_auction_limitsCheckBox.Checked = False Then
-            My.Computer.FileSystem.WriteAllText(AHCPP, My.Computer.FileSystem.ReadAllText(AHCPP).Replace("< 9", "< 7"), False)
-        End If
-
     End Sub
 
     Private Sub ApplySettingsDatabaseSettingsButton_Click(sender As Object, e As EventArgs) Handles ApplySettingsDatabaseSettingsButton.Click
@@ -1479,6 +1742,37 @@ Public Class ConfigForm
 
         mysql_hostLoginTextBox.Text = mysql_hostTextBox.Text
 
+    End Sub
+
+    Private Sub ApplySettingsMiscButton_Click(sender As Object, e As EventArgs) Handles ApplySettingsMiscButton.Click
+
+        Dim BlueSpellGaplevelLearnOutputLines As New List(Of String)()
+
+        'Handles removing AH submission limits
+        If no_auction_limitsCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(AHCPP, My.Computer.FileSystem.ReadAllText(AHCPP).Replace("< 7", "< 9"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(AHCPP, My.Computer.FileSystem.ReadAllText(AHCPP).Replace("< 9", "< 7"), False)
+        End If
+
+        If BlueSpellGaplevelLearnNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(BlueutilsCPP)
+                Dim BlueSpellGaplevelLearnMatch As Boolean
+                BlueSpellGaplevelLearnMatch = line.Contains("if (learnableLevel > 0 && learnableLevel < PBlueMage->GetMLevel()+")
+                If BlueSpellGaplevelLearnMatch Then
+                    BlueSpellGaplevelLearnOutputLines.Add("			if (learnableLevel > 0 && learnableLevel < PBlueMage->GetMLevel()+" + BlueSpellGaplevelLearnNumericUpDown.Text + ") { // TODO: Use blue magic skill check rather than level")
+                Else
+                    BlueSpellGaplevelLearnOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(BlueutilsCPP, BlueSpellGaplevelLearnOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+    End Sub
+
+    Private Sub BlueSpellGaplevelLearnNumericUpDown_MouseClick(sender As Object, e As MouseEventArgs) Handles BlueSpellGaplevelLearnNumericUpDown.MouseClick
+        MessageBox.Show("You must recompile the server for this to take effect!", "Important Message")
     End Sub
 
 End Class

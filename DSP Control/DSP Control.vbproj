@@ -275,12 +275,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="SpellSettings.Designer.vb">
-      <DependentUpon>SpellSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SpellSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Spell_WeaponPower.Designer.vb">
       <DependentUpon>Spell_WeaponPower.vb</DependentUpon>
     </Compile>
@@ -381,9 +375,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Quest_MissionSettings.resx">
       <DependentUpon>Quest_MissionSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SpellSettings.resx">
-      <DependentUpon>SpellSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spell_WeaponPower.resx">
       <DependentUpon>Spell_WeaponPower.vb</DependentUpon>

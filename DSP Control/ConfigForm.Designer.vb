@@ -589,6 +589,12 @@ Partial Class ConfigForm
         Me.ApplySettingPage9Button = New System.Windows.Forms.Button()
         Me.DatabaseSettingsTabPage = New System.Windows.Forms.TabPage()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.msg_server_portNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.mysql_hostLoginTextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox39 = New System.Windows.Forms.TextBox()
         Me.GroupBox42 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.mysql_hostTextBox = New System.Windows.Forms.TextBox()
@@ -604,14 +610,31 @@ Partial Class ConfigForm
         Me.TextBox24 = New System.Windows.Forms.TextBox()
         Me.MiscTabPage = New System.Windows.Forms.TabPage()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.BlueSpellGaplevelLearnLabel = New System.Windows.Forms.Label()
+        Me.BlueSpellGaplevelLearnNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.ApplySettingsMiscButton = New System.Windows.Forms.Button()
         Me.no_auction_limitsCheckBox = New System.Windows.Forms.CheckBox()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.mysql_hostLoginTextBox = New System.Windows.Forms.TextBox()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
-        Me.msg_server_portNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BARD_SONG_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ENHANCING_SONG_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.STONESKIN_CAPNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BLINK_SHADOWSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ENSPELL_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.STORM_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.KLIMAFORM_MACCNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AQUAVEIL_INTERR_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ABSORB_SPELL_TICKNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.MILK_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.JUICE_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.DIA_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.BIO_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.BARELEMENT_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.BARSTATUS_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.USE_OLD_CURE_FORMULACheckBox = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.LoginTabPage.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -748,12 +771,27 @@ Partial Class ConfigForm
         Me.GroupBox61.SuspendLayout()
         Me.DatabaseSettingsTabPage.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        CType(Me.msg_server_portNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox42.SuspendLayout()
         CType(Me.mysql_portNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MiscTabPage.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        CType(Me.msg_server_portNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BlueSpellGaplevelLearnNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -5536,6 +5574,27 @@ Partial Class ConfigForm
         '
         'GroupBox58
         '
+        Me.GroupBox58.Controls.Add(Me.USE_OLD_CURE_FORMULACheckBox)
+        Me.GroupBox58.Controls.Add(Me.BARSTATUS_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.BARELEMENT_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.BIO_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.DIA_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.JUICE_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.MILK_OVERWRITECheckBox)
+        Me.GroupBox58.Controls.Add(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.ABSORB_SPELL_TICKNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.ABSORB_SPELL_AMOUNTNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.AQUAVEIL_INTERR_RATENumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.KLIMAFORM_MACCNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.STORM_DURATIONNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.SPIKE_EFFECT_DURATIONNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.ENSPELL_DURATIONNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.BLINK_SHADOWSNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.STONESKIN_CAPNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.ENHANCING_SONG_DURATIONNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.BARD_INSTRUMENT_LIMITNumericUpDown)
+        Me.GroupBox58.Controls.Add(Me.BARD_SONG_LIMITNumericUpDown)
         Me.GroupBox58.Controls.Add(Me.TextBox320)
         Me.GroupBox58.Controls.Add(Me.TextBox305)
         Me.GroupBox58.Controls.Add(Me.TextBox321)
@@ -5581,7 +5640,7 @@ Partial Class ConfigForm
         Me.GroupBox58.Controls.Add(Me.TextBox298)
         Me.GroupBox58.Location = New System.Drawing.Point(5, 3)
         Me.GroupBox58.Name = "GroupBox58"
-        Me.GroupBox58.Size = New System.Drawing.Size(666, 666)
+        Me.GroupBox58.Size = New System.Drawing.Size(666, 648)
         Me.GroupBox58.TabIndex = 318
         Me.GroupBox58.TabStop = False
         '
@@ -6640,6 +6699,68 @@ Partial Class ConfigForm
         Me.Panel9.Size = New System.Drawing.Size(677, 718)
         Me.Panel9.TabIndex = 0
         '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.TextBox38)
+        Me.GroupBox7.Controls.Add(Me.msg_server_portNumericUpDown)
+        Me.GroupBox7.Controls.Add(Me.TextBox6)
+        Me.GroupBox7.Controls.Add(Me.mysql_hostLoginTextBox)
+        Me.GroupBox7.Controls.Add(Me.TextBox39)
+        Me.GroupBox7.Location = New System.Drawing.Point(0, 222)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(677, 101)
+        Me.GroupBox7.TabIndex = 89
+        Me.GroupBox7.TabStop = False
+        '
+        'TextBox38
+        '
+        Me.TextBox38.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TextBox38.Location = New System.Drawing.Point(3, 16)
+        Me.TextBox38.Name = "TextBox38"
+        Me.TextBox38.ReadOnly = True
+        Me.TextBox38.Size = New System.Drawing.Size(671, 20)
+        Me.TextBox38.TabIndex = 83
+        Me.TextBox38.Text = "#Central message server settings (ensure these are the same on both all map serve" & _
+    "rs and the central (lobby) server"
+        '
+        'msg_server_portNumericUpDown
+        '
+        Me.msg_server_portNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "msg_server_port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.msg_server_portNumericUpDown.Location = New System.Drawing.Point(111, 42)
+        Me.msg_server_portNumericUpDown.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.msg_server_portNumericUpDown.Name = "msg_server_portNumericUpDown"
+        Me.msg_server_portNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.msg_server_portNumericUpDown.TabIndex = 53
+        Me.msg_server_portNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.msg_server_port
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(3, 42)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.TabIndex = 54
+        Me.TextBox6.Text = "msg_server_port:  "
+        '
+        'mysql_hostLoginTextBox
+        '
+        Me.mysql_hostLoginTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.DSP_Control.My.MySettings.Default, "mysql_host", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.mysql_hostLoginTextBox.Location = New System.Drawing.Point(111, 68)
+        Me.mysql_hostLoginTextBox.Name = "mysql_hostLoginTextBox"
+        Me.mysql_hostLoginTextBox.ReadOnly = True
+        Me.mysql_hostLoginTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.mysql_hostLoginTextBox.TabIndex = 85
+        Me.mysql_hostLoginTextBox.Text = Global.DSP_Control.My.MySettings.Default.mysql_host
+        '
+        'TextBox39
+        '
+        Me.TextBox39.Location = New System.Drawing.Point(3, 68)
+        Me.TextBox39.Name = "TextBox39"
+        Me.TextBox39.ReadOnly = True
+        Me.TextBox39.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox39.TabIndex = 84
+        Me.TextBox39.Text = "msg_server_ip: "
+        '
         'GroupBox42
         '
         Me.GroupBox42.Controls.Add(Me.TextBox1)
@@ -6784,6 +6905,8 @@ Partial Class ConfigForm
         'Panel5
         '
         Me.Panel5.AutoScroll = True
+        Me.Panel5.Controls.Add(Me.BlueSpellGaplevelLearnLabel)
+        Me.Panel5.Controls.Add(Me.BlueSpellGaplevelLearnNumericUpDown)
         Me.Panel5.Controls.Add(Me.ApplySettingsMiscButton)
         Me.Panel5.Controls.Add(Me.no_auction_limitsCheckBox)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
@@ -6791,6 +6914,24 @@ Partial Class ConfigForm
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(683, 724)
         Me.Panel5.TabIndex = 0
+        '
+        'BlueSpellGaplevelLearnLabel
+        '
+        Me.BlueSpellGaplevelLearnLabel.AutoSize = True
+        Me.BlueSpellGaplevelLearnLabel.Location = New System.Drawing.Point(114, 37)
+        Me.BlueSpellGaplevelLearnLabel.Name = "BlueSpellGaplevelLearnLabel"
+        Me.BlueSpellGaplevelLearnLabel.Size = New System.Drawing.Size(217, 13)
+        Me.BlueSpellGaplevelLearnLabel.TabIndex = 95
+        Me.BlueSpellGaplevelLearnLabel.Text = "Gap between learning and using a BLU spell"
+        '
+        'BlueSpellGaplevelLearnNumericUpDown
+        '
+        Me.BlueSpellGaplevelLearnNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BlueSpellGaplevelLearn", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BlueSpellGaplevelLearnNumericUpDown.Location = New System.Drawing.Point(8, 35)
+        Me.BlueSpellGaplevelLearnNumericUpDown.Name = "BlueSpellGaplevelLearnNumericUpDown"
+        Me.BlueSpellGaplevelLearnNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.BlueSpellGaplevelLearnNumericUpDown.TabIndex = 94
+        Me.BlueSpellGaplevelLearnNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BlueSpellGaplevelLearn
         '
         'ApplySettingsMiscButton
         '
@@ -6814,67 +6955,223 @@ Partial Class ConfigForm
         Me.no_auction_limitsCheckBox.Text = "Unlimited AH submissions"
         Me.no_auction_limitsCheckBox.UseVisualStyleBackColor = True
         '
-        'GroupBox7
+        'BARD_SONG_LIMITNumericUpDown
         '
-        Me.GroupBox7.Controls.Add(Me.TextBox38)
-        Me.GroupBox7.Controls.Add(Me.msg_server_portNumericUpDown)
-        Me.GroupBox7.Controls.Add(Me.TextBox6)
-        Me.GroupBox7.Controls.Add(Me.mysql_hostLoginTextBox)
-        Me.GroupBox7.Controls.Add(Me.TextBox39)
-        Me.GroupBox7.Location = New System.Drawing.Point(0, 222)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(677, 101)
-        Me.GroupBox7.TabIndex = 89
-        Me.GroupBox7.TabStop = False
+        Me.BARD_SONG_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_SONG_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARD_SONG_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 201)
+        Me.BARD_SONG_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
+        Me.BARD_SONG_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.BARD_SONG_LIMITNumericUpDown.Name = "BARD_SONG_LIMITNumericUpDown"
+        Me.BARD_SONG_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BARD_SONG_LIMITNumericUpDown.TabIndex = 314
+        Me.BARD_SONG_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_SONG_LIMIT
         '
-        'TextBox38
+        'BARD_INSTRUMENT_LIMITNumericUpDown
         '
-        Me.TextBox38.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TextBox38.Location = New System.Drawing.Point(3, 16)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.ReadOnly = True
-        Me.TextBox38.Size = New System.Drawing.Size(671, 20)
-        Me.TextBox38.TabIndex = 83
-        Me.TextBox38.Text = "#Central message server settings (ensure these are the same on both all map serve" & _
-    "rs and the central (lobby) server"
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_INSTRUMENT_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 241)
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {32, 0, 0, 0})
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Name = "BARD_INSTRUMENT_LIMITNumericUpDown"
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.TabIndex = 315
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_INSTRUMENT_LIMIT
         '
-        'TextBox6
+        'ENHANCING_SONG_DURATIONNumericUpDown
         '
-        Me.TextBox6.Location = New System.Drawing.Point(3, 42)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 54
-        Me.TextBox6.Text = "msg_server_port:  "
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENHANCING_SONG_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 279)
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Name = "ENHANCING_SONG_DURATIONNumericUpDown"
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.TabIndex = 316
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENHANCING_SONG_DURATION
         '
-        'mysql_hostLoginTextBox
+        'STONESKIN_CAPNumericUpDown
         '
-        Me.mysql_hostLoginTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.DSP_Control.My.MySettings.Default, "mysql_host", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.mysql_hostLoginTextBox.Location = New System.Drawing.Point(111, 68)
-        Me.mysql_hostLoginTextBox.Name = "mysql_hostLoginTextBox"
-        Me.mysql_hostLoginTextBox.ReadOnly = True
-        Me.mysql_hostLoginTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.mysql_hostLoginTextBox.TabIndex = 85
-        Me.mysql_hostLoginTextBox.Text = Global.DSP_Control.My.MySettings.Default.mysql_host
+        Me.STONESKIN_CAPNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STONESKIN_CAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.STONESKIN_CAPNumericUpDown.Location = New System.Drawing.Point(204, 304)
+        Me.STONESKIN_CAPNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.STONESKIN_CAPNumericUpDown.Name = "STONESKIN_CAPNumericUpDown"
+        Me.STONESKIN_CAPNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.STONESKIN_CAPNumericUpDown.TabIndex = 317
+        Me.STONESKIN_CAPNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STONESKIN_CAP
         '
-        'TextBox39
+        'BLINK_SHADOWSNumericUpDown
         '
-        Me.TextBox39.Location = New System.Drawing.Point(3, 68)
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.ReadOnly = True
-        Me.TextBox39.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox39.TabIndex = 84
-        Me.TextBox39.Text = "msg_server_ip: "
+        Me.BLINK_SHADOWSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BLINK_SHADOWS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BLINK_SHADOWSNumericUpDown.Location = New System.Drawing.Point(204, 330)
+        Me.BLINK_SHADOWSNumericUpDown.Name = "BLINK_SHADOWSNumericUpDown"
+        Me.BLINK_SHADOWSNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BLINK_SHADOWSNumericUpDown.TabIndex = 318
+        Me.BLINK_SHADOWSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BLINK_SHADOWS
         '
-        'msg_server_portNumericUpDown
+        'ENSPELL_DURATIONNumericUpDown
         '
-        Me.msg_server_portNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "msg_server_port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.msg_server_portNumericUpDown.Location = New System.Drawing.Point(111, 42)
-        Me.msg_server_portNumericUpDown.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.msg_server_portNumericUpDown.Name = "msg_server_portNumericUpDown"
-        Me.msg_server_portNumericUpDown.Size = New System.Drawing.Size(100, 20)
-        Me.msg_server_portNumericUpDown.TabIndex = 53
-        Me.msg_server_portNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.msg_server_port
+        Me.ENSPELL_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENSPELL_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ENSPELL_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 356)
+        Me.ENSPELL_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.ENSPELL_DURATIONNumericUpDown.Name = "ENSPELL_DURATIONNumericUpDown"
+        Me.ENSPELL_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ENSPELL_DURATIONNumericUpDown.TabIndex = 319
+        Me.ENSPELL_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENSPELL_DURATION
+        '
+        'SPIKE_EFFECT_DURATIONNumericUpDown
+        '
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SPIKE_EFFECT_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 382)
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Name = "SPIKE_EFFECT_DURATIONNumericUpDown"
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.TabIndex = 320
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SPIKE_EFFECT_DURATION
+        '
+        'ELEMENTAL_DEBUFF_DURATIONNumericUpDown
+        '
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ELEMENTAL_DEBUFF_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 408)
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Name = "ELEMENTAL_DEBUFF_DURATIONNumericUpDown"
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.TabIndex = 321
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ELEMENTAL_DEBUFF_DURATION
+        '
+        'STORM_DURATIONNumericUpDown
+        '
+        Me.STORM_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STORM_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.STORM_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 434)
+        Me.STORM_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.STORM_DURATIONNumericUpDown.Name = "STORM_DURATIONNumericUpDown"
+        Me.STORM_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.STORM_DURATIONNumericUpDown.TabIndex = 322
+        Me.STORM_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STORM_DURATION
+        '
+        'KLIMAFORM_MACCNumericUpDown
+        '
+        Me.KLIMAFORM_MACCNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "KLIMAFORM_MACC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.KLIMAFORM_MACCNumericUpDown.Location = New System.Drawing.Point(204, 460)
+        Me.KLIMAFORM_MACCNumericUpDown.Name = "KLIMAFORM_MACCNumericUpDown"
+        Me.KLIMAFORM_MACCNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.KLIMAFORM_MACCNumericUpDown.TabIndex = 323
+        Me.KLIMAFORM_MACCNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.KLIMAFORM_MACC
+        '
+        'AQUAVEIL_INTERR_RATENumericUpDown
+        '
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AQUAVEIL_INTERR_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Location = New System.Drawing.Point(204, 486)
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Name = "AQUAVEIL_INTERR_RATENumericUpDown"
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.TabIndex = 324
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AQUAVEIL_INTERR_RATE
+        '
+        'ABSORB_SPELL_AMOUNTNumericUpDown
+        '
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_AMOUNT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Location = New System.Drawing.Point(204, 512)
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Name = "ABSORB_SPELL_AMOUNTNumericUpDown"
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.TabIndex = 325
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_AMOUNT
+        '
+        'ABSORB_SPELL_TICKNumericUpDown
+        '
+        Me.ABSORB_SPELL_TICKNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_TICK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ABSORB_SPELL_TICKNumericUpDown.Location = New System.Drawing.Point(204, 552)
+        Me.ABSORB_SPELL_TICKNumericUpDown.Name = "ABSORB_SPELL_TICKNumericUpDown"
+        Me.ABSORB_SPELL_TICKNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ABSORB_SPELL_TICKNumericUpDown.TabIndex = 326
+        Me.ABSORB_SPELL_TICKNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_TICK
+        '
+        'SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown
+        '
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SNEAK_INVIS_DURATION_MULTIPLIER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Location = New System.Drawing.Point(204, 578)
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Name = "SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown"
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.TabIndex = 327
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SNEAK_INVIS_DURATION_MULTIPLIER
+        '
+        'MILK_OVERWRITECheckBox
+        '
+        Me.MILK_OVERWRITECheckBox.AutoSize = True
+        Me.MILK_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.MILK_OVERWRITE
+        Me.MILK_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.MILK_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "MILK_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.MILK_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 48)
+        Me.MILK_OVERWRITECheckBox.Name = "MILK_OVERWRITECheckBox"
+        Me.MILK_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MILK_OVERWRITECheckBox.TabIndex = 328
+        Me.MILK_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'JUICE_OVERWRITECheckBox
+        '
+        Me.JUICE_OVERWRITECheckBox.AutoSize = True
+        Me.JUICE_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JUICE_OVERWRITE
+        Me.JUICE_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.JUICE_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JUICE_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JUICE_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 73)
+        Me.JUICE_OVERWRITECheckBox.Name = "JUICE_OVERWRITECheckBox"
+        Me.JUICE_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.JUICE_OVERWRITECheckBox.TabIndex = 329
+        Me.JUICE_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'DIA_OVERWRITECheckBox
+        '
+        Me.DIA_OVERWRITECheckBox.AutoSize = True
+        Me.DIA_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DIA_OVERWRITE
+        Me.DIA_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.DIA_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DIA_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DIA_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 99)
+        Me.DIA_OVERWRITECheckBox.Name = "DIA_OVERWRITECheckBox"
+        Me.DIA_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DIA_OVERWRITECheckBox.TabIndex = 330
+        Me.DIA_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'BIO_OVERWRITECheckBox
+        '
+        Me.BIO_OVERWRITECheckBox.AutoSize = True
+        Me.BIO_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BIO_OVERWRITE
+        Me.BIO_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BIO_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BIO_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 125)
+        Me.BIO_OVERWRITECheckBox.Name = "BIO_OVERWRITECheckBox"
+        Me.BIO_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BIO_OVERWRITECheckBox.TabIndex = 331
+        Me.BIO_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'BARELEMENT_OVERWRITECheckBox
+        '
+        Me.BARELEMENT_OVERWRITECheckBox.AutoSize = True
+        Me.BARELEMENT_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARELEMENT_OVERWRITE
+        Me.BARELEMENT_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.BARELEMENT_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARELEMENT_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARELEMENT_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 151)
+        Me.BARELEMENT_OVERWRITECheckBox.Name = "BARELEMENT_OVERWRITECheckBox"
+        Me.BARELEMENT_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BARELEMENT_OVERWRITECheckBox.TabIndex = 332
+        Me.BARELEMENT_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'BARSTATUS_OVERWRITECheckBox
+        '
+        Me.BARSTATUS_OVERWRITECheckBox.AutoSize = True
+        Me.BARSTATUS_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARSTATUS_OVERWRITE
+        Me.BARSTATUS_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.BARSTATUS_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARSTATUS_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARSTATUS_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 177)
+        Me.BARSTATUS_OVERWRITECheckBox.Name = "BARSTATUS_OVERWRITECheckBox"
+        Me.BARSTATUS_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BARSTATUS_OVERWRITECheckBox.TabIndex = 333
+        Me.BARSTATUS_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'USE_OLD_CURE_FORMULACheckBox
+        '
+        Me.USE_OLD_CURE_FORMULACheckBox.AutoSize = True
+        Me.USE_OLD_CURE_FORMULACheckBox.Checked = Global.DSP_Control.My.MySettings.Default.USE_OLD_CURE_FORMULA
+        Me.USE_OLD_CURE_FORMULACheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "USE_OLD_CURE_FORMULA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.USE_OLD_CURE_FORMULACheckBox.Location = New System.Drawing.Point(204, 606)
+        Me.USE_OLD_CURE_FORMULACheckBox.Name = "USE_OLD_CURE_FORMULACheckBox"
+        Me.USE_OLD_CURE_FORMULACheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.USE_OLD_CURE_FORMULACheckBox.TabIndex = 334
+        Me.USE_OLD_CURE_FORMULACheckBox.UseVisualStyleBackColor = True
         '
         'ConfigForm
         '
@@ -7083,15 +7380,30 @@ Partial Class ConfigForm
         Me.DatabaseSettingsTabPage.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        CType(Me.msg_server_portNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox42.ResumeLayout(False)
         Me.GroupBox42.PerformLayout()
         CType(Me.mysql_portNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MiscTabPage.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        CType(Me.msg_server_portNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BlueSpellGaplevelLearnNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -7684,4 +7996,27 @@ Partial Class ConfigForm
     Friend WithEvents mysql_hostLoginTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TextBox39 As System.Windows.Forms.TextBox
     Friend WithEvents msg_server_portNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BlueSpellGaplevelLearnLabel As System.Windows.Forms.Label
+    Friend WithEvents BlueSpellGaplevelLearnNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BARD_SONG_LIMITNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BARD_INSTRUMENT_LIMITNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ENHANCING_SONG_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents STONESKIN_CAPNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BLINK_SHADOWSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ENSPELL_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SPIKE_EFFECT_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ELEMENTAL_DEBUFF_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents STORM_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents KLIMAFORM_MACCNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AQUAVEIL_INTERR_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ABSORB_SPELL_AMOUNTNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ABSORB_SPELL_TICKNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents MILK_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents JUICE_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents DIA_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents BIO_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents BARELEMENT_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents BARSTATUS_OVERWRITECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents USE_OLD_CURE_FORMULACheckBox As System.Windows.Forms.CheckBox
 End Class
