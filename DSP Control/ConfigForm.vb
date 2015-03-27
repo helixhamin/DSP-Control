@@ -35,22 +35,77 @@ Public Class ConfigForm
     End Sub
 
     Private Sub ConfigForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        mysql_hostTextBox.Text = My.Settings.mysql_host
-        mysql_hostLoginTextBox.Text = My.Settings.mysql_host
-        mysql_portNumericUpDown.Text = My.Settings.mysql_port
-        mysql_loginTextBox.Text = My.Settings.mysql_login
-        mysql_passwordTextBox.Text = My.Settings.mysql_password
-        mysql_databaseTextBox.Text = My.Settings.mysql_database
-        msg_server_portNumericUpDown.Text = My.Settings.msg_server_port
-        expire_auctionsCheckBox.Checked = My.Settings.expire_auctions
-        no_auction_limitsCheckBox.Checked = My.Settings.no_auction_limits
-        expire_daysNumericUpDown.Text = My.Settings.expire_days
-        expire_intervalNumericUpDown.Text = My.Settings.expire_interval
+
         timestamp_formatLoginTextBox.Text = My.Settings.timestamp_formatLogin
         stdout_with_ansisequenceLoginTextBox.Text = My.Settings.stdout_with_ansisequenceLogin
         console_silentLoginNumericUpDown.Text = My.Settings.console_silentLogin
         search_server_portNumericUpDown.Text = My.Settings.search_server_port
+
         servernameTextBox.Text = My.Settings.servername
+
+        map_portNumericUpDown.Text = My.Settings.map_port
+        timestamp_formatMapTextBox.Text = My.Settings.timestamp_formatMap
+        stdout_with_ansisequenceMapTextBox.Text = My.Settings.stdout_with_ansisequenceMap
+        console_silentMapNumericUpDown.Text = My.Settings.console_silentMap
+
+        buff_maxsizeNumericUpDown.Text = My.Settings.buff_maxsize
+        max_time_lastupdateNumericUpDown.Text = My.Settings.max_time_lastupdate
+        lightluggage_blockNumericUpDown.Text = My.Settings.lightluggage_block
+        exp_rateNumericUpDown.Text = My.Settings.exp_rate
+        exp_loss_rateNumericUpDown.Text = My.Settings.exp_loss_rate
+        exp_party_gap_penaltiesCheckBox.Checked = My.Settings.exp_party_gap_penalties
+        fov_party_gap_penaltiesCheckBox.Checked = My.Settings.fov_party_gap_penalties
+        fov_allow_allianceCheckBox.Checked = My.Settings.fov_allow_alliance
+        vanadiel_time_offsetNumericUpDown.Text = My.Settings.vanadiel_time_offset
+        exp_retainCheckBox.Checked = My.Settings.exp_retain
+        exp_loss_levelNumericUpDown.Text = My.Settings.exp_loss_level
+
+        level_sync_enableCheckBox.Checked = My.Settings.level_sync_enable
+        all_jobs_widescanCheckBox.Checked = My.Settings.all_jobs_widescan
+        speed_modNumericUpDown.Text = My.Settings.speed_mod
+        mob_speed_modNumericUpDown.Text = My.Settings.mob_speed_mod
+        skillup_chance_multiplierNumericUpDown.Text = My.Settings.skillup_chance_multiplier
+        craft_chance_multiplierNumericUpDown.Text = My.Settings.craft_chance_multiplier
+        skillup_amount_multiplierNumericUpDown.Text = My.Settings.skillup_amount_multiplier
+        craft_amount_multiplierNumericUpDown.Text = My.Settings.craft_amount_multiplier
+
+        craft_day_mattersCheckBox.Checked = My.Settings.craft_day_matters
+        craft_moonphase_mattersCheckBox.Checked = My.Settings.craft_moonphase_matters
+        craft_direction_mattersCheckBox.Checked = My.Settings.craft_direction_matters
+        mob_tp_multiplierNumericUpDown.Text = My.Settings.mob_tp_multiplier
+        player_tp_multiplierNumericUpDown.Text = My.Settings.player_tp_multiplier
+        nm_hp_multiplierNumericUpDown.Text = My.Settings.nm_hp_multiplier
+        mob_hp_multiplierNumericUpDown.Text = My.Settings.mob_hp_multiplier
+        player_hp_multiplierNumericUpDown.Text = My.Settings.player_hp_multiplier
+        nm_mp_multiplierNumericUpDown.Text = My.Settings.nm_mp_multiplier
+        mob_mp_multiplierNumericUpDown.Text = My.Settings.mob_mp_multiplier
+        player_mp_multiplierNumericUpDown.Text = My.Settings.player_mp_multiplier
+        sj_mp_divisorNumericUpDown.Text = My.Settings.sj_mp_divisor
+
+        nm_stat_multiplierNumericUpDown.Text = My.Settings.nm_stat_multiplier
+        mob_stat_multiplierNumericUpDown.Text = My.Settings.mob_stat_multiplier
+        player_stat_multiplierNumericUpDown.Text = My.Settings.player_stat_multiplier
+        drop_rate_multiplierNumericUpDown.Text = My.Settings.drop_rate_multiplier
+        all_mobs_gil_bonusNumericUpDown.Text = My.Settings.all_mobs_gil_bonus
+        max_gil_bonusNumericUpDown.Text = My.Settings.max_gil_bonus
+        newstyle_skillupsNumericUpDown.Text = My.Settings.newstyle_skillups
+        Battle_cap_tweakNumericUpDown.Text = My.Settings.Battle_cap_tweak
+
+        CoP_Battle_capCheckBox.Checked = My.Settings.CoP_Battle_cap
+        max_merit_pointsNumericUpDown.Text = My.Settings.max_merit_points
+        yell_cooldownNumericUpDown.Text = My.Settings.yell_cooldown
+        audit_chatCheckBox.Checked = My.Settings.audit_chat
+        audit_sayCheckBox.Checked = My.Settings.audit_say
+        audit_shoutCheckBox.Checked = My.Settings.audit_shout
+        audit_tellCheckBox.Checked = My.Settings.audit_tell
+        audit_yellCheckBox.Checked = My.Settings.audit_yell
+        audit_linkshellCheckBox.Checked = My.Settings.audit_linkshell
+        audit_partyCheckBox.Checked = My.Settings.audit_party
+
+        expire_auctionsCheckBox.Checked = My.Settings.expire_auctions
+        expire_daysNumericUpDown.Text = My.Settings.expire_days
+        expire_intervalNumericUpDown.Text = My.Settings.expire_interval
+
         COPCheckBox.Checked = My.Settings.ENABLE_COP
         TOAUCheckBox.Checked = My.Settings.ENABLE_TOAU
         WOTGCheckBox.Checked = My.Settings.ENABLE_WOTG
@@ -60,70 +115,99 @@ Public Class ConfigForm
         ABYSSEACheckBox.Checked = My.Settings.ENABLE_ABYSSEA
         SOACheckBox.Checked = My.Settings.ENABLE_SOA
         RESTRICT_BY_EXPANSIONCheckBox.Checked = My.Settings.RESTRICT_BY_EXPANSION
+
+        INITIAL_LEVEL_CAPNumericUpDown.Text = My.Settings.INITIAL_LEVEL_CAP
+        MAX_LEVELNumericUpDown.Text = My.Settings.MAX_LEVEL
+        NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Text = My.Settings.NORMAL_MOB_MAX_LEVEL_RANGE_MIN
+        NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Text = My.Settings.NORMAL_MOB_MAX_LEVEL_RANGE_MAX
+        START_GILNumericUpDown.Text = My.Settings.START_GIL
+        START_INVENTORYNumericUpDown.Text = My.Settings.START_INVENTORY
+        OPENING_CUTSCENE_ENABLECheckBox.Checked = My.Settings.OPENING_CUTSCENE_ENABLE
+        SUBJOB_QUEST_LEVELNumericUpDown.Text = My.Settings.SUBJOB_QUEST_LEVEL
+        ADVANCED_JOB_LEVELNumericUpDown.Text = My.Settings.ADVANCED_JOB_LEVEL
+        ALL_MAPSCheckBox.Checked = My.Settings.ALL_MAPS
+        UNLOCK_OUTPOST_WARPSNumericUpDown.Text = My.Settings.UNLOCK_OUTPOST_WARPS
+        SHOP_PRICENumericUpDown.Text = My.Settings.SHOP_PRICE
+        GIL_RATENumericUpDown.Text = My.Settings.GIL_RATE
+        EXP_RATEFOVNumericUpDown.Text = My.Settings.EXP_RATEFOV
+        TABS_RATENumericUpDown.Text = My.Settings.TABS_RATE
+        SAN_FAMENumericUpDown.Text = My.Settings.SAN_FAME
+        BAS_FAMENumericUpDown.Text = My.Settings.BAS_FAME
+        WIN_FAMENumericUpDown.Text = My.Settings.WIN_FAME
+        NORG_FAMENumericUpDown.Text = My.Settings.NORG_FAME
+        JEUNO_FAMENumericUpDown.Text = My.Settings.JEUNO_FAME
+
+        FISHING_GUILD_POINTSNumericUpDown.Text = My.Settings.FISHING_GUILD_POINTS
+        WOODWORKING_GUILD_POINTSNumericUpDown.Text = My.Settings.WOODWORKING_GUILD_POINTS
+        SMITHING_GUILD_POINTSNumericUpDown.Text = My.Settings.SMITHING_GUILD_POINTS
+        GOLDSMITHING_GUILD_POINTSNumericUpDown.Text = My.Settings.GOLDSMITHING_GUILD_POINTS
+        CLOTHCRAFT_GUILD_POINTSNumericUpDown.Text = My.Settings.CLOTHCRAFT_GUILD_POINTS
+        LEATHERCRAFT_GUILD_POINTSNumericUpDown.Text = My.Settings.LEATHERCRAFT_GUILD_POINTS
+        BONECRAFT_GUILD_POINTSNumericUpDown.Text = My.Settings.BONECRAFT_GUILD_POINTS
+        ALCHEMY_GUILD_POINTSNumericUpDown.Text = My.Settings.ALCHEMY_GUILD_POINTS
+        COOKING_GUILD_POINTSNumericUpDown.Text = My.Settings.COOKING_GUILD_POINTS
+        DISABLE_GUILD_CONTRACTSCheckBox.Checked = My.Settings.DISABLE_GUILD_CONTRACTS
+        CURE_POWERNumericUpDown.Text = My.Settings.CURE_POWER
+        SPELL_POWERNumericUpDown.Text = My.Settings.SPELL_POWER
+        BLUE_POWERNumericUpDown.Text = My.Settings.BLUE_POWER
+        DRAIN_POWERNumericUpDown.Text = My.Settings.DRAIN_POWER
+        ITEM_POWERNumericUpDown.Text = My.Settings.ITEM_POWER
+        WEAPON_SKILL_POWERNumericUpDown.Text = My.Settings.WEAPON_SKILL_POWER
+        WEAPON_SKILL_POINTSNumericUpDown.Text = My.Settings.WEAPON_SKILL_POINTS
         USE_ADOULIN_WEAPON_SKILL_CHANGESCheckBox.Checked = My.Settings.USE_ADOULIN_WEAPON_SKILL_CHANGES
-        LoginExpansionControlTextBox.Text = My.Settings.LoginExpansionControl
-        map_portNumericUpDown.Text = My.Settings.map_port
-        timestamp_formatMapTextBox.Text = My.Settings.timestamp_formatMap
-        stdout_with_ansisequenceMapTextBox.Text = My.Settings.stdout_with_ansisequenceMap
-        console_silentMapNumericUpDown.Text = My.Settings.console_silentMap
-        buff_maxsizeNumericUpDown.Text = My.Settings.buff_maxsize
-        max_time_lastupdateNumericUpDown.Text = My.Settings.max_time_lastupdate
-        lightluggage_blockNumericUpDown.Text = My.Settings.lightluggage_block
-        vanadiel_time_offsetNumericUpDown.Text = My.Settings.vanadiel_time_offset
-        exp_rateNumericUpDown.Text = My.Settings.exp_rate
-        exp_loss_rateNumericUpDown.Text = My.Settings.exp_loss_rate
-        exp_party_gap_penaltiesCheckBox.Checked = My.Settings.exp_party_gap_penalties
-        exp_retainCheckBox.Checked = My.Settings.exp_retain
-        exp_loss_levelNumericUpDown.Text = My.Settings.exp_loss_level
-        fov_party_gap_penaltiesCheckBox.Checked = My.Settings.fov_party_gap_penalties
-        fov_allow_allianceCheckBox.Checked = My.Settings.fov_allow_alliance
-        speed_modNumericUpDown.Text = My.Settings.speed_mod
-        level_sync_enableCheckBox.Checked = My.Settings.level_sync_enable
-        all_jobs_widescanCheckBox.Checked = My.Settings.all_jobs_widescan
-        max_merit_pointsNumericUpDown.Text = My.Settings.max_merit_points
-        yell_cooldownNumericUpDown.Text = My.Settings.yell_cooldown
-        mob_speed_modNumericUpDown.Text = My.Settings.mob_speed_mod
-        all_mobs_gil_bonusNumericUpDown.Text = My.Settings.all_mobs_gil_bonus
-        max_gil_bonusNumericUpDown.Text = My.Settings.max_gil_bonus
-        Battle_cap_tweakNumericUpDown.Text = My.Settings.Battle_cap_tweak
-        skillup_chance_multiplierNumericUpDown.Text = My.Settings.skillup_chance_multiplier
-        craft_chance_multiplierNumericUpDown.Text = My.Settings.craft_chance_multiplier
-        skillup_amount_multiplierNumericUpDown.Text = My.Settings.skillup_amount_multiplier
-        craft_amount_multiplierNumericUpDown.Text = My.Settings.craft_amount_multiplier
-        newstyle_skillupsNumericUpDown.Text = My.Settings.newstyle_skillups
-        craft_day_mattersCheckBox.Checked = My.Settings.craft_day_matters
-        craft_moonphase_mattersCheckBox.Checked = My.Settings.craft_moonphase_matters
-        craft_direction_mattersCheckBox.Checked = My.Settings.craft_direction_matters
-        mob_tp_multiplierNumericUpDown.Text = My.Settings.mob_tp_multiplier
-        nm_hp_multiplierNumericUpDown.Text = My.Settings.nm_hp_multiplier
-        mob_hp_multiplierNumericUpDown.Text = My.Settings.mob_hp_multiplier
-        nm_mp_multiplierNumericUpDown.Text = My.Settings.nm_mp_multiplier
-        mob_mp_multiplierNumericUpDown.Text = My.Settings.mob_mp_multiplier
-        nm_stat_multiplierNumericUpDown.Text = My.Settings.nm_stat_multiplier
-        mob_stat_multiplierNumericUpDown.Text = My.Settings.mob_stat_multiplier
-        drop_rate_multiplierNumericUpDown.Text = My.Settings.drop_rate_multiplier
-        player_tp_multiplierNumericUpDown.Text = My.Settings.player_tp_multiplier
-        player_hp_multiplierNumericUpDown.Text = My.Settings.player_hp_multiplier
-        player_mp_multiplierNumericUpDown.Text = My.Settings.player_mp_multiplier
-        player_stat_multiplierNumericUpDown.Text = My.Settings.player_stat_multiplier
-        sj_mp_divisorNumericUpDown.Text = My.Settings.sj_mp_divisor
-        audit_chatCheckBox.Checked = My.Settings.audit_chat
-        audit_sayCheckBox.Checked = My.Settings.audit_say
-        audit_shoutCheckBox.Checked = My.Settings.audit_shout
-        audit_tellCheckBox.Checked = My.Settings.audit_tell
-        audit_yellCheckBox.Checked = My.Settings.audit_yell
-        audit_linkshellCheckBox.Checked = My.Settings.audit_linkshell
-        audit_partyCheckBox.Checked = My.Settings.audit_party
-        VISITANT_BONUSNumericUpDown.Text = My.Settings.VISITANT_BONUS
-        CoP_Battle_capCheckBox.Checked = My.Settings.CoP_Battle_cap
-        BlueSpellGaplevelLearnNumericUpDown.Text = My.Settings.BlueSpellGaplevelLearn
+
+        HARVESTING_BREAK_CHANCENumericUpDown.Text = My.Settings.HARVESTING_BREAK_CHANCE
+        EXCAVATION_BREAK_CHANCENumericUpDown.Text = My.Settings.EXCAVATION_BREAK_CHANCE
+        LOGGING_BREAK_CHANCENumericUpDown.Text = My.Settings.LOGGING_BREAK_CHANCE
+        MINING_BREAK_CHANCENumericUpDown.Text = My.Settings.MINING_BREAK_CHANCE
+        HARVESTING_RATENumericUpDown.Text = My.Settings.HARVESTING_RATE
+        EXCAVATION_RATENumericUpDown.Text = My.Settings.EXCAVATION_RATE
+        LOGGING_RATENumericUpDown.Text = My.Settings.LOGGING_RATE
+        MINING_RATENumericUpDown.Text = My.Settings.MINING_RATE
+        COFFER_MAX_ILLUSION_TIMENumericUpDown.Text = My.Settings.COFFER_MAX_ILLUSION_TIME
+        COFFER_MIN_ILLUSION_TIMENumericUpDown.Text = My.Settings.COFFER_MIN_ILLUSION_TIME
+        CHEST_MAX_ILLUSION_TIMENumericUpDown.Text = My.Settings.CHEST_MAX_ILLUSION_TIME
+        CHEST_MIN_ILLUSION_TIMENumericUpDown.Text = My.Settings.CHEST_MIN_ILLUSION_TIME
+        LandKingSystem_NQNumericUpDown.Text = My.Settings.LandKingSystem_NQ
+        LandKingSystem_HQNumericUpDown.Text = My.Settings.LandKingSystem_HQ
+
+        BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Text = My.Settings.BETWEEN_2DYNA_WAIT_TIME
+        DYNA_LEVEL_MINNumericUpDown.Text = My.Settings.DYNA_LEVEL_MIN
+        TIMELESS_HOURGLASS_COSTNumericUpDown.Text = My.Settings.TIMELESS_HOURGLASS_COST
+        CURRENCY_EXCHANGE_RATENumericUpDown.Text = My.Settings.CURRENCY_EXCHANGE_RATE
+        RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Text = My.Settings.RELIC_2ND_UPGRADE_WAIT_TIME
+        RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Text = My.Settings.RELIC_3RD_UPGRADE_WAIT_TIME
+        FREE_COP_DYNAMISCheckBox.Checked = My.Settings.FREE_COP_DYNAMIS
+        WSNM_LEVELNumericUpDown.Text = My.Settings.WSNM_LEVEL
+        WSNM_SKILL_LEVELNumericUpDown.Text = My.Settings.WSNM_SKILL_LEVEL
+        AF1_QUEST_LEVELNumericUpDown.Text = My.Settings.AF1_QUEST_LEVEL
+        AF2_QUEST_LEVELNumericUpDown.Text = My.Settings.AF2_QUEST_LEVEL
+        AF3_QUEST_LEVELNumericUpDown.Text = My.Settings.AF3_QUEST_LEVEL
+        AF1_FAMENumericUpDown.Text = My.Settings.AF1_FAME
+        AF2_FAMENumericUpDown.Text = My.Settings.AF2_FAME
+        AF3_FAMENumericUpDown.Text = My.Settings.AF3_FAME
+        DEBUG_MODECheckBox.Checked = My.Settings.DEBUG_MODE
+        QM_RESET_TIMENumericUpDown.Text = My.Settings.QM_RESET_TIME
+        OldSchoolG1CheckBox.Checked = My.Settings.OldSchoolG1
+        OldSchoolG2CheckBox.Checked = My.Settings.OldSchoolG2
+        FrigiciteDurationNumericUpDown.Text = My.Settings.FrigiciteDuration
+
+        REGIME_WAITCheckBox.Checked = My.Settings.REGIME_WAIT
+        FIELD_MANUALSCheckBox.Checked = My.Settings.FIELD_MANUALS
+        LOW_LEVEL_REGIMECheckBox.Checked = My.Settings.LOW_LEVEL_REGIME
+        GROUNDS_TOMESCheckBox.Checked = My.Settings.GROUNDS_TOMES
+        SCAVENGE_RATENumericUpDown.Text = My.Settings.SCAVENGE_RATE
+        STATUS_RESIST_MULTIPLIERNumericUpDown.Text = My.Settings.STATUS_RESIST_MULTIPLIER
+        CIRCLE_DURATIONNumericUpDown.Text = My.Settings.CIRCLE_DURATION
+        CIRCLE_KILLER_EFFECTNumericUpDown.Text = My.Settings.CIRCLE_KILLER_EFFECT
+        KILLER_EFFECTNumericUpDown.Text = My.Settings.KILLER_EFFECT
+
         MILK_OVERWRITECheckBox.Checked = My.Settings.MILK_OVERWRITE
         JUICE_OVERWRITECheckBox.Checked = My.Settings.JUICE_OVERWRITE
         DIA_OVERWRITECheckBox.Checked = My.Settings.DIA_OVERWRITE
         BIO_OVERWRITECheckBox.Checked = My.Settings.BIO_OVERWRITE
         BARELEMENT_OVERWRITECheckBox.Checked = My.Settings.BARELEMENT_OVERWRITE
         BARSTATUS_OVERWRITECheckBox.Checked = My.Settings.BARSTATUS_OVERWRITE
-        USE_OLD_CURE_FORMULACheckBox.Checked = My.Settings.USE_OLD_CURE_FORMULA
         BARD_SONG_LIMITNumericUpDown.Text = My.Settings.BARD_SONG_LIMIT
         BARD_INSTRUMENT_LIMITNumericUpDown.Text = My.Settings.BARD_INSTRUMENT_LIMIT
         ENHANCING_SONG_DURATIONNumericUpDown.Text = My.Settings.ENHANCING_SONG_DURATION
@@ -138,6 +222,52 @@ Public Class ConfigForm
         ABSORB_SPELL_AMOUNTNumericUpDown.Text = My.Settings.ABSORB_SPELL_AMOUNT
         ABSORB_SPELL_TICKNumericUpDown.Text = My.Settings.ABSORB_SPELL_TICK
         SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Text = My.Settings.SNEAK_INVIS_DURATION_MULTIPLIER
+        USE_OLD_CURE_FORMULACheckBox.Checked = My.Settings.USE_OLD_CURE_FORMULA
+
+        EXPLORER_MOOGLECheckBox.Checked = My.Settings.EXPLORER_MOOGLE
+        EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Text = My.Settings.EXPLORER_MOOGLE_LEVELCAP
+        JINX_MODE_2005CheckBox.Checked = My.Settings.JINX_MODE_2005
+        JINX_MODE_2008CheckBox.Checked = My.Settings.JINX_MODE_2008
+        JINX_MODE_2012CheckBox.Checked = My.Settings.JINX_MODE_2012
+        SUMMERFEST_2004CheckBox.Checked = My.Settings.SUMMERFEST_2004
+        SUNBREEZE_2009CheckBox.Checked = My.Settings.SUNBREEZE_2009
+        SUNBREEZE_2011CheckBox.Checked = My.Settings.SUNBREEZE_2011
+        CHRISTMASCheckBox.Checked = My.Settings.CHRISTMAS
+        HALLOWEENCheckBox.Checked = My.Settings.HALLOWEEN
+        HALLOWEEN_2005CheckBox.Checked = My.Settings.HALLOWEEN_2005
+        HALLOWEEN_YEAR_ROUNDCheckBox.Checked = My.Settings.HALLOWEEN_YEAR_ROUND
+        HOMEPOINT_HEALCheckBox.Checked = My.Settings.HOMEPOINT_HEAL
+        RIVERNE_PORTERSNumericUpDown.Text = My.Settings.RIVERNE_PORTERS
+        LANTERNS_STAY_LITNumericUpDown.Text = My.Settings.LANTERNS_STAY_LIT
+        ENABLE_COP_ZONE_CAPCheckBox.Checked = My.Settings.ENABLE_COP_ZONE_CAP
+        TIMEZONE_OFFSETNumericUpDown.Text = My.Settings.TIMEZONE_OFFSET
+        ALLOW_MULTIPLE_EXP_RINGSCheckBox.Checked = My.Settings.ALLOW_MULTIPLE_EXP_RINGS
+        BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Checked = My.Settings.BYPASS_EXP_RING_ONE_PER_WEEK
+        NUMBER_OF_DM_EARRINGSNumericUpDown.Text = My.Settings.NUMBER_OF_DM_EARRINGS
+        HOMEPOINT_TELEPORTCheckBox.Checked = My.Settings.HOMEPOINT_TELEPORT
+
+        BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Text = My.Settings.BETWEEN_2COSMOCLEANSE_WAIT_TIME
+        DIMENSIONAL_PORTAL_UNLOCKCheckBox.Checked = My.Settings.DIMENSIONAL_PORTAL_UNLOCK
+        VISITANT_BONUSNumericUpDown.Text = My.Settings.VISITANT_BONUS
+
+        mysql_hostTextBox.Text = My.Settings.mysql_host
+        mysql_hostLoginTextBox.Text = My.Settings.mysql_host
+        mysql_portNumericUpDown.Text = My.Settings.mysql_port
+        mysql_loginTextBox.Text = My.Settings.mysql_login
+        mysql_passwordTextBox.Text = My.Settings.mysql_password
+        mysql_databaseTextBox.Text = My.Settings.mysql_database
+        msg_server_portNumericUpDown.Text = My.Settings.msg_server_port
+
+        no_auction_limitsCheckBox.Checked = My.Settings.no_auction_limits
+        BlueSpellGaplevelLearnNumericUpDown.Text = My.Settings.BlueSpellGaplevelLearn
+
+        LoginExpansionControlTextBox.Text = My.Settings.LoginExpansionControl
+
+        If OldSchoolG2CheckBox.Checked = True Then
+            FrigiciteDurationNumericUpDown.Enabled = True
+        Else
+            FrigiciteDurationNumericUpDown.Enabled = False
+        End If
     End Sub
 
     Private Sub COPCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles COPCheckBox.CheckedChanged
@@ -1126,16 +1256,554 @@ Public Class ConfigForm
         Next
         System.IO.File.WriteAllLines(LoginConfFile, expansionsLoginOutputLines.ToArray(), Encoding.UTF8)
 
-        
     End Sub
 
     Private Sub ApplySettingPage2Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage2Button.Click
 
-        
+        Dim INITIAL_LEVEL_CAPOutputLines As New List(Of String)()
+        Dim MAX_LEVELOutputLines As New List(Of String)()
+        Dim NORMAL_MOB_MAX_LEVEL_RANGE_MINOutputLines As New List(Of String)()
+        Dim NORMAL_MOB_MAX_LEVEL_RANGE_MAXOutputLines As New List(Of String)()
+        Dim START_GILOutputLines As New List(Of String)()
+        Dim START_INVENTORYOutputLines As New List(Of String)()
+        Dim SUBJOB_QUEST_LEVELOutputLines As New List(Of String)()
+        Dim ADVANCED_JOB_LEVELOutputLines As New List(Of String)()
+        Dim UNLOCK_OUTPOST_WARPSOutputLines As New List(Of String)()
+        Dim SHOP_PRICEOutputLines As New List(Of String)()
+        Dim GIL_RATEOutputLines As New List(Of String)()
+        Dim TABS_RATEOutputLines As New List(Of String)()
+        Dim EXP_RATEFOVOutputLines As New List(Of String)()
+        Dim SAN_FAMEOutputLines As New List(Of String)()
+        Dim BAS_FAMEOutputLines As New List(Of String)()
+        Dim WIN_FAMEOutputLines As New List(Of String)()
+        Dim NORG_FAMEOutputLines As New List(Of String)()
+        Dim JEUNO_FAMEOutputLines As New List(Of String)()
+
+        'Handles initial level cap of the players
+        If INITIAL_LEVEL_CAPNumericUpDown.Text.Length < 0 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim INITIAL_LEVEL_CAPMatch As Boolean
+                INITIAL_LEVEL_CAPMatch = line.Contains("INITIAL_LEVEL_CAP")
+                If INITIAL_LEVEL_CAPMatch Then
+                    INITIAL_LEVEL_CAPOutputLines.Add("INITIAL_LEVEL_CAP = " + INITIAL_LEVEL_CAPNumericUpDown.Text + "; -- The initial level cap for new players.  There seems to be a hardcap of 255.")
+                Else
+                    INITIAL_LEVEL_CAPOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, INITIAL_LEVEL_CAPOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        'Handles Maximum player level
+        If MAX_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim MAX_LEVELMatch As Boolean
+                Dim NORMAL_MOB_MAX_LEVELMatch As Boolean
+                MAX_LEVELMatch = line.Contains("MAX_LEVEL")
+                NORMAL_MOB_MAX_LEVELMatch = line.Contains("NORMAL_MOB")
+                If MAX_LEVELMatch And Not NORMAL_MOB_MAX_LEVELMatch Then
+                    MAX_LEVELOutputLines.Add("MAX_LEVEL = " + MAX_LEVELNumericUpDown.Text + "; -- Level max of the server, lowers the attainable cap by disabling Limit Break quests.")
+                Else
+                    MAX_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, MAX_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim NORMAL_MOB_MAX_LEVEL_RANGE_MINMatch As Boolean
+                NORMAL_MOB_MAX_LEVEL_RANGE_MINMatch = line.Contains("NORMAL_MOB_MAX_LEVEL_RANGE_MIN")
+                If NORMAL_MOB_MAX_LEVEL_RANGE_MINMatch Then
+                    NORMAL_MOB_MAX_LEVEL_RANGE_MINOutputLines.Add("NORMAL_MOB_MAX_LEVEL_RANGE_MIN = " + NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Text + "; -- Lower Bound of Max Level Range for Normal Mobs (0 = Uncapped)")
+                Else
+                    NORMAL_MOB_MAX_LEVEL_RANGE_MINOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, NORMAL_MOB_MAX_LEVEL_RANGE_MINOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim NORMAL_MOB_MAX_LEVEL_RANGE_MAXMatch As Boolean
+                NORMAL_MOB_MAX_LEVEL_RANGE_MAXMatch = line.Contains("NORMAL_MOB_MAX_LEVEL_RANGE_MAX")
+                If NORMAL_MOB_MAX_LEVEL_RANGE_MAXMatch Then
+                    NORMAL_MOB_MAX_LEVEL_RANGE_MAXOutputLines.Add("NORMAL_MOB_MAX_LEVEL_RANGE_MAX = " + NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Text + "; -- Upper Bound of Max Level Range for Normal Mobs (0 = Uncapped)")
+                Else
+                    NORMAL_MOB_MAX_LEVEL_RANGE_MAXOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, NORMAL_MOB_MAX_LEVEL_RANGE_MAXOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        'Handles Player starting gil
+        If START_GILNumericUpDown.Text.Length < 0 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim START_GILMatch As Boolean
+                START_GILMatch = line.Contains("START_GIL")
+                If START_GILMatch Then
+                    START_GILOutputLines.Add("START_GIL = " + START_GILNumericUpDown.Text + "; -- Amount of gil given to newly created characters.")
+                Else
+                    START_GILOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, START_GILOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        'Handles Player starting inventory
+        If START_INVENTORYNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim START_INVENTORYMatch As Boolean
+                START_INVENTORYMatch = line.Contains("START_INVENTORY")
+                If START_INVENTORYMatch Then
+                    START_INVENTORYOutputLines.Add("START_INVENTORY = " + START_INVENTORYNumericUpDown.Text + "; -- Starting inventory and satchel size.  Ignores values < 30.  Do not set above 80!")
+                Else
+                    START_INVENTORYOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, START_INVENTORYOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If OPENING_CUTSCENE_ENABLECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OPENING_CUTSCENE_ENABLE = 0; --Set to 1 to enable opening cutscenes, 0 to disable.", "OPENING_CUTSCENE_ENABLE = 1; --Set to 1 to enable opening cutscenes, 0 to disable."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OPENING_CUTSCENE_ENABLE = 1; --Set to 1 to enable opening cutscenes, 0 to disable.", "OPENING_CUTSCENE_ENABLE = 0; --Set to 1 to enable opening cutscenes, 0 to disable."), False)
+        End If
+
+        'Handles level a player can get their subjob
+        If SUBJOB_QUEST_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SUBJOB_QUEST_LEVELMatch As Boolean
+                SUBJOB_QUEST_LEVELMatch = line.Contains("SUBJOB_QUEST_LEVEL")
+                If SUBJOB_QUEST_LEVELMatch Then
+                    SUBJOB_QUEST_LEVELOutputLines.Add("SUBJOB_QUEST_LEVEL = " + SUBJOB_QUEST_LEVELNumericUpDown.Text + "; --Minimum level to accept either subjob quest.  Set to 0 to start the game with subjobs unlocked.")
+                Else
+                    SUBJOB_QUEST_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SUBJOB_QUEST_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        'Handles level a player can get their advanced jobs
+        If ADVANCED_JOB_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ADVANCED_JOB_LEVELMatch As Boolean
+                ADVANCED_JOB_LEVELMatch = line.Contains("ADVANCED_JOB_LEVEL")
+                If ADVANCED_JOB_LEVELMatch Then
+                    ADVANCED_JOB_LEVELOutputLines.Add("ADVANCED_JOB_LEVEL = " + ADVANCED_JOB_LEVELNumericUpDown.Text + "; --Minimum level to accept advanced job quests.  Set to 0 to start the game with advanced jobs.")
+                Else
+                    ADVANCED_JOB_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ADVANCED_JOB_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ALL_MAPSCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ALL_MAPS = 0; -- Set to 1 to give starting characters all the maps.", "ALL_MAPS = 1; -- Set to 1 to give starting characters all the maps."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ALL_MAPS = 1; -- Set to 1 to give starting characters all the maps.", "ALL_MAPS = 0; -- Set to 1 to give starting characters all the maps."), False)
+        End If
+
+        'Handles unlocking outpost warps
+        If UNLOCK_OUTPOST_WARPSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim UNLOCK_OUTPOST_WARPSMatch As Boolean
+                UNLOCK_OUTPOST_WARPSMatch = line.Contains("UNLOCK_OUTPOST_WARPS")
+                If UNLOCK_OUTPOST_WARPSMatch Then
+                    UNLOCK_OUTPOST_WARPSOutputLines.Add("UNLOCK_OUTPOST_WARPS = " + UNLOCK_OUTPOST_WARPSNumericUpDown.Text + "; -- Set to 1 to give starting characters all outpost warps.  2 to add Tu'Lia and Tavnazia.")
+                Else
+                    UNLOCK_OUTPOST_WARPSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, UNLOCK_OUTPOST_WARPSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SHOP_PRICENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SHOP_PRICEMatch As Boolean
+                SHOP_PRICEMatch = line.Contains("SHOP_PRICE")
+                If SHOP_PRICEMatch Then
+                    SHOP_PRICEOutputLines.Add("SHOP_PRICE = " + SHOP_PRICENumericUpDown.Text + "; -- Multiplies prices in NPC shops.")
+                Else
+                    SHOP_PRICEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SHOP_PRICEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If GIL_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim GIL_RATEMatch As Boolean
+                GIL_RATEMatch = line.Contains("GIL_RATE")
+                If GIL_RATEMatch Then
+                    GIL_RATEOutputLines.Add("GIL_RATE   = " + GIL_RATENumericUpDown.Text + "; -- Multiplies gil earned from quests.  Won't always display in game.")
+                Else
+                    GIL_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, GIL_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If EXP_RATEFOVNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim EXP_RATEFOVMatch As Boolean
+                EXP_RATEFOVMatch = line.Contains("EXP_RATE")
+                If EXP_RATEFOVMatch Then
+                    EXP_RATEFOVOutputLines.Add("EXP_RATE   = " + EXP_RATEFOVNumericUpDown.Text + "; -- Multiplies exp earned from fov.")
+                Else
+                    EXP_RATEFOVOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, EXP_RATEFOVOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If TABS_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim TABS_RATEMatch As Boolean
+                TABS_RATEMatch = line.Contains("TABS_RATE")
+                If TABS_RATEMatch Then
+                    TABS_RATEOutputLines.Add("TABS_RATE  = " + TABS_RATENumericUpDown.Text + "; -- Multiplies tabs earned from fov.")
+                Else
+                    TABS_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, TABS_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SAN_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SAN_FAMEMatch As Boolean
+                SAN_FAMEMatch = line.Contains("SAN_FAME")
+                If SAN_FAMEMatch Then
+                    SAN_FAMEOutputLines.Add("SAN_FAME   = " + SAN_FAMENumericUpDown.Text + "; -- Multiplies fame earned from San d'Oria quests.")
+                Else
+                    SAN_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SAN_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If BAS_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BAS_FAMEMatch As Boolean
+                BAS_FAMEMatch = line.Contains("BAS_FAME")
+                If BAS_FAMEMatch Then
+                    BAS_FAMEOutputLines.Add("BAS_FAME   = " + BAS_FAMENumericUpDown.Text + "; -- Multiplies fame earned from Bastok quests.")
+                Else
+                    BAS_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BAS_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WIN_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WIN_FAMEMatch As Boolean
+                WIN_FAMEMatch = line.Contains("WIN_FAME")
+                If WIN_FAMEMatch Then
+                    WIN_FAMEOutputLines.Add("WIN_FAME   = " + WIN_FAMENumericUpDown.Text + "; -- Multiplies fame earned from Windurst quests.")
+                Else
+                    WIN_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WIN_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If NORG_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim NORG_FAMEMatch As Boolean
+                NORG_FAMEMatch = line.Contains("NORG_FAME")
+                If NORG_FAMEMatch Then
+                    NORG_FAMEOutputLines.Add("NORG_FAME  = " + NORG_FAMENumericUpDown.Text + "; -- Multiplies fame earned from Norg and Tenshodo quests.")
+                Else
+                    NORG_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, NORG_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If JEUNO_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim JEUNO_FAMEMatch As Boolean
+                JEUNO_FAMEMatch = line.Contains("JEUNO_FAME")
+                If JEUNO_FAMEMatch Then
+                    JEUNO_FAMEOutputLines.Add("JEUNO_FAME = " + JEUNO_FAMENumericUpDown.Text + "; -- Multiplies fame earned from Jeuno quests.")
+                Else
+                    JEUNO_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, JEUNO_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
 
     End Sub
 
     Private Sub ApplySettingPage3Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage3Button.Click
+
+        Dim FISHING_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim WOODWORKING_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim SMITHING_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim GOLDSMITHING_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim CLOTHCRAFT_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim LEATHERCRAFT_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim BONECRAFT_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim ALCHEMY_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim COOKING_GUILD_POINTSOutputLines As New List(Of String)()
+        Dim CURE_POWEROutputLines As New List(Of String)()
+        Dim SPELL_POWEROutputLines As New List(Of String)()
+        Dim BLUE_POWEROutputLines As New List(Of String)()
+        Dim DRAIN_POWEROutputLines As New List(Of String)()
+        Dim ITEM_POWEROutputLines As New List(Of String)()
+        Dim WEAPON_SKILL_POWEROutputLines As New List(Of String)()
+        Dim WEAPON_SKILL_POINTSOutputLines As New List(Of String)()
+
+        If FISHING_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim FISHING_GUILD_POINTSMatch As Boolean
+                FISHING_GUILD_POINTSMatch = line.Contains("FISHING_GUILD_POINTS")
+                If FISHING_GUILD_POINTSMatch Then
+                    FISHING_GUILD_POINTSOutputLines.Add("FISHING_GUILD_POINTS      = " + FISHING_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from fishermans' guild trades.")
+                Else
+                    FISHING_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, FISHING_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WOODWORKING_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WOODWORKING_GUILD_POINTSMatch As Boolean
+                WOODWORKING_GUILD_POINTSMatch = line.Contains("WOODWORKING_GUILD_POINTS")
+                If WOODWORKING_GUILD_POINTSMatch Then
+                    WOODWORKING_GUILD_POINTSOutputLines.Add("WOODWORKING_GUILD_POINTS  = " + WOODWORKING_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from carpenters' guild trades.")
+                Else
+                    WOODWORKING_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WOODWORKING_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SMITHING_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SMITHING_GUILD_POINTSMatch As Boolean
+                Dim GOLDSMITHING_GUILD_POINTSMatch As Boolean
+                SMITHING_GUILD_POINTSMatch = line.Contains("SMITHING_GUILD_POINTS")
+                GOLDSMITHING_GUILD_POINTSMatch = line.Contains("GOLDSMITHING_GUILD_POINTS")
+                If SMITHING_GUILD_POINTSMatch And Not GOLDSMITHING_GUILD_POINTSMatch Then
+                    SMITHING_GUILD_POINTSOutputLines.Add("SMITHING_GUILD_POINTS     = " + SMITHING_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from blacksmiths' guild trades.")
+                Else
+                    SMITHING_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SMITHING_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If GOLDSMITHING_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim GOLDSMITHING_GUILD_POINTSMatch As Boolean
+                GOLDSMITHING_GUILD_POINTSMatch = line.Contains("GOLDSMITHING_GUILD_POINTS")
+                If GOLDSMITHING_GUILD_POINTSMatch Then
+                    GOLDSMITHING_GUILD_POINTSOutputLines.Add("GOLDSMITHING_GUILD_POINTS = " + GOLDSMITHING_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from goldsmiths' guild trades.")
+                Else
+                    GOLDSMITHING_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, GOLDSMITHING_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CLOTHCRAFT_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CLOTHCRAFT_GUILD_POINTSMatch As Boolean
+                CLOTHCRAFT_GUILD_POINTSMatch = line.Contains("CLOTHCRAFT_GUILD_POINTS")
+                If CLOTHCRAFT_GUILD_POINTSMatch Then
+                    CLOTHCRAFT_GUILD_POINTSOutputLines.Add("CLOTHCRAFT_GUILD_POINTS   = " + CLOTHCRAFT_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from weavers' guild trades.")
+                Else
+                    CLOTHCRAFT_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CLOTHCRAFT_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LEATHERCRAFT_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LEATHERCRAFT_GUILD_POINTSMatch As Boolean
+                LEATHERCRAFT_GUILD_POINTSMatch = line.Contains("LEATHERCRAFT_GUILD_POINTS")
+                If LEATHERCRAFT_GUILD_POINTSMatch Then
+                    LEATHERCRAFT_GUILD_POINTSOutputLines.Add("LEATHERCRAFT_GUILD_POINTS = " + LEATHERCRAFT_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from tanners' guild trades.")
+                Else
+                    LEATHERCRAFT_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LEATHERCRAFT_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If BONECRAFT_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BONECRAFT_GUILD_POINTSMatch As Boolean
+                BONECRAFT_GUILD_POINTSMatch = line.Contains("BONECRAFT_GUILD_POINTS")
+                If BONECRAFT_GUILD_POINTSMatch Then
+                    BONECRAFT_GUILD_POINTSOutputLines.Add("BONECRAFT_GUILD_POINTS    = " + BONECRAFT_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from boneworkers' guild trades.")
+                Else
+                    BONECRAFT_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BONECRAFT_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ALCHEMY_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ALCHEMY_GUILD_POINTSMatch As Boolean
+                ALCHEMY_GUILD_POINTSMatch = line.Contains("ALCHEMY_GUILD_POINTS")
+                If ALCHEMY_GUILD_POINTSMatch Then
+                    ALCHEMY_GUILD_POINTSOutputLines.Add("ALCHEMY_GUILD_POINTS      = " + ALCHEMY_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from alchemists' guild trades.")
+                Else
+                    ALCHEMY_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ALCHEMY_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If COOKING_GUILD_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim COOKING_GUILD_POINTSMatch As Boolean
+                COOKING_GUILD_POINTSMatch = line.Contains("COOKING_GUILD_POINTS")
+                If COOKING_GUILD_POINTSMatch Then
+                    COOKING_GUILD_POINTSOutputLines.Add("COOKING_GUILD_POINTS      = " + COOKING_GUILD_POINTSNumericUpDown.Text + "; -- Multiplies guild points earned from culinarians' guild trades.")
+                Else
+                    COOKING_GUILD_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, COOKING_GUILD_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If DISABLE_GUILD_CONTRACTSCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DISABLE_GUILD_CONTRACTS   = 0; -- Set to 1 to disable guild contracts, allowing players to accumulate guild points from all guilds at once.", "DISABLE_GUILD_CONTRACTS   = 1; -- Set to 1 to disable guild contracts, allowing players to accumulate guild points from all guilds at once."), False)
+        ElseIf DISABLE_GUILD_CONTRACTSCheckBox.Checked = False Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DISABLE_GUILD_CONTRACTS   = 1; -- Set to 1 to disable guild contracts, allowing players to accumulate guild points from all guilds at once.", "DISABLE_GUILD_CONTRACTS   = 0; -- Set to 1 to disable guild contracts, allowing players to accumulate guild points from all guilds at once."), False)
+        End If
+
+        If CURE_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CURE_POWERMatch As Boolean
+                CURE_POWERMatch = line.Contains("CURE_POWER")
+                If CURE_POWERMatch Then
+                    CURE_POWEROutputLines.Add("CURE_POWER  = " + CURE_POWERNumericUpDown.Text + "; -- Multiplies amount healed from Healing Magic, including the relevant Blue Magic.")
+                Else
+                    CURE_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CURE_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If SPELL_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SPELL_POWERMatch As Boolean
+                SPELL_POWERMatch = line.Contains("SPELL_POWER")
+                If SPELL_POWERMatch Then
+                    SPELL_POWEROutputLines.Add("SPELL_POWER = " + SPELL_POWERNumericUpDown.Text + "; -- Multiplies damage dealt by Elemental and Divine Magic.")
+                Else
+                    SPELL_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SPELL_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If BLUE_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BLUE_POWERMatch As Boolean
+                BLUE_POWERMatch = line.Contains("BLUE_POWER")
+                If BLUE_POWERMatch Then
+                    BLUE_POWEROutputLines.Add("BLUE_POWER  = " + BLUE_POWERNumericUpDown.Text + "; -- Multiplies damage dealt by most Blue Magic.")
+                Else
+                    BLUE_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BLUE_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If DRAIN_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim DRAIN_POWERMatch As Boolean
+                DRAIN_POWERMatch = line.Contains("DRAIN_POWER")
+                If DRAIN_POWERMatch Then
+                    DRAIN_POWEROutputLines.Add("DRAIN_POWER = " + DRAIN_POWERNumericUpDown.Text + "; -- Multiplies amount drained by Drain, Aspir, and relevant Blue Magic spells.")
+                Else
+                    DRAIN_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, DRAIN_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ITEM_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim ITEM_POWERMatch As Boolean
+                ITEM_POWERMatch = line.Contains("ITEM_POWER")
+                If ITEM_POWERMatch Then
+                    ITEM_POWEROutputLines.Add("ITEM_POWER  = " + ITEM_POWERNumericUpDown.Text + "; -- Multiplies the effect of items such as Potions and Ethers.")
+                Else
+                    ITEM_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, ITEM_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WEAPON_SKILL_POWERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WEAPON_SKILL_POWERMatch As Boolean
+                WEAPON_SKILL_POWERMatch = line.Contains("WEAPON_SKILL_POWER")
+                If WEAPON_SKILL_POWERMatch Then
+                    WEAPON_SKILL_POWEROutputLines.Add("WEAPON_SKILL_POWER  = " + WEAPON_SKILL_POWERNumericUpDown.Text + "; --  Multiplies damage dealt by Weapon Skills.")
+                Else
+                    WEAPON_SKILL_POWEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WEAPON_SKILL_POWEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WEAPON_SKILL_POINTSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WEAPON_SKILL_POINTSMatch As Boolean
+                WEAPON_SKILL_POINTSMatch = line.Contains("WEAPON_SKILL_POINTS")
+                If WEAPON_SKILL_POINTSMatch Then
+                    WEAPON_SKILL_POINTSOutputLines.Add("WEAPON_SKILL_POINTS = " + WEAPON_SKILL_POINTSNumericUpDown.Text + "; -- Multiplies points earned during weapon unlocking.")
+                Else
+                    WEAPON_SKILL_POINTSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WEAPON_SKILL_POINTSOutputLines.ToArray(), Encoding.UTF8)
+        End If
 
         If USE_ADOULIN_WEAPON_SKILL_CHANGESCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("USE_ADOULIN_WEAPON_SKILL_CHANGES = false; -- true/false. Change to toggle new Adoulin weapon skill damage calculations", "USE_ADOULIN_WEAPON_SKILL_CHANGES = true; -- true/false. Change to toggle new Adoulin weapon skill damage calculations"), False)
@@ -1147,25 +1815,591 @@ Public Class ConfigForm
 
     Private Sub ApplySettingPage4Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage4Button.Click
 
-        If CoP_Battle_capCheckBox.Checked = True Then
-            My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("CoP_Battle_cap: 0", "CoP_Battle_cap: 1"), False)
+        Dim HARVESTING_BREAK_CHANCEOutputLines As New List(Of String)()
+        Dim EXCAVATION_BREAK_CHANCEOutputLines As New List(Of String)()
+        Dim LOGGING_BREAK_CHANCEOutputLines As New List(Of String)()
+        Dim MINING_BREAK_CHANCEOutputLines As New List(Of String)()
+        Dim HARVESTING_RATEOutputLines As New List(Of String)()
+        Dim EXCAVATION_RATEOutputLines As New List(Of String)()
+        Dim LOGGING_RATEOutputLines As New List(Of String)()
+        Dim MINING_RATEOutputLines As New List(Of String)()
+        Dim COFFER_MAX_ILLUSION_TIMEOutputLines As New List(Of String)()
+        Dim COFFER_MIN_ILLUSION_TIMEOutputLines As New List(Of String)()
+        Dim CHEST_MAX_ILLUSION_TIMEOutputLines As New List(Of String)()
+        Dim CHEST_MIN_ILLUSION_TIMEOutputLines As New List(Of String)()
+        Dim LandKingSystem_NQOutputLines As New List(Of String)()
+        Dim LandKingSystem_HQOutputLines As New List(Of String)()
+
+        If HARVESTING_BREAK_CHANCENumericUpDown.Text.Length < 1 Then
         Else
-            My.Computer.FileSystem.WriteAllText(MapConfFile, My.Computer.FileSystem.ReadAllText(MapConfFile).Replace("CoP_Battle_cap: 1", "CoP_Battle_cap: 0"), False)
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim HARVESTING_BREAK_CHANCEMatch As Boolean
+                HARVESTING_BREAK_CHANCEMatch = line.Contains("HARVESTING_BREAK_CHANCE")
+                If HARVESTING_BREAK_CHANCEMatch Then
+                    HARVESTING_BREAK_CHANCEOutputLines.Add("HARVESTING_BREAK_CHANCE = " + HARVESTING_BREAK_CHANCENumericUpDown.Text + "; -- % chance for the sickle to break during harvesting.  Set between 0 and 1.")
+                Else
+                    HARVESTING_BREAK_CHANCEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, HARVESTING_BREAK_CHANCEOutputLines.ToArray(), Encoding.UTF8)
         End If
 
-        If ENABLE_COP_ZONE_CAPCheckBox.Checked = True Then
-            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ENABLE_COP_ZONE_CAP=0; -- enable or disable lvl cap", "ENABLE_COP_ZONE_CAP=1; -- enable or disable lvl cap"), False)
+        If EXCAVATION_BREAK_CHANCENumericUpDown.Text.Length < 1 Then
         Else
-            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ENABLE_COP_ZONE_CAP=1; -- enable or disable lvl cap", "ENABLE_COP_ZONE_CAP=0; -- enable or disable lvl cap"), False)
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim EXCAVATION_BREAK_CHANCEMatch As Boolean
+                EXCAVATION_BREAK_CHANCEMatch = line.Contains("EXCAVATION_BREAK_CHANCE")
+                If EXCAVATION_BREAK_CHANCEMatch Then
+                    EXCAVATION_BREAK_CHANCEOutputLines.Add("EXCAVATION_BREAK_CHANCE = " + EXCAVATION_BREAK_CHANCENumericUpDown.Text + "; -- % chance for the pickaxe to break during excavation.  Set between 0 and 1.")
+                Else
+                    EXCAVATION_BREAK_CHANCEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, EXCAVATION_BREAK_CHANCEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LOGGING_BREAK_CHANCENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LOGGING_BREAK_CHANCEMatch As Boolean
+                LOGGING_BREAK_CHANCEMatch = line.Contains("LOGGING_BREAK_CHANCE")
+                If LOGGING_BREAK_CHANCEMatch Then
+                    LOGGING_BREAK_CHANCEOutputLines.Add("LOGGING_BREAK_CHANCE    = " + LOGGING_BREAK_CHANCENumericUpDown.Text + "; -- % chance for the hatchet to break during logging.  Set between 0 and 1.")
+                Else
+                    LOGGING_BREAK_CHANCEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LOGGING_BREAK_CHANCEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If MINING_BREAK_CHANCENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim MINING_BREAK_CHANCEMatch As Boolean
+                MINING_BREAK_CHANCEMatch = line.Contains("MINING_BREAK_CHANCE")
+                If MINING_BREAK_CHANCEMatch Then
+                    MINING_BREAK_CHANCEOutputLines.Add("MINING_BREAK_CHANCE     = " + MINING_BREAK_CHANCENumericUpDown.Text + "; -- % chance for the pickaxe to break during mining.  Set between 0 and 1.")
+                Else
+                    MINING_BREAK_CHANCEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, MINING_BREAK_CHANCEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If HARVESTING_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim HARVESTING_RATEMatch As Boolean
+                HARVESTING_RATEMatch = line.Contains("HARVESTING_RATE")
+                If HARVESTING_RATEMatch Then
+                    HARVESTING_RATEOutputLines.Add("HARVESTING_RATE         = " + HARVESTING_RATENumericUpDown.Text + "; -- % chance to recieve an item from haresting.  Set between 0 and 1.")
+                Else
+                    HARVESTING_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, HARVESTING_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If EXCAVATION_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim EXCAVATION_RATEMatch As Boolean
+                EXCAVATION_RATEMatch = line.Contains("EXCAVATION_RATE")
+                If EXCAVATION_RATEMatch Then
+                    EXCAVATION_RATEOutputLines.Add("EXCAVATION_RATE         = " + EXCAVATION_RATENumericUpDown.Text + "; -- % chance to recieve an item from excavation.  Set between 0 and 1.")
+                Else
+                    EXCAVATION_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, EXCAVATION_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LOGGING_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LOGGING_RATEMatch As Boolean
+                LOGGING_RATEMatch = line.Contains("LOGGING_RATE")
+                If LOGGING_RATEMatch Then
+                    LOGGING_RATEOutputLines.Add("LOGGING_RATE            = " + LOGGING_RATENumericUpDown.Text + "; -- % chance to recieve an item from logging.  Set between 0 and 1.")
+                Else
+                    LOGGING_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LOGGING_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If MINING_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim MINING_RATEMatch As Boolean
+                MINING_RATEMatch = line.Contains("MINING_RATE")
+                If MINING_RATEMatch Then
+                    MINING_RATEOutputLines.Add("MINING_RATE             = " + MINING_RATENumericUpDown.Text + "; -- % chance to recieve an item from mining.  Set between 0 and 1.")
+                Else
+                    MINING_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, MINING_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If COFFER_MAX_ILLUSION_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim COFFER_MAX_ILLUSION_TIMEMatch As Boolean
+                COFFER_MAX_ILLUSION_TIMEMatch = line.Contains("COFFER_MAX_ILLUSION_TIME")
+                If COFFER_MAX_ILLUSION_TIMEMatch Then
+                    COFFER_MAX_ILLUSION_TIMEOutputLines.Add("COFFER_MAX_ILLUSION_TIME = " + COFFER_MAX_ILLUSION_TIMENumericUpDown.Text + ";  -- 1 hour")
+                Else
+                    COFFER_MAX_ILLUSION_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, COFFER_MAX_ILLUSION_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If COFFER_MIN_ILLUSION_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim COFFER_MIN_ILLUSION_TIMEMatch As Boolean
+                COFFER_MIN_ILLUSION_TIMEMatch = line.Contains("COFFER_MIN_ILLUSION_TIME")
+                If COFFER_MIN_ILLUSION_TIMEMatch Then
+                    COFFER_MIN_ILLUSION_TIMEOutputLines.Add("COFFER_MIN_ILLUSION_TIME = " + COFFER_MIN_ILLUSION_TIMENumericUpDown.Text + ";  -- 30 minutes")
+                Else
+                    COFFER_MIN_ILLUSION_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, COFFER_MIN_ILLUSION_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CHEST_MAX_ILLUSION_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CHEST_MAX_ILLUSION_TIMEMatch As Boolean
+                CHEST_MAX_ILLUSION_TIMEMatch = line.Contains("CHEST_MAX_ILLUSION_TIME")
+                If CHEST_MAX_ILLUSION_TIMEMatch Then
+                    CHEST_MAX_ILLUSION_TIMEOutputLines.Add("CHEST_MAX_ILLUSION_TIME  = " + CHEST_MAX_ILLUSION_TIMENumericUpDown.Text + ";  -- 1 hour")
+                Else
+                    CHEST_MAX_ILLUSION_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CHEST_MAX_ILLUSION_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CHEST_MIN_ILLUSION_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CHEST_MIN_ILLUSION_TIMEMatch As Boolean
+                CHEST_MIN_ILLUSION_TIMEMatch = line.Contains("CHEST_MIN_ILLUSION_TIME")
+                If CHEST_MIN_ILLUSION_TIMEMatch Then
+                    CHEST_MIN_ILLUSION_TIMEOutputLines.Add("CHEST_MIN_ILLUSION_TIME  = " + CHEST_MIN_ILLUSION_TIMENumericUpDown.Text + ";  -- 30 minutes")
+                Else
+                    CHEST_MIN_ILLUSION_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CHEST_MIN_ILLUSION_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LandKingSystem_NQNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LandKingSystem_NQMatch As Boolean
+                LandKingSystem_NQMatch = line.Contains("LandKingSystem_NQ")
+                If LandKingSystem_NQMatch Then
+                    LandKingSystem_NQOutputLines.Add("LandKingSystem_NQ = " + LandKingSystem_NQNumericUpDown.Text + ";")
+                Else
+                    LandKingSystem_NQOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LandKingSystem_NQOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LandKingSystem_HQNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LandKingSystem_HQMatch As Boolean
+                LandKingSystem_HQMatch = line.Contains("LandKingSystem_HQ")
+                If LandKingSystem_HQMatch Then
+                    LandKingSystem_HQOutputLines.Add("LandKingSystem_HQ = " + LandKingSystem_HQNumericUpDown.Text + ";")
+                Else
+                    LandKingSystem_HQOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LandKingSystem_HQOutputLines.ToArray(), Encoding.UTF8)
         End If
 
     End Sub
 
     Private Sub ApplySettingPage5Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage5Button.Click
 
+        Dim BETWEEN_2DYNA_WAIT_TIMEOutputLines As New List(Of String)()
+        Dim DYNA_LEVEL_MINOutputLines As New List(Of String)()
+        Dim TIMELESS_HOURGLASS_COSTOutputLines As New List(Of String)()
+        Dim CURRENCY_EXCHANGE_RATEOutputLines As New List(Of String)()
+        Dim RELIC_2ND_UPGRADE_WAIT_TIMEOutputLines As New List(Of String)()
+        Dim RELIC_3RD_UPGRADE_WAIT_TIMEOutputLines As New List(Of String)()
+        Dim WSNM_LEVELOutputLines As New List(Of String)()
+        Dim WSNM_SKILL_LEVELOutputLines As New List(Of String)()
+        Dim AF1_QUEST_LEVELOutputLines As New List(Of String)()
+        Dim AF2_QUEST_LEVELOutputLines As New List(Of String)()
+        Dim AF3_QUEST_LEVELOutputLines As New List(Of String)()
+        Dim AF1_FAMEOutputLines As New List(Of String)()
+        Dim AF2_FAMEOutputLines As New List(Of String)()
+        Dim AF3_FAMEOutputLines As New List(Of String)()
+        Dim QM_RESET_TIMEOutputLines As New List(Of String)()
+        Dim FrigiciteDurationOutputLines As New List(Of String)()
+
+        If FREE_COP_DYNAMISCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("FREE_COP_DYNAMIS = 0 ; -- Authorize player to entering inside COP Dynamis without completing COP mission ( 1 = enable 0= disable)", "FREE_COP_DYNAMIS = 1 ; -- Authorize player to entering inside COP Dynamis without completing COP mission ( 1 = enable 0= disable)"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("FREE_COP_DYNAMIS = 1 ; -- Authorize player to entering inside COP Dynamis without completing COP mission ( 1 = enable 0= disable)", "FREE_COP_DYNAMIS = 0 ; -- Authorize player to entering inside COP Dynamis without completing COP mission ( 1 = enable 0= disable)"), False)
+        End If
+
+        If BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BETWEEN_2DYNA_WAIT_TIMEMatch As Boolean
+                BETWEEN_2DYNA_WAIT_TIMEMatch = line.Contains("BETWEEN_2DYNA_WAIT_TIME")
+                If BETWEEN_2DYNA_WAIT_TIMEMatch Then
+                    BETWEEN_2DYNA_WAIT_TIMEOutputLines.Add("BETWEEN_2DYNA_WAIT_TIME = " + BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Text + ";        -- wait time between 2 Dynamis (in real day) min: 1 day")
+                Else
+                    BETWEEN_2DYNA_WAIT_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BETWEEN_2DYNA_WAIT_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If DYNA_LEVEL_MINNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim DYNA_LEVEL_MINMatch As Boolean
+                DYNA_LEVEL_MINMatch = line.Contains("DYNA_LEVEL_MIN")
+                If DYNA_LEVEL_MINMatch Then
+                    DYNA_LEVEL_MINOutputLines.Add("DYNA_LEVEL_MIN = " + DYNA_LEVEL_MINNumericUpDown.Text + ";       -- level min for entering in Dynamis")
+                Else
+                    DYNA_LEVEL_MINOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, DYNA_LEVEL_MINOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If TIMELESS_HOURGLASS_COSTNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim TIMELESS_HOURGLASS_COSTMatch As Boolean
+                TIMELESS_HOURGLASS_COSTMatch = line.Contains("TIMELESS_HOURGLASS_COST")
+                If TIMELESS_HOURGLASS_COSTMatch Then
+                    TIMELESS_HOURGLASS_COSTOutputLines.Add("TIMELESS_HOURGLASS_COST = " + TIMELESS_HOURGLASS_COSTNumericUpDown.Text + ";   -- cost of the timeless hourglass for Dynamis.")
+                Else
+                    TIMELESS_HOURGLASS_COSTOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, TIMELESS_HOURGLASS_COSTOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CURRENCY_EXCHANGE_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CURRENCY_EXCHANGE_RATEMatch As Boolean
+                CURRENCY_EXCHANGE_RATEMatch = line.Contains("CURRENCY_EXCHANGE_RATE")
+                If CURRENCY_EXCHANGE_RATEMatch Then
+                    CURRENCY_EXCHANGE_RATEOutputLines.Add("CURRENCY_EXCHANGE_RATE = " + CURRENCY_EXCHANGE_RATENumericUpDown.Text + ";      -- X Tier 1 ancient currency -> 1 Tier 2, and so on.  Certain values may conflict with shop items.  Not designed to exceed 198.")
+                Else
+                    CURRENCY_EXCHANGE_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CURRENCY_EXCHANGE_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim RELIC_2ND_UPGRADE_WAIT_TIMEMatch As Boolean
+                RELIC_2ND_UPGRADE_WAIT_TIMEMatch = line.Contains("RELIC_2ND_UPGRADE_WAIT_TIME")
+                If RELIC_2ND_UPGRADE_WAIT_TIMEMatch Then
+                    RELIC_2ND_UPGRADE_WAIT_TIMEOutputLines.Add("RELIC_2ND_UPGRADE_WAIT_TIME = " + RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Text + ";      -- wait time for 2nd relic upgrade (stage 2 -> stage 3) in seconds. 604800s = 1 RL week.")
+                Else
+                    RELIC_2ND_UPGRADE_WAIT_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, RELIC_2ND_UPGRADE_WAIT_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim RELIC_3RD_UPGRADE_WAIT_TIMEMatch As Boolean
+                RELIC_3RD_UPGRADE_WAIT_TIMEMatch = line.Contains("RELIC_3RD_UPGRADE_WAIT_TIME")
+                If RELIC_3RD_UPGRADE_WAIT_TIMEMatch Then
+                    RELIC_3RD_UPGRADE_WAIT_TIMEOutputLines.Add("RELIC_3RD_UPGRADE_WAIT_TIME = " + RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Text + ";      -- wait time for 3rd relic upgrade (stage 3 -> stage 4) in seconds. 295200s = 82 hours.")
+                Else
+                    RELIC_3RD_UPGRADE_WAIT_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, RELIC_3RD_UPGRADE_WAIT_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WSNM_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WSNM_LEVELMatch As Boolean
+                WSNM_LEVELMatch = line.Contains("WSNM_LEVEL")
+                If WSNM_LEVELMatch Then
+                    WSNM_LEVELOutputLines.Add("WSNM_LEVEL = " + WSNM_LEVELNumericUpDown.Text + "; -- Min Level to get WSNM Quests")
+                Else
+                    WSNM_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WSNM_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If WSNM_SKILL_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim WSNM_SKILL_LEVELMatch As Boolean
+                WSNM_SKILL_LEVELMatch = line.Contains("WSNM_SKILL_LEVEL")
+                If WSNM_SKILL_LEVELMatch Then
+                    WSNM_SKILL_LEVELOutputLines.Add("WSNM_SKILL_LEVEL = " + WSNM_SKILL_LEVELNumericUpDown.Text + ";")
+                Else
+                    WSNM_SKILL_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, WSNM_SKILL_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF1_QUEST_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF1_QUEST_LEVELMatch As Boolean
+                AF1_QUEST_LEVELMatch = line.Contains("AF1_QUEST_LEVEL")
+                If AF1_QUEST_LEVELMatch Then
+                    AF1_QUEST_LEVELOutputLines.Add("AF1_QUEST_LEVEL = " + AF1_QUEST_LEVELNumericUpDown.Text + "; -- Minimum level to start AF1 quest")
+                Else
+                    AF1_QUEST_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF1_QUEST_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF2_QUEST_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF2_QUEST_LEVELMatch As Boolean
+                AF2_QUEST_LEVELMatch = line.Contains("AF2_QUEST_LEVEL")
+                If AF2_QUEST_LEVELMatch Then
+                    AF2_QUEST_LEVELOutputLines.Add("AF2_QUEST_LEVEL = " + AF2_QUEST_LEVELNumericUpDown.Text + "; -- Minimum level to start AF2 quest")
+                Else
+                    AF2_QUEST_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF2_QUEST_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF3_QUEST_LEVELNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF3_QUEST_LEVELMatch As Boolean
+                AF3_QUEST_LEVELMatch = line.Contains("AF3_QUEST_LEVEL")
+                If AF3_QUEST_LEVELMatch Then
+                    AF3_QUEST_LEVELOutputLines.Add("AF3_QUEST_LEVEL = " + AF3_QUEST_LEVELNumericUpDown.Text + "; -- Minimum level to start AF3 quest")
+                Else
+                    AF3_QUEST_LEVELOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF3_QUEST_LEVELOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF1_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF1_FAMEMatch As Boolean
+                AF1_FAMEMatch = line.Contains("AF1_FAME")
+                If AF1_FAMEMatch Then
+                    AF1_FAMEOutputLines.Add("AF1_FAME = " + AF1_FAMENumericUpDown.Text + "; -- base fame for completing an AF1 quest")
+                Else
+                    AF1_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF1_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF2_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF2_FAMEMatch As Boolean
+                AF2_FAMEMatch = line.Contains("AF2_FAME")
+                If AF2_FAMEMatch Then
+                    AF2_FAMEOutputLines.Add("AF2_FAME = " + AF2_FAMENumericUpDown.Text + "; -- base fame for completing an AF2 quest")
+                Else
+                    AF2_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF2_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If AF3_FAMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim AF3_FAMEMatch As Boolean
+                AF3_FAMEMatch = line.Contains("AF3_FAME")
+                If AF3_FAMEMatch Then
+                    AF3_FAMEOutputLines.Add("AF3_FAME = " + AF3_FAMENumericUpDown.Text + "; -- base fame for completing an AF3 quest")
+                Else
+                    AF3_FAMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, AF3_FAMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If DEBUG_MODECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DEBUG_MODE = 0; -- Set to 1 to activate auto-warping to the next location (only supported by certain missions / quests).", "DEBUG_MODE = 1; -- Set to 1 to activate auto-warping to the next location (only supported by certain missions / quests)."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DEBUG_MODE = 1; -- Set to 1 to activate auto-warping to the next location (only supported by certain missions / quests).", "DEBUG_MODE = 0; -- Set to 1 to activate auto-warping to the next location (only supported by certain missions / quests)."), False)
+        End If
+
+        If QM_RESET_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim QM_RESET_TIMEMatch As Boolean
+                QM_RESET_TIMEMatch = line.Contains("QM_RESET_TIME")
+                If QM_RESET_TIMEMatch Then
+                    QM_RESET_TIMEOutputLines.Add("QM_RESET_TIME = " + QM_RESET_TIMENumericUpDown.Text + "; -- Default time (in seconds) you have from killing ???-pop mission NMs to click again and get key item, until ??? resets.")
+                Else
+                    QM_RESET_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, QM_RESET_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If OldSchoolG1CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OldSchoolG1 = false; -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method.", "OldSchoolG1 = true; -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OldSchoolG1 = true; -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method.", "OldSchoolG1 = false; -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method."), False)
+        End If
+
+        If OldSchoolG2CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OldSchoolG2 = false; -- Set true to require the NMs for ""Atop the Highest Mountains"" be dead to get KI like before SE changed it.", "OldSchoolG2 = true; -- Set true to require the NMs for ""Atop the Highest Mountains"" be dead to get KI like before SE changed it."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("OldSchoolG2 = true; -- Set true to require the NMs for ""Atop the Highest Mountains"" be dead to get KI like before SE changed it.", "OldSchoolG2 = false; -- Set true to require the NMs for ""Atop the Highest Mountains"" be dead to get KI like before SE changed it."), False)
+        End If
+
+        If FrigiciteDurationNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim FrigiciteDurationMatch As Boolean
+                FrigiciteDurationMatch = line.Contains("FrigiciteDuration")
+                If FrigiciteDurationMatch Then
+                    FrigiciteDurationOutputLines.Add("FrigiciteDuration = " + FrigiciteDurationNumericUpDown.Text + "; -- When OldSChoolG2 is enabled, this is the time (in seconds) you have from killing Boreal NMs to click the ""???"" target.")
+                Else
+                    FrigiciteDurationOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, FrigiciteDurationOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
     End Sub
 
     Private Sub ApplySettingPage6Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage6Button.Click
+
+        Dim SCAVENGE_RATEOutputLines As New List(Of String)()
+        Dim STATUS_RESIST_MULTIPLIEROutputLines As New List(Of String)()
+        Dim CIRCLE_DURATIONOutputLines As New List(Of String)()
+        Dim CIRCLE_KILLER_EFFECTOutputLines As New List(Of String)()
+        Dim KILLER_EFFECTOutputLines As New List(Of String)()
+
+        If REGIME_WAITCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("REGIME_WAIT = 0; --Make people wait till 00:00 game time as in retail. If it's 0, there is no wait time.", "REGIME_WAIT = 1; --Make people wait till 00:00 game time as in retail. If it's 0, there is no wait time."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("REGIME_WAIT = 1; --Make people wait till 00:00 game time as in retail. If it's 0, there is no wait time.", "REGIME_WAIT = 0; --Make people wait till 00:00 game time as in retail. If it's 0, there is no wait time."), False)
+        End If
+
+        If FIELD_MANUALSCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("FIELD_MANUALS = 0; -- Enables Fields of Valor manuals", "FIELD_MANUALS = 1; -- Enables Fields of Valor manuals"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("FIELD_MANUALS = 1; -- Enables Fields of Valor manuals", "FIELD_MANUALS = 0; -- Enables Fields of Valor manuals"), False)
+        End If
+
+        If LOW_LEVEL_REGIMECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("LOW_LEVEL_REGIME = 0; --Allow people to kill regime targets even if they give no exp, allowing people to farm regime targets at 75 in low level areas.", "LOW_LEVEL_REGIME = 1; --Allow people to kill regime targets even if they give no exp, allowing people to farm regime targets at 75 in low level areas."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("LOW_LEVEL_REGIME = 1; --Allow people to kill regime targets even if they give no exp, allowing people to farm regime targets at 75 in low level areas.", "LOW_LEVEL_REGIME = 0; --Allow people to kill regime targets even if they give no exp, allowing people to farm regime targets at 75 in low level areas."), False)
+        End If
+
+        If GROUNDS_TOMESCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("GROUNDS_TOMES = 0; -- Enables Grounds of Valor tomes", "GROUNDS_TOMES = 1; -- Enables Grounds of Valor tomes"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("GROUNDS_TOMES = 1; -- Enables Grounds of Valor tomes", "GROUNDS_TOMES = 0; -- Enables Grounds of Valor tomes"), False)
+        End If
+
+        If SCAVENGE_RATENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim SCAVENGE_RATEMatch As Boolean
+                SCAVENGE_RATEMatch = line.Contains("SCAVENGE_RATE")
+                If SCAVENGE_RATEMatch Then
+                    SCAVENGE_RATEOutputLines.Add("SCAVENGE_RATE = " + SCAVENGE_RATENumericUpDown.Text + "; --The chance of obtaining an item when you use the Ranger job ability Scavenge.  Do not set above 1!")
+                Else
+                    SCAVENGE_RATEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, SCAVENGE_RATEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If STATUS_RESIST_MULTIPLIERNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim STATUS_RESIST_MULTIPLIERMatch As Boolean
+                STATUS_RESIST_MULTIPLIERMatch = line.Contains("STATUS_RESIST_MULTIPLIER")
+                If STATUS_RESIST_MULTIPLIERMatch Then
+                    STATUS_RESIST_MULTIPLIEROutputLines.Add("STATUS_RESIST_MULTIPLIER = " + STATUS_RESIST_MULTIPLIERNumericUpDown.Text + "; -- Sets the strength of status resist traits.")
+                Else
+                    STATUS_RESIST_MULTIPLIEROutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, STATUS_RESIST_MULTIPLIEROutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CIRCLE_DURATIONNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CIRCLE_DURATIONMatch As Boolean
+                CIRCLE_DURATIONMatch = line.Contains("CIRCLE_DURATION")
+                If CIRCLE_DURATIONMatch Then
+                    CIRCLE_DURATIONOutputLines.Add("CIRCLE_DURATION = " + CIRCLE_DURATIONNumericUpDown.Text + "; -- Sets the duration of circle effects, in seconds. Retail is 5 minutes.")
+                Else
+                    CIRCLE_DURATIONOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CIRCLE_DURATIONOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If CIRCLE_KILLER_EFFECTNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim CIRCLE_KILLER_EFFECTMatch As Boolean
+                CIRCLE_KILLER_EFFECTMatch = line.Contains("CIRCLE_KILLER_EFFECT")
+                If CIRCLE_KILLER_EFFECTMatch Then
+                    CIRCLE_KILLER_EFFECTOutputLines.Add("CIRCLE_KILLER_EFFECT = " + CIRCLE_KILLER_EFFECTNumericUpDown.Text + "; -- Intimidation percentage granted by circle effects. (made up number)")
+                Else
+                    CIRCLE_KILLER_EFFECTOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, CIRCLE_KILLER_EFFECTOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If KILLER_EFFECTNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim KILLER_EFFECTMatch As Boolean
+                Dim CIRCLEMatch As Boolean
+                KILLER_EFFECTMatch = line.Contains("KILLER_EFFECT")
+                CIRCLEMatch = line.Contains("CIRCLE")
+                If KILLER_EFFECTMatch And Not CIRCLEMatch Then
+                    KILLER_EFFECTOutputLines.Add("KILLER_EFFECT = " + KILLER_EFFECTNumericUpDown.Text + "; -- Intimidation percentage from killer job traits.")
+                Else
+                    KILLER_EFFECTOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, KILLER_EFFECTOutputLines.ToArray(), Encoding.UTF8)
+        End If
 
     End Sub
 
@@ -1427,11 +2661,204 @@ Public Class ConfigForm
 
     Private Sub ApplySettingPage8Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage8Button.Click
 
+        Dim EXPLORER_MOOGLE_LEVELCAPOutputLines As New List(Of String)()
+        Dim RIVERNE_PORTERSOutputLines As New List(Of String)()
+        Dim LANTERNS_STAY_LITOutputLines As New List(Of String)()
+        Dim TIMEZONE_OFFSETOutputLines As New List(Of String)()
+        Dim NUMBER_OF_DM_EARRINGSOutputLines As New List(Of String)()
+
+        If EXPLORER_MOOGLECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("EXPLORER_MOOGLE = 0; -- Enables Explorer Moogle teleports", "EXPLORER_MOOGLE = 1; -- Enables Explorer Moogle teleports"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("EXPLORER_MOOGLE = 1; -- Enables Explorer Moogle teleports", "EXPLORER_MOOGLE = 0; -- Enables Explorer Moogle teleports"), False)
+        End If
+
+        If EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim EXPLORER_MOOGLE_LEVELCAPMatch As Boolean
+                EXPLORER_MOOGLE_LEVELCAPMatch = line.Contains("EXPLORER_MOOGLE_LEVELCAP")
+                If EXPLORER_MOOGLE_LEVELCAPMatch Then
+                    EXPLORER_MOOGLE_LEVELCAPOutputLines.Add("EXPLORER_MOOGLE_LEVELCAP = " + EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Text + ";")
+                Else
+                    EXPLORER_MOOGLE_LEVELCAPOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, EXPLORER_MOOGLE_LEVELCAPOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If JINX_MODE_2005CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2005 = 0; -- Set to 1 to give starting characters swimsuits from 2005.  Ex: Hume Top", "JINX_MODE_2005 = 1; -- Set to 1 to give starting characters swimsuits from 2005.  Ex: Hume Top"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2005 = 1; -- Set to 1 to give starting characters swimsuits from 2005.  Ex: Hume Top", "JINX_MODE_2005 = 0; -- Set to 1 to give starting characters swimsuits from 2005.  Ex: Hume Top"), False)
+        End If
+
+        If JINX_MODE_2008CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2008 = 0; -- Set to 1 to give starting characters swimsuits from 2008.  Ex: Custom Top", "JINX_MODE_2008 = 1; -- Set to 1 to give starting characters swimsuits from 2008.  Ex: Custom Top"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2008 = 1; -- Set to 1 to give starting characters swimsuits from 2008.  Ex: Custom Top", "JINX_MODE_2008 = 0; -- Set to 1 to give starting characters swimsuits from 2008.  Ex: Custom Top"), False)
+        End If
+
+        If JINX_MODE_2012CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2012 = 0; -- Set to 1 to give starting characters swimsuits from 2012.  Ex: Marine Top", "JINX_MODE_2012 = 1; -- Set to 1 to give starting characters swimsuits from 2012.  Ex: Marine Top"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("JINX_MODE_2012 = 1; -- Set to 1 to give starting characters swimsuits from 2012.  Ex: Marine Top", "JINX_MODE_2012 = 0; -- Set to 1 to give starting characters swimsuits from 2012.  Ex: Marine Top"), False)
+        End If
+
+        If SUMMERFEST_2004CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUMMERFEST_2004 = 0; -- Set to 1 to give starting characters Far East dress from 2004.  Ex: Onoko Yukata", "SUMMERFEST_2004 = 1; -- Set to 1 to give starting characters Far East dress from 2004.  Ex: Onoko Yukata"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUMMERFEST_2004 = 1; -- Set to 1 to give starting characters Far East dress from 2004.  Ex: Onoko Yukata", "SUMMERFEST_2004 = 0; -- Set to 1 to give starting characters Far East dress from 2004.  Ex: Onoko Yukata"), False)
+        End If
+
+        If SUNBREEZE_2009CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUNBREEZE_2009 = 0; -- Set to 1 to give starting characters Far East dress from 2009.  Ex: Otokogusa Yukata", "SUNBREEZE_2009 = 1; -- Set to 1 to give starting characters Far East dress from 2009.  Ex: Otokogusa Yukata"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUNBREEZE_2009 = 1; -- Set to 1 to give starting characters Far East dress from 2009.  Ex: Otokogusa Yukata", "SUNBREEZE_2009 = 0; -- Set to 1 to give starting characters Far East dress from 2009.  Ex: Otokogusa Yukata"), False)
+        End If
+
+        If SUNBREEZE_2011CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUNBREEZE_2011 = 0; -- Set to 1 to give starting characters Far East dress from 2011.  Ex: Hikogami Yukata", "SUNBREEZE_2011 = 1; -- Set to 1 to give starting characters Far East dress from 2011.  Ex: Hikogami Yukata"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("SUNBREEZE_2011 = 1; -- Set to 1 to give starting characters Far East dress from 2011.  Ex: Hikogami Yukata", "SUNBREEZE_2011 = 0; -- Set to 1 to give starting characters Far East dress from 2011.  Ex: Hikogami Yukata"), False)
+        End If
+
+        If CHRISTMASCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("CHRISTMAS = 0; -- Set to 1 to give starting characters Christmas dress.", "CHRISTMAS = 1; -- Set to 1 to give starting characters Christmas dress."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("CHRISTMAS = 1; -- Set to 1 to give starting characters Christmas dress.", "CHRISTMAS = 0; -- Set to 1 to give starting characters Christmas dress."), False)
+        End If
+
+        If HALLOWEENCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN = 0; -- Set to 1 to give starting characters Halloween items (Does not start event).", "HALLOWEEN = 1; -- Set to 1 to give starting characters Halloween items (Does not start event)."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN = 1; -- Set to 1 to give starting characters Halloween items (Does not start event).", "HALLOWEEN = 0; -- Set to 1 to give starting characters Halloween items (Does not start event)."), False)
+        End If
+
+        If HALLOWEEN_2005CheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN_2005 = 0; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.", "HALLOWEEN_2005 = 1; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN_2005 = 1; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.", "HALLOWEEN_2005 = 0; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1."), False)
+        End If
+
+        If HALLOWEEN_YEAR_ROUNDCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN_YEAR_ROUND = 0; -- Set to 1 to have Harvest Festival initialize outside of normal times.", "HALLOWEEN_YEAR_ROUND = 1; -- Set to 1 to have Harvest Festival initialize outside of normal times."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN_YEAR_ROUND = 1; -- Set to 1 to have Harvest Festival initialize outside of normal times.", "HALLOWEEN_YEAR_ROUND = 0; -- Set to 1 to have Harvest Festival initialize outside of normal times."), False)
+        End If
+
+        If HOMEPOINT_HEALCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_HEAL = 0; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games.", "HOMEPOINT_HEAL = 1; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_HEAL = 1; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games.", "HOMEPOINT_HEAL = 0; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games."), False)
+        End If
+
+        If RIVERNE_PORTERSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim RIVERNE_PORTERSMatch As Boolean
+                RIVERNE_PORTERSMatch = line.Contains("RIVERNE_PORTERS")
+                If RIVERNE_PORTERSMatch Then
+                    RIVERNE_PORTERSOutputLines.Add("RIVERNE_PORTERS = " + RIVERNE_PORTERSNumericUpDown.Text + "; -- Time in seconds that Unstable Displacements in Cape Riverne stay open after trading a scale.")
+                Else
+                    RIVERNE_PORTERSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, RIVERNE_PORTERSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If LANTERNS_STAY_LITNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim LANTERNS_STAY_LITMatch As Boolean
+                LANTERNS_STAY_LITMatch = line.Contains("LANTERNS_STAY_LIT")
+                If LANTERNS_STAY_LITMatch Then
+                    LANTERNS_STAY_LITOutputLines.Add("LANTERNS_STAY_LIT = " + LANTERNS_STAY_LITNumericUpDown.Text + "; -- time in seconds that lanterns in the Den of Rancor stay lit.")
+                Else
+                    LANTERNS_STAY_LITOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, LANTERNS_STAY_LITOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ENABLE_COP_ZONE_CAPCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ENABLE_COP_ZONE_CAP=0; -- enable or disable lvl cap", "ENABLE_COP_ZONE_CAP=1; -- enable or disable lvl cap"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ENABLE_COP_ZONE_CAP=1; -- enable or disable lvl cap", "ENABLE_COP_ZONE_CAP=0; -- enable or disable lvl cap"), False)
+        End If
+
+        If TIMEZONE_OFFSETNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim TIMEZONE_OFFSETMatch As Boolean
+                TIMEZONE_OFFSETMatch = line.Contains("TIMEZONE_OFFSET")
+                If TIMEZONE_OFFSETMatch Then
+                    TIMEZONE_OFFSETOutputLines.Add("TIMEZONE_OFFSET = " + TIMEZONE_OFFSETNumericUpDown.Text + "; -- Offset from UTC used to determine when ""JP Midnight"" is for the server.  Default is JST (+9.0).")
+                Else
+                    TIMEZONE_OFFSETOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, TIMEZONE_OFFSETOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If ALLOW_MULTIPLE_EXP_RINGSCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ALLOW_MULTIPLE_EXP_RINGS = 0; -- Set to 1 to remove ownership restrictions on the Chariot/Empress/Emperor Band trio.", "ALLOW_MULTIPLE_EXP_RINGS = 1; -- Set to 1 to remove ownership restrictions on the Chariot/Empress/Emperor Band trio."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("ALLOW_MULTIPLE_EXP_RINGS = 1; -- Set to 1 to remove ownership restrictions on the Chariot/Empress/Emperor Band trio.", "ALLOW_MULTIPLE_EXP_RINGS = 0; -- Set to 1 to remove ownership restrictions on the Chariot/Empress/Emperor Band trio."), False)
+        End If
+
+        If BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BYPASS_EXP_RING_ONE_PER_WEEK = 0; -- -- Set to 1 to bypass the limit of one ring per Conquest Tally Week.", "BYPASS_EXP_RING_ONE_PER_WEEK = 1; -- -- Set to 1 to bypass the limit of one ring per Conquest Tally Week."), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("BYPASS_EXP_RING_ONE_PER_WEEK = 1; -- -- Set to 1 to bypass the limit of one ring per Conquest Tally Week.", "BYPASS_EXP_RING_ONE_PER_WEEK = 0; -- -- Set to 1 to bypass the limit of one ring per Conquest Tally Week."), False)
+        End If
+
+        If NUMBER_OF_DM_EARRINGSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim NUMBER_OF_DM_EARRINGSMatch As Boolean
+                NUMBER_OF_DM_EARRINGSMatch = line.Contains("NUMBER_OF_DM_EARRINGS")
+                If NUMBER_OF_DM_EARRINGSMatch Then
+                    NUMBER_OF_DM_EARRINGSOutputLines.Add("NUMBER_OF_DM_EARRINGS = " + NUMBER_OF_DM_EARRINGSNumericUpDown.Text + "; -- Number of earrings players can simultaneously own from Divine Might before scripts start blocking them (Default: 1)")
+                Else
+                    NUMBER_OF_DM_EARRINGSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, NUMBER_OF_DM_EARRINGSOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If HOMEPOINT_TELEPORTCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT =0; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT =1; -- Enables the homepoint teleport system"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT =1; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT =0; -- Enables the homepoint teleport system"), False)
+        End If
+
     End Sub
 
     Private Sub ApplySettingPage9Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage9Button.Click
 
+        Dim BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines As New List(Of String)()
         Dim VISITANT_BONUSOutputLines As New List(Of String)()
+
+        If BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim BETWEEN_2COSMOCLEANSE_WAIT_TIMEMatch As Boolean
+                BETWEEN_2COSMOCLEANSE_WAIT_TIMEMatch = line.Contains("BETWEEN_2COSMOCLEANSE_WAIT_TIME")
+                If BETWEEN_2COSMOCLEANSE_WAIT_TIMEMatch Then
+                    BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines.Add("BETWEEN_2COSMOCLEANSE_WAIT_TIME = " + BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Text + "; -- day between 2 limbus keyitem  (default 3 days)")
+                Else
+                    BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines.ToArray(), Encoding.UTF8)
+        End If
+
+        If DIMENSIONAL_PORTAL_UNLOCKCheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIMENSIONAL_PORTAL_UNLOCK = false; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus", "DIMENSIONAL_PORTAL_UNLOCK = true; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIMENSIONAL_PORTAL_UNLOCK = true; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus", "DIMENSIONAL_PORTAL_UNLOCK = false; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus"), False)
+        End If
 
         If VISITANT_BONUSNumericUpDown.Text.Length < 1 Then
         Else
@@ -1773,6 +3200,56 @@ Public Class ConfigForm
 
     Private Sub BlueSpellGaplevelLearnNumericUpDown_MouseClick(sender As Object, e As MouseEventArgs) Handles BlueSpellGaplevelLearnNumericUpDown.MouseClick
         MessageBox.Show("You must recompile the server for this to take effect!", "Important Message")
+    End Sub
+
+    Private Sub JINX_MODE_2012CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles JINX_MODE_2012CheckBox.CheckedChanged
+
+    End Sub
+
+    Private Sub EXPLORER_MOOGLECheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles EXPLORER_MOOGLECheckBox.CheckedChanged
+        If EXPLORER_MOOGLECheckBox.Checked = True Then
+            EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Enabled = True
+        Else
+            EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Enabled = False
+        End If
+    End Sub
+
+    Private Sub DYNA_LEVEL_MINNumericUpDown_ValueChanged(sender As Object, e As EventArgs)
+        If DYNA_LEVEL_MINNumericUpDown.Value > My.Settings.MAX_LEVEL Then
+            DYNA_LEVEL_MINNumericUpDown.Text = My.Settings.MAX_LEVEL
+        End If
+    End Sub
+
+    Private Sub WSNM_LEVELNumericUpDown_ValueChanged(sender As Object, e As EventArgs)
+        If WSNM_LEVELNumericUpDown.Value > My.Settings.MAX_LEVEL Then
+            WSNM_LEVELNumericUpDown.Text = My.Settings.MAX_LEVEL
+        End If
+    End Sub
+
+    Private Sub AF1_QUEST_LEVELNumericUpDown_ValueChanged(sender As Object, e As EventArgs)
+        If AF1_QUEST_LEVELNumericUpDown.Value > My.Settings.MAX_LEVEL Then
+            AF1_QUEST_LEVELNumericUpDown.Text = My.Settings.MAX_LEVEL
+        End If
+    End Sub
+
+    Private Sub AF2_QUEST_LEVELNumericUpDown_ValueChanged(sender As Object, e As EventArgs)
+        If AF2_QUEST_LEVELNumericUpDown.Value > My.Settings.MAX_LEVEL Then
+            AF2_QUEST_LEVELNumericUpDown.Text = My.Settings.MAX_LEVEL
+        End If
+    End Sub
+
+    Private Sub AF3_QUEST_LEVELNumericUpDown_ValueChanged(sender As Object, e As EventArgs)
+        If AF3_QUEST_LEVELNumericUpDown.Value > My.Settings.MAX_LEVEL Then
+            AF3_QUEST_LEVELNumericUpDown.Text = My.Settings.MAX_LEVEL
+        End If
+    End Sub
+
+    Private Sub OldSchoolG2CheckBox_CheckedChanged(sender As Object, e As EventArgs)
+        If OldSchoolG2CheckBox.Checked = True Then
+            FrigiciteDurationNumericUpDown.Enabled = True
+        Else
+            FrigiciteDurationNumericUpDown.Enabled = False
+        End If
     End Sub
 
 End Class

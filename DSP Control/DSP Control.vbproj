@@ -91,12 +91,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability_TraitSettings.Designer.vb">
-      <DependentUpon>Ability_TraitSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ability_TraitSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AboutBox.Designer.vb">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </Compile>
@@ -104,58 +98,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="AuditSettings.Designer.vb">
-      <DependentUpon>AuditSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AuditSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CelebrationsSettings.Designer.vb">
-      <DependentUpon>CelebrationsSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CelebrationsSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CharacterSettingsForm.Designer.vb">
-      <DependentUpon>CharacterSettingsForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CharacterSettingsForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Coffer_ChestSettings.Designer.vb">
-      <DependentUpon>Coffer_ChestSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Coffer_ChestSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ConfigForm.Designer.vb">
       <DependentUpon>ConfigForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ConfigForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfigFormMap.Designer.vb">
-      <DependentUpon>ConfigFormMap.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ConfigFormMap.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfigFormSearch.Designer.vb">
-      <DependentUpon>ConfigFormSearch.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ConfigFormSearch.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfigFormSettings.Designer.vb">
-      <DependentUpon>ConfigFormSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ConfigFormSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CraftingandSkillupsettings.Designer.vb">
-      <DependentUpon>CraftingandSkillupsettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CraftingandSkillupsettings.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DSPControlForm.vb">
@@ -165,76 +111,16 @@
       <DependentUpon>DSPControlForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfigFormExpansions.Designer.vb">
-      <DependentUpon>ConfigFormExpansions.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ConfigFormExpansions.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DynamisSettings.Designer.vb">
-      <DependentUpon>DynamisSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="DynamisSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExperienceRates.Designer.vb">
-      <DependentUpon>ExperienceRates.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ExperienceRates.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FameGainMultipliers.Designer.vb">
-      <DependentUpon>FameGainMultipliers.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FameGainMultipliers.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FOVSettings.Designer.vb">
-      <DependentUpon>FOVSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FOVSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GameLogs.Designer.vb">
       <DependentUpon>GameLogs.vb</DependentUpon>
     </Compile>
     <Compile Include="GameLogs.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuildPointssetting.Designer.vb">
-      <DependentUpon>GuildPointssetting.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GuildPointssetting.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LimbusSettings.Designer.vb">
-      <DependentUpon>LimbusSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LimbusSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LobbyLogs.Designer.vb">
       <DependentUpon>LobbyLogs.vb</DependentUpon>
     </Compile>
     <Compile Include="LobbyLogs.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MaterialCollectingsettings.Designer.vb">
-      <DependentUpon>MaterialCollectingsettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MaterialCollectingsettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MonsterMultipliers.Designer.vb">
-      <DependentUpon>MonsterMultipliers.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MonsterMultipliers.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MonsterSettingsForm.Designer.vb">
-      <DependentUpon>MonsterSettingsForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MonsterSettingsForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -258,108 +144,27 @@
     <Compile Include="PathLocations.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PlayerMultipliers.Designer.vb">
-      <DependentUpon>PlayerMultipliers.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PlayerMultipliers.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Quest_MissionSettings.Designer.vb">
-      <DependentUpon>Quest_MissionSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Quest_MissionSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Spell_WeaponPower.Designer.vb">
-      <DependentUpon>Spell_WeaponPower.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Spell_WeaponPower.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartingPlayerSettings.Designer.vb">
-      <DependentUpon>StartingPlayerSettings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StartingPlayerSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ability_TraitSettings.resx">
-      <DependentUpon>Ability_TraitSettings.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AuditSettings.resx">
-      <DependentUpon>AuditSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CelebrationsSettings.resx">
-      <DependentUpon>CelebrationsSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CharacterSettingsForm.resx">
-      <DependentUpon>CharacterSettingsForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Coffer_ChestSettings.resx">
-      <DependentUpon>Coffer_ChestSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigForm.resx">
       <DependentUpon>ConfigForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfigFormExpansions.resx">
-      <DependentUpon>ConfigFormExpansions.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfigFormMap.resx">
-      <DependentUpon>ConfigFormMap.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfigFormSearch.resx">
-      <DependentUpon>ConfigFormSearch.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfigFormSettings.resx">
-      <DependentUpon>ConfigFormSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CraftingandSkillupsettings.resx">
-      <DependentUpon>CraftingandSkillupsettings.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DSPControlForm.resx">
       <DependentUpon>DSPControlForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DynamisSettings.resx">
-      <DependentUpon>DynamisSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExperienceRates.resx">
-      <DependentUpon>ExperienceRates.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FameGainMultipliers.resx">
-      <DependentUpon>FameGainMultipliers.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FOVSettings.resx">
-      <DependentUpon>FOVSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameLogs.resx">
       <DependentUpon>GameLogs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuildPointssetting.resx">
-      <DependentUpon>GuildPointssetting.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LimbusSettings.resx">
-      <DependentUpon>LimbusSettings.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LobbyLogs.resx">
       <DependentUpon>LobbyLogs.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MaterialCollectingsettings.resx">
-      <DependentUpon>MaterialCollectingsettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MonsterMultipliers.resx">
-      <DependentUpon>MonsterMultipliers.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MonsterSettingsForm.resx">
-      <DependentUpon>MonsterSettingsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -369,18 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PathLocations.resx">
       <DependentUpon>PathLocations.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PlayerMultipliers.resx">
-      <DependentUpon>PlayerMultipliers.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Quest_MissionSettings.resx">
-      <DependentUpon>Quest_MissionSettings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Spell_WeaponPower.resx">
-      <DependentUpon>Spell_WeaponPower.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartingPlayerSettings.resx">
-      <DependentUpon>StartingPlayerSettings.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

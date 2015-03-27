@@ -28,12 +28,16 @@ Partial Class PathLocationsListBox
         Me.DSPPathLabel = New System.Windows.Forms.Label()
         Me.DSPPathButton = New System.Windows.Forms.Button()
         Me.DSPPathTextBox = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'AshitaPathTextBox
         '
         Me.AshitaPathTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.DSP_Control.My.MySettings.Default, "AshitaPath", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.AshitaPathTextBox.Location = New System.Drawing.Point(15, 73)
+        Me.AshitaPathTextBox.Location = New System.Drawing.Point(9, 32)
         Me.AshitaPathTextBox.Name = "AshitaPathTextBox"
         Me.AshitaPathTextBox.Size = New System.Drawing.Size(196, 20)
         Me.AshitaPathTextBox.TabIndex = 18
@@ -41,7 +45,7 @@ Partial Class PathLocationsListBox
         '
         'AshitaPathButton
         '
-        Me.AshitaPathButton.Location = New System.Drawing.Point(217, 73)
+        Me.AshitaPathButton.Location = New System.Drawing.Point(211, 32)
         Me.AshitaPathButton.Name = "AshitaPathButton"
         Me.AshitaPathButton.Size = New System.Drawing.Size(75, 23)
         Me.AshitaPathButton.TabIndex = 17
@@ -51,7 +55,7 @@ Partial Class PathLocationsListBox
         'AshitaPathLabel
         '
         Me.AshitaPathLabel.AutoSize = True
-        Me.AshitaPathLabel.Location = New System.Drawing.Point(12, 57)
+        Me.AshitaPathLabel.Location = New System.Drawing.Point(6, 16)
         Me.AshitaPathLabel.Name = "AshitaPathLabel"
         Me.AshitaPathLabel.Size = New System.Drawing.Size(80, 13)
         Me.AshitaPathLabel.TabIndex = 16
@@ -60,7 +64,7 @@ Partial Class PathLocationsListBox
         'DSPPathLabel
         '
         Me.DSPPathLabel.AutoSize = True
-        Me.DSPPathLabel.Location = New System.Drawing.Point(12, 9)
+        Me.DSPPathLabel.Location = New System.Drawing.Point(6, 16)
         Me.DSPPathLabel.Name = "DSPPathLabel"
         Me.DSPPathLabel.Size = New System.Drawing.Size(69, 13)
         Me.DSPPathLabel.TabIndex = 15
@@ -68,7 +72,7 @@ Partial Class PathLocationsListBox
         '
         'DSPPathButton
         '
-        Me.DSPPathButton.Location = New System.Drawing.Point(217, 22)
+        Me.DSPPathButton.Location = New System.Drawing.Point(211, 29)
         Me.DSPPathButton.Name = "DSPPathButton"
         Me.DSPPathButton.Size = New System.Drawing.Size(75, 23)
         Me.DSPPathButton.TabIndex = 14
@@ -78,27 +82,48 @@ Partial Class PathLocationsListBox
         'DSPPathTextBox
         '
         Me.DSPPathTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.DSP_Control.My.MySettings.Default, "DSPPath", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.DSPPathTextBox.Location = New System.Drawing.Point(15, 25)
+        Me.DSPPathTextBox.Location = New System.Drawing.Point(9, 32)
         Me.DSPPathTextBox.Name = "DSPPathTextBox"
         Me.DSPPathTextBox.Size = New System.Drawing.Size(196, 20)
         Me.DSPPathTextBox.TabIndex = 13
         Me.DSPPathTextBox.Text = Global.DSP_Control.My.MySettings.Default.DSPPath
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.DSPPathLabel)
+        Me.GroupBox1.Controls.Add(Me.DSPPathTextBox)
+        Me.GroupBox1.Controls.Add(Me.DSPPathButton)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(296, 68)
+        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.AshitaPathLabel)
+        Me.GroupBox2.Controls.Add(Me.AshitaPathButton)
+        Me.GroupBox2.Controls.Add(Me.AshitaPathTextBox)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 86)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(296, 66)
+        Me.GroupBox2.TabIndex = 20
+        Me.GroupBox2.TabStop = False
+        '
         'PathLocationsListBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(314, 123)
-        Me.Controls.Add(Me.AshitaPathTextBox)
-        Me.Controls.Add(Me.AshitaPathButton)
-        Me.Controls.Add(Me.AshitaPathLabel)
-        Me.Controls.Add(Me.DSPPathLabel)
-        Me.Controls.Add(Me.DSPPathButton)
-        Me.Controls.Add(Me.DSPPathTextBox)
+        Me.ClientSize = New System.Drawing.Size(314, 165)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "PathLocationsListBox"
         Me.Text = "PathLocations"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents AshitaPathTextBox As System.Windows.Forms.TextBox
@@ -107,4 +132,6 @@ Partial Class PathLocationsListBox
     Friend WithEvents DSPPathLabel As System.Windows.Forms.Label
     Friend WithEvents DSPPathButton As System.Windows.Forms.Button
     Friend WithEvents DSPPathTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
 End Class

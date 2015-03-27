@@ -289,6 +289,15 @@ Partial Class ConfigForm
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.GroupBox47 = New System.Windows.Forms.GroupBox()
+        Me.TABS_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.EXP_RATEFOVNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.GIL_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SHOP_PRICENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.JEUNO_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.NORG_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.WIN_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BAS_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SAN_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox152 = New System.Windows.Forms.TextBox()
         Me.TextBox153 = New System.Windows.Forms.TextBox()
         Me.TextBox154 = New System.Windows.Forms.TextBox()
@@ -308,6 +317,15 @@ Partial Class ConfigForm
         Me.TextBox168 = New System.Windows.Forms.TextBox()
         Me.TextBox167 = New System.Windows.Forms.TextBox()
         Me.GroupBox46 = New System.Windows.Forms.GroupBox()
+        Me.MAX_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.OPENING_CUTSCENE_ENABLECheckBox = New System.Windows.Forms.CheckBox()
+        Me.ALL_MAPSCheckBox = New System.Windows.Forms.CheckBox()
+        Me.INITIAL_LEVEL_CAPNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ADVANCED_JOB_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SUBJOB_QUEST_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.START_INVENTORYNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.START_GILNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox129 = New System.Windows.Forms.TextBox()
         Me.TextBox130 = New System.Windows.Forms.TextBox()
         Me.TextBox131 = New System.Windows.Forms.TextBox()
@@ -353,6 +371,16 @@ Partial Class ConfigForm
         Me.TextBox199 = New System.Windows.Forms.TextBox()
         Me.TextBox198 = New System.Windows.Forms.TextBox()
         Me.GroupBox49 = New System.Windows.Forms.GroupBox()
+        Me.DISABLE_GUILD_CONTRACTSCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SMITHING_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.COOKING_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.FISHING_GUILD_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox180 = New System.Windows.Forms.TextBox()
         Me.TextBox170 = New System.Windows.Forms.TextBox()
         Me.TextBox181 = New System.Windows.Forms.TextBox()
@@ -377,6 +405,14 @@ Partial Class ConfigForm
         Me.TabPage11 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.GroupBox51 = New System.Windows.Forms.GroupBox()
+        Me.LOGGING_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.MINING_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.EXCAVATION_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.HARVESTING_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.MINING_BREAK_CHANCENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.LOGGING_BREAK_CHANCENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.HARVESTING_BREAK_CHANCENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox221 = New System.Windows.Forms.TextBox()
         Me.TextBox220 = New System.Windows.Forms.TextBox()
         Me.TextBox219 = New System.Windows.Forms.TextBox()
@@ -398,6 +434,10 @@ Partial Class ConfigForm
         Me.TextBox233 = New System.Windows.Forms.TextBox()
         Me.TextBox232 = New System.Windows.Forms.TextBox()
         Me.GroupBox52 = New System.Windows.Forms.GroupBox()
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox222 = New System.Windows.Forms.TextBox()
         Me.TextBox223 = New System.Windows.Forms.TextBox()
         Me.TextBox224 = New System.Windows.Forms.TextBox()
@@ -438,6 +478,13 @@ Partial Class ConfigForm
         Me.TextBox263 = New System.Windows.Forms.TextBox()
         Me.TextBox264 = New System.Windows.Forms.TextBox()
         Me.GroupBox54 = New System.Windows.Forms.GroupBox()
+        Me.FREE_COP_DYNAMISCheckBox = New System.Windows.Forms.CheckBox()
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.DYNA_LEVEL_MINNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox234 = New System.Windows.Forms.TextBox()
         Me.TextBox235 = New System.Windows.Forms.TextBox()
         Me.TextBox236 = New System.Windows.Forms.TextBox()
@@ -457,6 +504,11 @@ Partial Class ConfigForm
         Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.GroupBox57 = New System.Windows.Forms.GroupBox()
+        Me.KILLER_EFFECTNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CIRCLE_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SCAVENGE_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox292 = New System.Windows.Forms.TextBox()
         Me.TextBox291 = New System.Windows.Forms.TextBox()
         Me.TextBox290 = New System.Windows.Forms.TextBox()
@@ -469,6 +521,10 @@ Partial Class ConfigForm
         Me.TextBox294 = New System.Windows.Forms.TextBox()
         Me.TextBox293 = New System.Windows.Forms.TextBox()
         Me.GroupBox56 = New System.Windows.Forms.GroupBox()
+        Me.GROUNDS_TOMESCheckBox = New System.Windows.Forms.CheckBox()
+        Me.LOW_LEVEL_REGIMECheckBox = New System.Windows.Forms.CheckBox()
+        Me.FIELD_MANUALSCheckBox = New System.Windows.Forms.CheckBox()
+        Me.REGIME_WAITCheckBox = New System.Windows.Forms.CheckBox()
         Me.TextBox275 = New System.Windows.Forms.TextBox()
         Me.TextBox283 = New System.Windows.Forms.TextBox()
         Me.TextBox282 = New System.Windows.Forms.TextBox()
@@ -482,6 +538,27 @@ Partial Class ConfigForm
         Me.TabPage14 = New System.Windows.Forms.TabPage()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.GroupBox58 = New System.Windows.Forms.GroupBox()
+        Me.USE_OLD_CURE_FORMULACheckBox = New System.Windows.Forms.CheckBox()
+        Me.BARSTATUS_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.BARELEMENT_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.BIO_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.DIA_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.JUICE_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.MILK_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ABSORB_SPELL_TICKNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AQUAVEIL_INTERR_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.KLIMAFORM_MACCNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.STORM_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ENSPELL_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BLINK_SHADOWSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.STONESKIN_CAPNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ENHANCING_SONG_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BARD_SONG_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox320 = New System.Windows.Forms.TextBox()
         Me.TextBox305 = New System.Windows.Forms.TextBox()
         Me.TextBox321 = New System.Windows.Forms.TextBox()
@@ -529,6 +606,14 @@ Partial Class ConfigForm
         Me.TabPage16 = New System.Windows.Forms.TabPage()
         Me.ApplySettingPage8Button = New System.Windows.Forms.Button()
         Me.GroupBox60 = New System.Windows.Forms.GroupBox()
+        Me.HOMEPOINT_TELEPORTCheckBox = New System.Windows.Forms.CheckBox()
+        Me.HOMEPOINT_HEALCheckBox = New System.Windows.Forms.CheckBox()
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox = New System.Windows.Forms.CheckBox()
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox = New System.Windows.Forms.CheckBox()
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.TIMEZONE_OFFSETNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.LANTERNS_STAY_LITNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.RIVERNE_PORTERSNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.ENABLE_COP_ZONE_CAPCheckBox = New System.Windows.Forms.CheckBox()
         Me.TextBox363 = New System.Windows.Forms.TextBox()
         Me.TextBox375 = New System.Windows.Forms.TextBox()
@@ -550,6 +635,18 @@ Partial Class ConfigForm
         Me.TextBox379 = New System.Windows.Forms.TextBox()
         Me.TextBox380 = New System.Windows.Forms.TextBox()
         Me.GroupBox59 = New System.Windows.Forms.GroupBox()
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox = New System.Windows.Forms.CheckBox()
+        Me.HALLOWEEN_2005CheckBox = New System.Windows.Forms.CheckBox()
+        Me.HALLOWEENCheckBox = New System.Windows.Forms.CheckBox()
+        Me.CHRISTMASCheckBox = New System.Windows.Forms.CheckBox()
+        Me.SUNBREEZE_2011CheckBox = New System.Windows.Forms.CheckBox()
+        Me.SUNBREEZE_2009CheckBox = New System.Windows.Forms.CheckBox()
+        Me.SUMMERFEST_2004CheckBox = New System.Windows.Forms.CheckBox()
+        Me.JINX_MODE_2012CheckBox = New System.Windows.Forms.CheckBox()
+        Me.JINX_MODE_2008CheckBox = New System.Windows.Forms.CheckBox()
+        Me.JINX_MODE_2005CheckBox = New System.Windows.Forms.CheckBox()
+        Me.EXPLORER_MOOGLECheckBox = New System.Windows.Forms.CheckBox()
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox351 = New System.Windows.Forms.TextBox()
         Me.TextBox338 = New System.Windows.Forms.TextBox()
         Me.TextBox352 = New System.Windows.Forms.TextBox()
@@ -581,6 +678,8 @@ Partial Class ConfigForm
         Me.TextBox390 = New System.Windows.Forms.TextBox()
         Me.TextBox389 = New System.Windows.Forms.TextBox()
         Me.GroupBox61 = New System.Windows.Forms.GroupBox()
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox = New System.Windows.Forms.CheckBox()
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.TextBox382 = New System.Windows.Forms.TextBox()
         Me.TextBox386 = New System.Windows.Forms.TextBox()
         Me.TextBox385 = New System.Windows.Forms.TextBox()
@@ -614,27 +713,30 @@ Partial Class ConfigForm
         Me.BlueSpellGaplevelLearnNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.ApplySettingsMiscButton = New System.Windows.Forms.Button()
         Me.no_auction_limitsCheckBox = New System.Windows.Forms.CheckBox()
-        Me.BARD_SONG_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ENHANCING_SONG_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.STONESKIN_CAPNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.BLINK_SHADOWSNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ENSPELL_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.STORM_DURATIONNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.KLIMAFORM_MACCNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.AQUAVEIL_INTERR_RATENumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ABSORB_SPELL_TICKNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.MILK_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.JUICE_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.DIA_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.BIO_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.BARELEMENT_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.BARSTATUS_OVERWRITECheckBox = New System.Windows.Forms.CheckBox()
-        Me.USE_OLD_CURE_FORMULACheckBox = New System.Windows.Forms.CheckBox()
+        Me.LandKingSystem_HQNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.LandKingSystem_NQNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.WEAPON_SKILL_POINTSNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.WEAPON_SKILL_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.ITEM_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.DRAIN_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.BLUE_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SPELL_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.CURE_POWERNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.FrigiciteDurationNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.QM_RESET_TIMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF3_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF2_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF1_FAMENumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF3_QUEST_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF2_QUEST_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.AF1_QUEST_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.WSNM_SKILL_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.WSNM_LEVELNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.OldSchoolG2CheckBox = New System.Windows.Forms.CheckBox()
+        Me.OldSchoolG1CheckBox = New System.Windows.Forms.CheckBox()
+        Me.DEBUG_MODECheckBox = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.LoginTabPage.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -741,34 +843,102 @@ Partial Class ConfigForm
         Me.TabPage6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.GroupBox47.SuspendLayout()
+        CType(Me.TABS_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EXP_RATEFOVNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GIL_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SHOP_PRICENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JEUNO_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NORG_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WIN_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BAS_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SAN_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox46.SuspendLayout()
+        CType(Me.MAX_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.INITIAL_LEVEL_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UNLOCK_OUTPOST_WARPSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ADVANCED_JOB_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SUBJOB_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.START_INVENTORYNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.START_GILNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage7.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.GroupBox50.SuspendLayout()
         Me.GroupBox49.SuspendLayout()
+        CType(Me.WOODWORKING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SMITHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GOLDSMITHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BONECRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ALCHEMY_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.COOKING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FISHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage11.SuspendLayout()
         Me.Panel12.SuspendLayout()
         Me.GroupBox51.SuspendLayout()
+        CType(Me.LOGGING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MINING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EXCAVATION_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HARVESTING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MINING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LOGGING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EXCAVATION_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HARVESTING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox53.SuspendLayout()
         Me.GroupBox52.SuspendLayout()
+        CType(Me.CHEST_MIN_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CHEST_MAX_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.COFFER_MIN_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.COFFER_MAX_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage12.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.GroupBox55.SuspendLayout()
         Me.GroupBox54.SuspendLayout()
+        CType(Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CURRENCY_EXCHANGE_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TIMELESS_HOURGLASS_COSTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DYNA_LEVEL_MINNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage13.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.GroupBox57.SuspendLayout()
+        CType(Me.KILLER_EFFECTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CIRCLE_KILLER_EFFECTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CIRCLE_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STATUS_RESIST_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SCAVENGE_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox56.SuspendLayout()
         Me.TabPage14.SuspendLayout()
         Me.Panel15.SuspendLayout()
         Me.GroupBox58.SuspendLayout()
+        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage16.SuspendLayout()
         Me.GroupBox60.SuspendLayout()
+        CType(Me.NUMBER_OF_DM_EARRINGSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TIMEZONE_OFFSETNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LANTERNS_STAY_LITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RIVERNE_PORTERSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox59.SuspendLayout()
+        CType(Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage17.SuspendLayout()
         Me.GroupBox62.SuspendLayout()
         CType(Me.VISITANT_BONUSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox61.SuspendLayout()
+        CType(Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.DatabaseSettingsTabPage.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -778,20 +948,27 @@ Partial Class ConfigForm
         Me.MiscTabPage.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.BlueSpellGaplevelLearnNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LandKingSystem_HQNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LandKingSystem_NQNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WEAPON_SKILL_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WEAPON_SKILL_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ITEM_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DRAIN_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BLUE_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SPELL_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CURE_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FrigiciteDurationNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QM_RESET_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF3_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF2_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF1_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF3_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF2_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AF1_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WSNM_SKILL_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WSNM_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -2106,7 +2283,7 @@ Partial Class ConfigForm
         Me.GroupBox27.Controls.Add(Me.TextBox87)
         Me.GroupBox27.Controls.Add(Me.TextBox86)
         Me.GroupBox27.Controls.Add(Me.sj_mp_divisorNumericUpDown)
-        Me.GroupBox27.Location = New System.Drawing.Point(4, 531)
+        Me.GroupBox27.Location = New System.Drawing.Point(4, 519)
         Me.GroupBox27.Name = "GroupBox27"
         Me.GroupBox27.Size = New System.Drawing.Size(662, 75)
         Me.GroupBox27.TabIndex = 136
@@ -2154,7 +2331,7 @@ Partial Class ConfigForm
         Me.GroupBox26.Controls.Add(Me.player_mp_multiplierNumericUpDown)
         Me.GroupBox26.Location = New System.Drawing.Point(4, 391)
         Me.GroupBox26.Name = "GroupBox26"
-        Me.GroupBox26.Size = New System.Drawing.Size(662, 134)
+        Me.GroupBox26.Size = New System.Drawing.Size(662, 122)
         Me.GroupBox26.TabIndex = 135
         Me.GroupBox26.TabStop = False
         '
@@ -2189,7 +2366,7 @@ Partial Class ConfigForm
         '
         'TextBox85
         '
-        Me.TextBox85.Location = New System.Drawing.Point(3, 98)
+        Me.TextBox85.Location = New System.Drawing.Point(3, 94)
         Me.TextBox85.Name = "TextBox85"
         Me.TextBox85.ReadOnly = True
         Me.TextBox85.Size = New System.Drawing.Size(132, 20)
@@ -2223,7 +2400,7 @@ Partial Class ConfigForm
         Me.player_mp_multiplierNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "player_mp_multiplier", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.player_mp_multiplierNumericUpDown.DecimalPlaces = 1
         Me.player_mp_multiplierNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.player_mp_multiplierNumericUpDown.Location = New System.Drawing.Point(141, 98)
+        Me.player_mp_multiplierNumericUpDown.Location = New System.Drawing.Point(141, 94)
         Me.player_mp_multiplierNumericUpDown.Name = "player_mp_multiplierNumericUpDown"
         Me.player_mp_multiplierNumericUpDown.Size = New System.Drawing.Size(100, 20)
         Me.player_mp_multiplierNumericUpDown.TabIndex = 122
@@ -3625,6 +3802,15 @@ Partial Class ConfigForm
         '
         'GroupBox47
         '
+        Me.GroupBox47.Controls.Add(Me.TABS_RATENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.EXP_RATEFOVNumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.GIL_RATENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.SHOP_PRICENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.JEUNO_FAMENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.NORG_FAMENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.WIN_FAMENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.BAS_FAMENumericUpDown)
+        Me.GroupBox47.Controls.Add(Me.SAN_FAMENumericUpDown)
         Me.GroupBox47.Controls.Add(Me.TextBox152)
         Me.GroupBox47.Controls.Add(Me.TextBox153)
         Me.GroupBox47.Controls.Add(Me.TextBox154)
@@ -3648,6 +3834,105 @@ Partial Class ConfigForm
         Me.GroupBox47.Size = New System.Drawing.Size(659, 260)
         Me.GroupBox47.TabIndex = 137
         Me.GroupBox47.TabStop = False
+        '
+        'TABS_RATENumericUpDown
+        '
+        Me.TABS_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "TABS_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TABS_RATENumericUpDown.DecimalPlaces = 3
+        Me.TABS_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.TABS_RATENumericUpDown.Location = New System.Drawing.Point(109, 100)
+        Me.TABS_RATENumericUpDown.Name = "TABS_RATENumericUpDown"
+        Me.TABS_RATENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.TABS_RATENumericUpDown.TabIndex = 107
+        Me.TABS_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.TABS_RATE
+        '
+        'EXP_RATEFOVNumericUpDown
+        '
+        Me.EXP_RATEFOVNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "EXP_RATEFOV", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.EXP_RATEFOVNumericUpDown.DecimalPlaces = 3
+        Me.EXP_RATEFOVNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.EXP_RATEFOVNumericUpDown.Location = New System.Drawing.Point(109, 74)
+        Me.EXP_RATEFOVNumericUpDown.Name = "EXP_RATEFOVNumericUpDown"
+        Me.EXP_RATEFOVNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.EXP_RATEFOVNumericUpDown.TabIndex = 106
+        Me.EXP_RATEFOVNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.EXP_RATEFOV
+        '
+        'GIL_RATENumericUpDown
+        '
+        Me.GIL_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "GIL_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.GIL_RATENumericUpDown.DecimalPlaces = 3
+        Me.GIL_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.GIL_RATENumericUpDown.Location = New System.Drawing.Point(109, 48)
+        Me.GIL_RATENumericUpDown.Name = "GIL_RATENumericUpDown"
+        Me.GIL_RATENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.GIL_RATENumericUpDown.TabIndex = 105
+        Me.GIL_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.GIL_RATE
+        '
+        'SHOP_PRICENumericUpDown
+        '
+        Me.SHOP_PRICENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SHOP_PRICE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SHOP_PRICENumericUpDown.DecimalPlaces = 3
+        Me.SHOP_PRICENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.SHOP_PRICENumericUpDown.Location = New System.Drawing.Point(109, 22)
+        Me.SHOP_PRICENumericUpDown.Name = "SHOP_PRICENumericUpDown"
+        Me.SHOP_PRICENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.SHOP_PRICENumericUpDown.TabIndex = 104
+        Me.SHOP_PRICENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SHOP_PRICE
+        '
+        'JEUNO_FAMENumericUpDown
+        '
+        Me.JEUNO_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "JEUNO_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JEUNO_FAMENumericUpDown.DecimalPlaces = 3
+        Me.JEUNO_FAMENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.JEUNO_FAMENumericUpDown.Location = New System.Drawing.Point(109, 230)
+        Me.JEUNO_FAMENumericUpDown.Name = "JEUNO_FAMENumericUpDown"
+        Me.JEUNO_FAMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.JEUNO_FAMENumericUpDown.TabIndex = 103
+        Me.JEUNO_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.JEUNO_FAME
+        '
+        'NORG_FAMENumericUpDown
+        '
+        Me.NORG_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "NORG_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.NORG_FAMENumericUpDown.DecimalPlaces = 3
+        Me.NORG_FAMENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.NORG_FAMENumericUpDown.Location = New System.Drawing.Point(109, 204)
+        Me.NORG_FAMENumericUpDown.Name = "NORG_FAMENumericUpDown"
+        Me.NORG_FAMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.NORG_FAMENumericUpDown.TabIndex = 102
+        Me.NORG_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.NORG_FAME
+        '
+        'WIN_FAMENumericUpDown
+        '
+        Me.WIN_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WIN_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WIN_FAMENumericUpDown.DecimalPlaces = 3
+        Me.WIN_FAMENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.WIN_FAMENumericUpDown.Location = New System.Drawing.Point(109, 178)
+        Me.WIN_FAMENumericUpDown.Name = "WIN_FAMENumericUpDown"
+        Me.WIN_FAMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.WIN_FAMENumericUpDown.TabIndex = 101
+        Me.WIN_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WIN_FAME
+        '
+        'BAS_FAMENumericUpDown
+        '
+        Me.BAS_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BAS_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BAS_FAMENumericUpDown.DecimalPlaces = 3
+        Me.BAS_FAMENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.BAS_FAMENumericUpDown.Location = New System.Drawing.Point(109, 152)
+        Me.BAS_FAMENumericUpDown.Name = "BAS_FAMENumericUpDown"
+        Me.BAS_FAMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.BAS_FAMENumericUpDown.TabIndex = 100
+        Me.BAS_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BAS_FAME
+        '
+        'SAN_FAMENumericUpDown
+        '
+        Me.SAN_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SAN_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SAN_FAMENumericUpDown.DecimalPlaces = 3
+        Me.SAN_FAMENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.SAN_FAMENumericUpDown.Location = New System.Drawing.Point(109, 126)
+        Me.SAN_FAMENumericUpDown.Name = "SAN_FAMENumericUpDown"
+        Me.SAN_FAMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.SAN_FAMENumericUpDown.TabIndex = 99
+        Me.SAN_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SAN_FAME
         '
         'TextBox152
         '
@@ -3741,7 +4026,7 @@ Partial Class ConfigForm
         '
         'TextBox162
         '
-        Me.TextBox162.Location = New System.Drawing.Point(337, 49)
+        Me.TextBox162.Location = New System.Drawing.Point(337, 48)
         Me.TextBox162.Name = "TextBox162"
         Me.TextBox162.ReadOnly = True
         Me.TextBox162.Size = New System.Drawing.Size(322, 20)
@@ -3750,7 +4035,7 @@ Partial Class ConfigForm
         '
         'TextBox163
         '
-        Me.TextBox163.Location = New System.Drawing.Point(337, 75)
+        Me.TextBox163.Location = New System.Drawing.Point(337, 74)
         Me.TextBox163.Name = "TextBox163"
         Me.TextBox163.ReadOnly = True
         Me.TextBox163.Size = New System.Drawing.Size(322, 20)
@@ -3759,7 +4044,7 @@ Partial Class ConfigForm
         '
         'TextBox164
         '
-        Me.TextBox164.Location = New System.Drawing.Point(337, 101)
+        Me.TextBox164.Location = New System.Drawing.Point(337, 100)
         Me.TextBox164.Name = "TextBox164"
         Me.TextBox164.ReadOnly = True
         Me.TextBox164.Size = New System.Drawing.Size(322, 20)
@@ -3768,7 +4053,7 @@ Partial Class ConfigForm
         '
         'TextBox165
         '
-        Me.TextBox165.Location = New System.Drawing.Point(337, 127)
+        Me.TextBox165.Location = New System.Drawing.Point(337, 126)
         Me.TextBox165.Name = "TextBox165"
         Me.TextBox165.ReadOnly = True
         Me.TextBox165.Size = New System.Drawing.Size(322, 20)
@@ -3777,7 +4062,7 @@ Partial Class ConfigForm
         '
         'TextBox169
         '
-        Me.TextBox169.Location = New System.Drawing.Point(337, 231)
+        Me.TextBox169.Location = New System.Drawing.Point(337, 230)
         Me.TextBox169.Name = "TextBox169"
         Me.TextBox169.ReadOnly = True
         Me.TextBox169.Size = New System.Drawing.Size(322, 20)
@@ -3786,7 +4071,7 @@ Partial Class ConfigForm
         '
         'TextBox166
         '
-        Me.TextBox166.Location = New System.Drawing.Point(337, 153)
+        Me.TextBox166.Location = New System.Drawing.Point(337, 152)
         Me.TextBox166.Name = "TextBox166"
         Me.TextBox166.ReadOnly = True
         Me.TextBox166.Size = New System.Drawing.Size(322, 20)
@@ -3795,7 +4080,7 @@ Partial Class ConfigForm
         '
         'TextBox168
         '
-        Me.TextBox168.Location = New System.Drawing.Point(337, 205)
+        Me.TextBox168.Location = New System.Drawing.Point(337, 204)
         Me.TextBox168.Name = "TextBox168"
         Me.TextBox168.ReadOnly = True
         Me.TextBox168.Size = New System.Drawing.Size(322, 20)
@@ -3804,7 +4089,7 @@ Partial Class ConfigForm
         '
         'TextBox167
         '
-        Me.TextBox167.Location = New System.Drawing.Point(337, 179)
+        Me.TextBox167.Location = New System.Drawing.Point(337, 178)
         Me.TextBox167.Name = "TextBox167"
         Me.TextBox167.ReadOnly = True
         Me.TextBox167.Size = New System.Drawing.Size(322, 20)
@@ -3813,6 +4098,17 @@ Partial Class ConfigForm
         '
         'GroupBox46
         '
+        Me.GroupBox46.Controls.Add(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.MAX_LEVELNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.OPENING_CUTSCENE_ENABLECheckBox)
+        Me.GroupBox46.Controls.Add(Me.ALL_MAPSCheckBox)
+        Me.GroupBox46.Controls.Add(Me.INITIAL_LEVEL_CAPNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.UNLOCK_OUTPOST_WARPSNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.ADVANCED_JOB_LEVELNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.SUBJOB_QUEST_LEVELNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.START_INVENTORYNumericUpDown)
+        Me.GroupBox46.Controls.Add(Me.START_GILNumericUpDown)
         Me.GroupBox46.Controls.Add(Me.TextBox129)
         Me.GroupBox46.Controls.Add(Me.TextBox130)
         Me.GroupBox46.Controls.Add(Me.TextBox131)
@@ -3842,6 +4138,101 @@ Partial Class ConfigForm
         Me.GroupBox46.TabIndex = 136
         Me.GroupBox46.TabStop = False
         '
+        'MAX_LEVELNumericUpDown
+        '
+        Me.MAX_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "MAX_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.MAX_LEVELNumericUpDown.Location = New System.Drawing.Point(141, 71)
+        Me.MAX_LEVELNumericUpDown.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.MAX_LEVELNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.MAX_LEVELNumericUpDown.Name = "MAX_LEVELNumericUpDown"
+        Me.MAX_LEVELNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.MAX_LEVELNumericUpDown.TabIndex = 138
+        Me.MAX_LEVELNumericUpDown.Value = New Decimal(New Integer() {75, 0, 0, 0})
+        '
+        'OPENING_CUTSCENE_ENABLECheckBox
+        '
+        Me.OPENING_CUTSCENE_ENABLECheckBox.AutoSize = True
+        Me.OPENING_CUTSCENE_ENABLECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.OPENING_CUTSCENE_ENABLE
+        Me.OPENING_CUTSCENE_ENABLECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "OPENING_CUTSCENE_ENABLE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.OPENING_CUTSCENE_ENABLECheckBox.Location = New System.Drawing.Point(190, 203)
+        Me.OPENING_CUTSCENE_ENABLECheckBox.Name = "OPENING_CUTSCENE_ENABLECheckBox"
+        Me.OPENING_CUTSCENE_ENABLECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.OPENING_CUTSCENE_ENABLECheckBox.TabIndex = 145
+        Me.OPENING_CUTSCENE_ENABLECheckBox.UseVisualStyleBackColor = True
+        '
+        'ALL_MAPSCheckBox
+        '
+        Me.ALL_MAPSCheckBox.AutoSize = True
+        Me.ALL_MAPSCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.ALL_MAPS
+        Me.ALL_MAPSCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "ALL_MAPS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ALL_MAPSCheckBox.Location = New System.Drawing.Point(150, 281)
+        Me.ALL_MAPSCheckBox.Name = "ALL_MAPSCheckBox"
+        Me.ALL_MAPSCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.ALL_MAPSCheckBox.TabIndex = 144
+        Me.ALL_MAPSCheckBox.UseVisualStyleBackColor = True
+        '
+        'INITIAL_LEVEL_CAPNumericUpDown
+        '
+        Me.INITIAL_LEVEL_CAPNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "INITIAL_LEVEL_CAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.INITIAL_LEVEL_CAPNumericUpDown.Location = New System.Drawing.Point(141, 45)
+        Me.INITIAL_LEVEL_CAPNumericUpDown.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.INITIAL_LEVEL_CAPNumericUpDown.Name = "INITIAL_LEVEL_CAPNumericUpDown"
+        Me.INITIAL_LEVEL_CAPNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.INITIAL_LEVEL_CAPNumericUpDown.TabIndex = 143
+        Me.INITIAL_LEVEL_CAPNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.INITIAL_LEVEL_CAP
+        '
+        'UNLOCK_OUTPOST_WARPSNumericUpDown
+        '
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "UNLOCK_OUTPOST_WARPS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.Location = New System.Drawing.Point(176, 305)
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.Name = "UNLOCK_OUTPOST_WARPSNumericUpDown"
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.Size = New System.Drawing.Size(65, 20)
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.TabIndex = 142
+        Me.UNLOCK_OUTPOST_WARPSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.UNLOCK_OUTPOST_WARPS
+        '
+        'ADVANCED_JOB_LEVELNumericUpDown
+        '
+        Me.ADVANCED_JOB_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ADVANCED_JOB_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ADVANCED_JOB_LEVELNumericUpDown.Location = New System.Drawing.Point(150, 253)
+        Me.ADVANCED_JOB_LEVELNumericUpDown.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.ADVANCED_JOB_LEVELNumericUpDown.Name = "ADVANCED_JOB_LEVELNumericUpDown"
+        Me.ADVANCED_JOB_LEVELNumericUpDown.Size = New System.Drawing.Size(48, 20)
+        Me.ADVANCED_JOB_LEVELNumericUpDown.TabIndex = 141
+        Me.ADVANCED_JOB_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ADVANCED_JOB_LEVEL
+        '
+        'SUBJOB_QUEST_LEVELNumericUpDown
+        '
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SUBJOB_QUEST_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.Location = New System.Drawing.Point(150, 227)
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.Name = "SUBJOB_QUEST_LEVELNumericUpDown"
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.Size = New System.Drawing.Size(48, 20)
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.TabIndex = 140
+        Me.SUBJOB_QUEST_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SUBJOB_QUEST_LEVEL
+        '
+        'START_INVENTORYNumericUpDown
+        '
+        Me.START_INVENTORYNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "START_INVENTORY", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.START_INVENTORYNumericUpDown.Location = New System.Drawing.Point(141, 175)
+        Me.START_INVENTORYNumericUpDown.Maximum = New Decimal(New Integer() {80, 0, 0, 0})
+        Me.START_INVENTORYNumericUpDown.Minimum = New Decimal(New Integer() {30, 0, 0, 0})
+        Me.START_INVENTORYNumericUpDown.Name = "START_INVENTORYNumericUpDown"
+        Me.START_INVENTORYNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.START_INVENTORYNumericUpDown.TabIndex = 139
+        Me.START_INVENTORYNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.START_INVENTORY
+        '
+        'START_GILNumericUpDown
+        '
+        Me.START_GILNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "START_GIL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.START_GILNumericUpDown.Location = New System.Drawing.Point(141, 149)
+        Me.START_GILNumericUpDown.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.START_GILNumericUpDown.Name = "START_GILNumericUpDown"
+        Me.START_GILNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.START_GILNumericUpDown.TabIndex = 138
+        Me.START_GILNumericUpDown.ThousandsSeparator = True
+        Me.START_GILNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.START_GIL
+        '
         'TextBox129
         '
         Me.TextBox129.Dock = System.Windows.Forms.DockStyle.Top
@@ -3857,7 +4248,7 @@ Partial Class ConfigForm
         Me.TextBox130.Location = New System.Drawing.Point(3, 45)
         Me.TextBox130.Name = "TextBox130"
         Me.TextBox130.ReadOnly = True
-        Me.TextBox130.Size = New System.Drawing.Size(122, 20)
+        Me.TextBox130.Size = New System.Drawing.Size(132, 20)
         Me.TextBox130.TabIndex = 63
         Me.TextBox130.Text = "INITIAL_LEVEL_CAP = "
         '
@@ -3885,7 +4276,7 @@ Partial Class ConfigForm
         Me.TextBox132.Location = New System.Drawing.Point(3, 71)
         Me.TextBox132.Name = "TextBox132"
         Me.TextBox132.ReadOnly = True
-        Me.TextBox132.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox132.Size = New System.Drawing.Size(132, 20)
         Me.TextBox132.TabIndex = 65
         Me.TextBox132.Text = "MAX_LEVEL = "
         '
@@ -3912,7 +4303,7 @@ Partial Class ConfigForm
         Me.TextBox136.Location = New System.Drawing.Point(3, 149)
         Me.TextBox136.Name = "TextBox136"
         Me.TextBox136.ReadOnly = True
-        Me.TextBox136.Size = New System.Drawing.Size(80, 20)
+        Me.TextBox136.Size = New System.Drawing.Size(132, 20)
         Me.TextBox136.TabIndex = 65
         Me.TextBox136.Text = "START_GIL = "
         '
@@ -3921,7 +4312,7 @@ Partial Class ConfigForm
         Me.TextBox137.Location = New System.Drawing.Point(3, 175)
         Me.TextBox137.Name = "TextBox137"
         Me.TextBox137.ReadOnly = True
-        Me.TextBox137.Size = New System.Drawing.Size(124, 20)
+        Me.TextBox137.Size = New System.Drawing.Size(132, 20)
         Me.TextBox137.TabIndex = 66
         Me.TextBox137.Text = "START_INVENTORY = "
         '
@@ -3957,7 +4348,7 @@ Partial Class ConfigForm
         Me.TextBox141.Location = New System.Drawing.Point(3, 279)
         Me.TextBox141.Name = "TextBox141"
         Me.TextBox141.ReadOnly = True
-        Me.TextBox141.Size = New System.Drawing.Size(71, 20)
+        Me.TextBox141.Size = New System.Drawing.Size(141, 20)
         Me.TextBox141.TabIndex = 70
         Me.TextBox141.Text = "ALL_MAPS = "
         '
@@ -4089,6 +4480,13 @@ Partial Class ConfigForm
         '
         'GroupBox50
         '
+        Me.GroupBox50.Controls.Add(Me.WEAPON_SKILL_POINTSNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.WEAPON_SKILL_POWERNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.ITEM_POWERNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.DRAIN_POWERNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.BLUE_POWERNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.SPELL_POWERNumericUpDown)
+        Me.GroupBox50.Controls.Add(Me.CURE_POWERNumericUpDown)
         Me.GroupBox50.Controls.Add(Me.USE_ADOULIN_WEAPON_SKILL_CHANGESCheckBox)
         Me.GroupBox50.Controls.Add(Me.TextBox190)
         Me.GroupBox50.Controls.Add(Me.TextBox191)
@@ -4128,7 +4526,7 @@ Partial Class ConfigForm
         Me.TextBox190.Location = New System.Drawing.Point(6, 19)
         Me.TextBox190.Name = "TextBox190"
         Me.TextBox190.ReadOnly = True
-        Me.TextBox190.Size = New System.Drawing.Size(192, 20)
+        Me.TextBox190.Size = New System.Drawing.Size(165, 20)
         Me.TextBox190.TabIndex = 128
         Me.TextBox190.Text = "CURE_POWER  = "
         '
@@ -4270,6 +4668,16 @@ Partial Class ConfigForm
         '
         'GroupBox49
         '
+        Me.GroupBox49.Controls.Add(Me.DISABLE_GUILD_CONTRACTSCheckBox)
+        Me.GroupBox49.Controls.Add(Me.WOODWORKING_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.SMITHING_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.GOLDSMITHING_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.BONECRAFT_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.ALCHEMY_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.COOKING_GUILD_POINTSNumericUpDown)
+        Me.GroupBox49.Controls.Add(Me.FISHING_GUILD_POINTSNumericUpDown)
         Me.GroupBox49.Controls.Add(Me.TextBox180)
         Me.GroupBox49.Controls.Add(Me.TextBox170)
         Me.GroupBox49.Controls.Add(Me.TextBox181)
@@ -4295,6 +4703,116 @@ Partial Class ConfigForm
         Me.GroupBox49.Size = New System.Drawing.Size(668, 296)
         Me.GroupBox49.TabIndex = 160
         Me.GroupBox49.TabStop = False
+        '
+        'DISABLE_GUILD_CONTRACTSCheckBox
+        '
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.AutoSize = True
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DISABLE_GUILD_CONTRACTS
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DISABLE_GUILD_CONTRACTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.Location = New System.Drawing.Point(204, 255)
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.Name = "DISABLE_GUILD_CONTRACTSCheckBox"
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.TabIndex = 157
+        Me.DISABLE_GUILD_CONTRACTSCheckBox.UseVisualStyleBackColor = True
+        '
+        'WOODWORKING_GUILD_POINTSNumericUpDown
+        '
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WOODWORKING_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 45)
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.Name = "WOODWORKING_GUILD_POINTSNumericUpDown"
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.TabIndex = 156
+        Me.WOODWORKING_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WOODWORKING_GUILD_POINTS
+        '
+        'SMITHING_GUILD_POINTSNumericUpDown
+        '
+        Me.SMITHING_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SMITHING_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SMITHING_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.SMITHING_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.SMITHING_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 71)
+        Me.SMITHING_GUILD_POINTSNumericUpDown.Name = "SMITHING_GUILD_POINTSNumericUpDown"
+        Me.SMITHING_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.SMITHING_GUILD_POINTSNumericUpDown.TabIndex = 155
+        Me.SMITHING_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SMITHING_GUILD_POINTS
+        '
+        'GOLDSMITHING_GUILD_POINTSNumericUpDown
+        '
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "GOLDSMITHING_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 97)
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.Name = "GOLDSMITHING_GUILD_POINTSNumericUpDown"
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.TabIndex = 154
+        Me.GOLDSMITHING_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.GOLDSMITHING_GUILD_POINTS
+        '
+        'CLOTHCRAFT_GUILD_POINTSNumericUpDown
+        '
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CLOTHCRAFT_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 123)
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.Name = "CLOTHCRAFT_GUILD_POINTSNumericUpDown"
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.TabIndex = 153
+        Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CLOTHCRAFT_GUILD_POINTS
+        '
+        'LEATHERCRAFT_GUILD_POINTSNumericUpDown
+        '
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LEATHERCRAFT_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 149)
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.Name = "LEATHERCRAFT_GUILD_POINTSNumericUpDown"
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.TabIndex = 152
+        Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LEATHERCRAFT_GUILD_POINTS
+        '
+        'BONECRAFT_GUILD_POINTSNumericUpDown
+        '
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BONECRAFT_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 175)
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.Name = "BONECRAFT_GUILD_POINTSNumericUpDown"
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.TabIndex = 151
+        Me.BONECRAFT_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BONECRAFT_GUILD_POINTS
+        '
+        'ALCHEMY_GUILD_POINTSNumericUpDown
+        '
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ALCHEMY_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 201)
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.Name = "ALCHEMY_GUILD_POINTSNumericUpDown"
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.TabIndex = 150
+        Me.ALCHEMY_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ALCHEMY_GUILD_POINTS
+        '
+        'COOKING_GUILD_POINTSNumericUpDown
+        '
+        Me.COOKING_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "COOKING_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.COOKING_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.COOKING_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.COOKING_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 227)
+        Me.COOKING_GUILD_POINTSNumericUpDown.Name = "COOKING_GUILD_POINTSNumericUpDown"
+        Me.COOKING_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.COOKING_GUILD_POINTSNumericUpDown.TabIndex = 149
+        Me.COOKING_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.COOKING_GUILD_POINTS
+        '
+        'FISHING_GUILD_POINTSNumericUpDown
+        '
+        Me.FISHING_GUILD_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "FISHING_GUILD_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.FISHING_GUILD_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.FISHING_GUILD_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.FISHING_GUILD_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 19)
+        Me.FISHING_GUILD_POINTSNumericUpDown.Name = "FISHING_GUILD_POINTSNumericUpDown"
+        Me.FISHING_GUILD_POINTSNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.FISHING_GUILD_POINTSNumericUpDown.TabIndex = 148
+        Me.FISHING_GUILD_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.FISHING_GUILD_POINTS
         '
         'TextBox180
         '
@@ -4513,6 +5031,14 @@ Partial Class ConfigForm
         '
         'GroupBox51
         '
+        Me.GroupBox51.Controls.Add(Me.LOGGING_RATENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.MINING_RATENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.EXCAVATION_RATENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.HARVESTING_RATENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.MINING_BREAK_CHANCENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.LOGGING_BREAK_CHANCENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.EXCAVATION_BREAK_CHANCENumericUpDown)
+        Me.GroupBox51.Controls.Add(Me.HARVESTING_BREAK_CHANCENumericUpDown)
         Me.GroupBox51.Controls.Add(Me.TextBox221)
         Me.GroupBox51.Controls.Add(Me.TextBox220)
         Me.GroupBox51.Controls.Add(Me.TextBox219)
@@ -4534,6 +5060,102 @@ Partial Class ConfigForm
         Me.GroupBox51.Size = New System.Drawing.Size(667, 228)
         Me.GroupBox51.TabIndex = 209
         Me.GroupBox51.TabStop = False
+        '
+        'LOGGING_RATENumericUpDown
+        '
+        Me.LOGGING_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LOGGING_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LOGGING_RATENumericUpDown.DecimalPlaces = 2
+        Me.LOGGING_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.LOGGING_RATENumericUpDown.Location = New System.Drawing.Point(201, 175)
+        Me.LOGGING_RATENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.LOGGING_RATENumericUpDown.Name = "LOGGING_RATENumericUpDown"
+        Me.LOGGING_RATENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.LOGGING_RATENumericUpDown.TabIndex = 167
+        Me.LOGGING_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LOGGING_RATE
+        '
+        'MINING_RATENumericUpDown
+        '
+        Me.MINING_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "MINING_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.MINING_RATENumericUpDown.DecimalPlaces = 2
+        Me.MINING_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.MINING_RATENumericUpDown.Location = New System.Drawing.Point(201, 201)
+        Me.MINING_RATENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.MINING_RATENumericUpDown.Name = "MINING_RATENumericUpDown"
+        Me.MINING_RATENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.MINING_RATENumericUpDown.TabIndex = 166
+        Me.MINING_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.MINING_RATE
+        '
+        'EXCAVATION_RATENumericUpDown
+        '
+        Me.EXCAVATION_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "EXCAVATION_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.EXCAVATION_RATENumericUpDown.DecimalPlaces = 2
+        Me.EXCAVATION_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.EXCAVATION_RATENumericUpDown.Location = New System.Drawing.Point(201, 149)
+        Me.EXCAVATION_RATENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.EXCAVATION_RATENumericUpDown.Name = "EXCAVATION_RATENumericUpDown"
+        Me.EXCAVATION_RATENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.EXCAVATION_RATENumericUpDown.TabIndex = 165
+        Me.EXCAVATION_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.EXCAVATION_RATE
+        '
+        'HARVESTING_RATENumericUpDown
+        '
+        Me.HARVESTING_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "HARVESTING_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HARVESTING_RATENumericUpDown.DecimalPlaces = 2
+        Me.HARVESTING_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.HARVESTING_RATENumericUpDown.Location = New System.Drawing.Point(201, 123)
+        Me.HARVESTING_RATENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.HARVESTING_RATENumericUpDown.Name = "HARVESTING_RATENumericUpDown"
+        Me.HARVESTING_RATENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.HARVESTING_RATENumericUpDown.TabIndex = 164
+        Me.HARVESTING_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.HARVESTING_RATE
+        '
+        'MINING_BREAK_CHANCENumericUpDown
+        '
+        Me.MINING_BREAK_CHANCENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "MINING_BREAK_CHANCE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.MINING_BREAK_CHANCENumericUpDown.DecimalPlaces = 2
+        Me.MINING_BREAK_CHANCENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.MINING_BREAK_CHANCENumericUpDown.Location = New System.Drawing.Point(201, 97)
+        Me.MINING_BREAK_CHANCENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.MINING_BREAK_CHANCENumericUpDown.Name = "MINING_BREAK_CHANCENumericUpDown"
+        Me.MINING_BREAK_CHANCENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.MINING_BREAK_CHANCENumericUpDown.TabIndex = 163
+        Me.MINING_BREAK_CHANCENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.MINING_BREAK_CHANCE
+        '
+        'LOGGING_BREAK_CHANCENumericUpDown
+        '
+        Me.LOGGING_BREAK_CHANCENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LOGGING_BREAK_CHANCE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LOGGING_BREAK_CHANCENumericUpDown.DecimalPlaces = 2
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Location = New System.Drawing.Point(201, 71)
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Name = "LOGGING_BREAK_CHANCENumericUpDown"
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.LOGGING_BREAK_CHANCENumericUpDown.TabIndex = 162
+        Me.LOGGING_BREAK_CHANCENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LOGGING_BREAK_CHANCE
+        '
+        'EXCAVATION_BREAK_CHANCENumericUpDown
+        '
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "EXCAVATION_BREAK_CHANCE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.DecimalPlaces = 2
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Location = New System.Drawing.Point(201, 45)
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Name = "EXCAVATION_BREAK_CHANCENumericUpDown"
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.TabIndex = 161
+        Me.EXCAVATION_BREAK_CHANCENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.EXCAVATION_BREAK_CHANCE
+        '
+        'HARVESTING_BREAK_CHANCENumericUpDown
+        '
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "HARVESTING_BREAK_CHANCE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.DecimalPlaces = 2
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Location = New System.Drawing.Point(201, 19)
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Name = "HARVESTING_BREAK_CHANCENumericUpDown"
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Size = New System.Drawing.Size(78, 20)
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.TabIndex = 160
+        Me.HARVESTING_BREAK_CHANCENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.HARVESTING_BREAK_CHANCE
         '
         'TextBox221
         '
@@ -4681,6 +5303,8 @@ Partial Class ConfigForm
         '
         'GroupBox53
         '
+        Me.GroupBox53.Controls.Add(Me.LandKingSystem_HQNumericUpDown)
+        Me.GroupBox53.Controls.Add(Me.LandKingSystem_NQNumericUpDown)
         Me.GroupBox53.Controls.Add(Me.TextBox231)
         Me.GroupBox53.Controls.Add(Me.TextBox233)
         Me.GroupBox53.Controls.Add(Me.TextBox232)
@@ -4722,6 +5346,10 @@ Partial Class ConfigForm
         '
         'GroupBox52
         '
+        Me.GroupBox52.Controls.Add(Me.CHEST_MIN_ILLUSION_TIMENumericUpDown)
+        Me.GroupBox52.Controls.Add(Me.CHEST_MAX_ILLUSION_TIMENumericUpDown)
+        Me.GroupBox52.Controls.Add(Me.COFFER_MIN_ILLUSION_TIMENumericUpDown)
+        Me.GroupBox52.Controls.Add(Me.COFFER_MAX_ILLUSION_TIMENumericUpDown)
         Me.GroupBox52.Controls.Add(Me.TextBox222)
         Me.GroupBox52.Controls.Add(Me.TextBox223)
         Me.GroupBox52.Controls.Add(Me.TextBox224)
@@ -4736,6 +5364,46 @@ Partial Class ConfigForm
         Me.GroupBox52.Size = New System.Drawing.Size(667, 187)
         Me.GroupBox52.TabIndex = 207
         Me.GroupBox52.TabStop = False
+        '
+        'CHEST_MIN_ILLUSION_TIMENumericUpDown
+        '
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CHEST_MIN_ILLUSION_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.Location = New System.Drawing.Point(201, 155)
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.Name = "CHEST_MIN_ILLUSION_TIMENumericUpDown"
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.TabIndex = 178
+        Me.CHEST_MIN_ILLUSION_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CHEST_MIN_ILLUSION_TIME
+        '
+        'CHEST_MAX_ILLUSION_TIMENumericUpDown
+        '
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CHEST_MAX_ILLUSION_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.Location = New System.Drawing.Point(201, 129)
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.Name = "CHEST_MAX_ILLUSION_TIMENumericUpDown"
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.TabIndex = 177
+        Me.CHEST_MAX_ILLUSION_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CHEST_MAX_ILLUSION_TIME
+        '
+        'COFFER_MIN_ILLUSION_TIMENumericUpDown
+        '
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "COFFER_MIN_ILLUSION_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.Location = New System.Drawing.Point(201, 103)
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.Name = "COFFER_MIN_ILLUSION_TIMENumericUpDown"
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.TabIndex = 176
+        Me.COFFER_MIN_ILLUSION_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.COFFER_MIN_ILLUSION_TIME
+        '
+        'COFFER_MAX_ILLUSION_TIMENumericUpDown
+        '
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "COFFER_MAX_ILLUSION_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.Location = New System.Drawing.Point(201, 77)
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.Name = "COFFER_MAX_ILLUSION_TIMENumericUpDown"
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.TabIndex = 175
+        Me.COFFER_MAX_ILLUSION_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.COFFER_MAX_ILLUSION_TIME
         '
         'TextBox222
         '
@@ -4854,6 +5522,19 @@ Partial Class ConfigForm
         '
         'GroupBox55
         '
+        Me.GroupBox55.Controls.Add(Me.OldSchoolG2CheckBox)
+        Me.GroupBox55.Controls.Add(Me.OldSchoolG1CheckBox)
+        Me.GroupBox55.Controls.Add(Me.DEBUG_MODECheckBox)
+        Me.GroupBox55.Controls.Add(Me.FrigiciteDurationNumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.QM_RESET_TIMENumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF3_FAMENumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF2_FAMENumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF1_FAMENumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF3_QUEST_LEVELNumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF2_QUEST_LEVELNumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.AF1_QUEST_LEVELNumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.WSNM_SKILL_LEVELNumericUpDown)
+        Me.GroupBox55.Controls.Add(Me.WSNM_LEVELNumericUpDown)
         Me.GroupBox55.Controls.Add(Me.TextBox273)
         Me.GroupBox55.Controls.Add(Me.TextBox249)
         Me.GroupBox55.Controls.Add(Me.TextBox274)
@@ -5129,6 +5810,13 @@ Partial Class ConfigForm
         '
         'GroupBox54
         '
+        Me.GroupBox54.Controls.Add(Me.FREE_COP_DYNAMISCheckBox)
+        Me.GroupBox54.Controls.Add(Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown)
+        Me.GroupBox54.Controls.Add(Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown)
+        Me.GroupBox54.Controls.Add(Me.CURRENCY_EXCHANGE_RATENumericUpDown)
+        Me.GroupBox54.Controls.Add(Me.TIMELESS_HOURGLASS_COSTNumericUpDown)
+        Me.GroupBox54.Controls.Add(Me.DYNA_LEVEL_MINNumericUpDown)
+        Me.GroupBox54.Controls.Add(Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown)
         Me.GroupBox54.Controls.Add(Me.TextBox234)
         Me.GroupBox54.Controls.Add(Me.TextBox235)
         Me.GroupBox54.Controls.Add(Me.TextBox236)
@@ -5149,6 +5837,78 @@ Partial Class ConfigForm
         Me.GroupBox54.Size = New System.Drawing.Size(665, 247)
         Me.GroupBox54.TabIndex = 248
         Me.GroupBox54.TabStop = False
+        '
+        'FREE_COP_DYNAMISCheckBox
+        '
+        Me.FREE_COP_DYNAMISCheckBox.AutoSize = True
+        Me.FREE_COP_DYNAMISCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.FREE_COP_DYNAMIS
+        Me.FREE_COP_DYNAMISCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.FREE_COP_DYNAMISCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "FREE_COP_DYNAMIS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.FREE_COP_DYNAMISCheckBox.Location = New System.Drawing.Point(219, 219)
+        Me.FREE_COP_DYNAMISCheckBox.Name = "FREE_COP_DYNAMISCheckBox"
+        Me.FREE_COP_DYNAMISCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.FREE_COP_DYNAMISCheckBox.TabIndex = 199
+        Me.FREE_COP_DYNAMISCheckBox.UseVisualStyleBackColor = True
+        '
+        'RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown
+        '
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "RELIC_3RD_UPGRADE_WAIT_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Location = New System.Drawing.Point(219, 191)
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000000, 0, 0, 0})
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Name = "RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown"
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.TabIndex = 198
+        Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.RELIC_3RD_UPGRADE_WAIT_TIME
+        '
+        'RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown
+        '
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "RELIC_2ND_UPGRADE_WAIT_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Location = New System.Drawing.Point(219, 165)
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000000, 0, 0, 0})
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Name = "RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown"
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.TabIndex = 197
+        Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.RELIC_2ND_UPGRADE_WAIT_TIME
+        '
+        'CURRENCY_EXCHANGE_RATENumericUpDown
+        '
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CURRENCY_EXCHANGE_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.Location = New System.Drawing.Point(219, 123)
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.Maximum = New Decimal(New Integer() {198, 0, 0, 0})
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.Name = "CURRENCY_EXCHANGE_RATENumericUpDown"
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.TabIndex = 196
+        Me.CURRENCY_EXCHANGE_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CURRENCY_EXCHANGE_RATE
+        '
+        'TIMELESS_HOURGLASS_COSTNumericUpDown
+        '
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "TIMELESS_HOURGLASS_COST", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.Location = New System.Drawing.Point(219, 97)
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.Maximum = New Decimal(New Integer() {10000000, 0, 0, 0})
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.Name = "TIMELESS_HOURGLASS_COSTNumericUpDown"
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.TabIndex = 195
+        Me.TIMELESS_HOURGLASS_COSTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.TIMELESS_HOURGLASS_COST
+        '
+        'DYNA_LEVEL_MINNumericUpDown
+        '
+        Me.DYNA_LEVEL_MINNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "DYNA_LEVEL_MIN", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DYNA_LEVEL_MINNumericUpDown.Location = New System.Drawing.Point(219, 71)
+        Me.DYNA_LEVEL_MINNumericUpDown.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.DYNA_LEVEL_MINNumericUpDown.Name = "DYNA_LEVEL_MINNumericUpDown"
+        Me.DYNA_LEVEL_MINNumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.DYNA_LEVEL_MINNumericUpDown.TabIndex = 194
+        Me.DYNA_LEVEL_MINNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.DYNA_LEVEL_MIN
+        '
+        'BETWEEN_2DYNA_WAIT_TIMENumericUpDown
+        '
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BETWEEN_2DYNA_WAIT_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Location = New System.Drawing.Point(219, 45)
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Name = "BETWEEN_2DYNA_WAIT_TIMENumericUpDown"
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Size = New System.Drawing.Size(64, 20)
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.TabIndex = 193
+        Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BETWEEN_2DYNA_WAIT_TIME
         '
         'TextBox234
         '
@@ -5281,10 +6041,10 @@ Partial Class ConfigForm
         '
         'TextBox243
         '
-        Me.TextBox243.Location = New System.Drawing.Point(289, 217)
+        Me.TextBox243.Location = New System.Drawing.Point(279, 217)
         Me.TextBox243.Name = "TextBox243"
         Me.TextBox243.ReadOnly = True
-        Me.TextBox243.Size = New System.Drawing.Size(373, 20)
+        Me.TextBox243.Size = New System.Drawing.Size(383, 20)
         Me.TextBox243.TabIndex = 192
         Me.TextBox243.Text = "-- Allow player to entering inside COP Dynamis without completing COP mission"
         '
@@ -5322,6 +6082,11 @@ Partial Class ConfigForm
         '
         'GroupBox57
         '
+        Me.GroupBox57.Controls.Add(Me.KILLER_EFFECTNumericUpDown)
+        Me.GroupBox57.Controls.Add(Me.CIRCLE_KILLER_EFFECTNumericUpDown)
+        Me.GroupBox57.Controls.Add(Me.CIRCLE_DURATIONNumericUpDown)
+        Me.GroupBox57.Controls.Add(Me.STATUS_RESIST_MULTIPLIERNumericUpDown)
+        Me.GroupBox57.Controls.Add(Me.SCAVENGE_RATENumericUpDown)
         Me.GroupBox57.Controls.Add(Me.TextBox292)
         Me.GroupBox57.Controls.Add(Me.TextBox291)
         Me.GroupBox57.Controls.Add(Me.TextBox290)
@@ -5335,9 +6100,58 @@ Partial Class ConfigForm
         Me.GroupBox57.Controls.Add(Me.TextBox293)
         Me.GroupBox57.Location = New System.Drawing.Point(4, 185)
         Me.GroupBox57.Name = "GroupBox57"
-        Me.GroupBox57.Size = New System.Drawing.Size(667, 202)
+        Me.GroupBox57.Size = New System.Drawing.Size(667, 181)
         Me.GroupBox57.TabIndex = 292
         Me.GroupBox57.TabStop = False
+        '
+        'KILLER_EFFECTNumericUpDown
+        '
+        Me.KILLER_EFFECTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "KILLER_EFFECT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.KILLER_EFFECTNumericUpDown.Location = New System.Drawing.Point(186, 149)
+        Me.KILLER_EFFECTNumericUpDown.Name = "KILLER_EFFECTNumericUpDown"
+        Me.KILLER_EFFECTNumericUpDown.Size = New System.Drawing.Size(80, 20)
+        Me.KILLER_EFFECTNumericUpDown.TabIndex = 244
+        Me.KILLER_EFFECTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.KILLER_EFFECT
+        '
+        'CIRCLE_KILLER_EFFECTNumericUpDown
+        '
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CIRCLE_KILLER_EFFECT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.Location = New System.Drawing.Point(186, 123)
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.Name = "CIRCLE_KILLER_EFFECTNumericUpDown"
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.Size = New System.Drawing.Size(80, 20)
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.TabIndex = 243
+        Me.CIRCLE_KILLER_EFFECTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CIRCLE_KILLER_EFFECT
+        '
+        'CIRCLE_DURATIONNumericUpDown
+        '
+        Me.CIRCLE_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CIRCLE_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CIRCLE_DURATIONNumericUpDown.Location = New System.Drawing.Point(186, 97)
+        Me.CIRCLE_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.CIRCLE_DURATIONNumericUpDown.Name = "CIRCLE_DURATIONNumericUpDown"
+        Me.CIRCLE_DURATIONNumericUpDown.Size = New System.Drawing.Size(80, 20)
+        Me.CIRCLE_DURATIONNumericUpDown.TabIndex = 242
+        Me.CIRCLE_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CIRCLE_DURATION
+        '
+        'STATUS_RESIST_MULTIPLIERNumericUpDown
+        '
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STATUS_RESIST_MULTIPLIER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.Location = New System.Drawing.Point(186, 71)
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.Name = "STATUS_RESIST_MULTIPLIERNumericUpDown"
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.Size = New System.Drawing.Size(80, 20)
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.TabIndex = 241
+        Me.STATUS_RESIST_MULTIPLIERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STATUS_RESIST_MULTIPLIER
+        '
+        'SCAVENGE_RATENumericUpDown
+        '
+        Me.SCAVENGE_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SCAVENGE_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SCAVENGE_RATENumericUpDown.DecimalPlaces = 1
+        Me.SCAVENGE_RATENumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.SCAVENGE_RATENumericUpDown.Location = New System.Drawing.Point(186, 45)
+        Me.SCAVENGE_RATENumericUpDown.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.SCAVENGE_RATENumericUpDown.Name = "SCAVENGE_RATENumericUpDown"
+        Me.SCAVENGE_RATENumericUpDown.Size = New System.Drawing.Size(80, 20)
+        Me.SCAVENGE_RATENumericUpDown.TabIndex = 240
+        Me.SCAVENGE_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SCAVENGE_RATE
         '
         'TextBox292
         '
@@ -5441,6 +6255,10 @@ Partial Class ConfigForm
         '
         'GroupBox56
         '
+        Me.GroupBox56.Controls.Add(Me.GROUNDS_TOMESCheckBox)
+        Me.GroupBox56.Controls.Add(Me.LOW_LEVEL_REGIMECheckBox)
+        Me.GroupBox56.Controls.Add(Me.FIELD_MANUALSCheckBox)
+        Me.GroupBox56.Controls.Add(Me.REGIME_WAITCheckBox)
         Me.GroupBox56.Controls.Add(Me.TextBox275)
         Me.GroupBox56.Controls.Add(Me.TextBox283)
         Me.GroupBox56.Controls.Add(Me.TextBox282)
@@ -5455,6 +6273,53 @@ Partial Class ConfigForm
         Me.GroupBox56.Size = New System.Drawing.Size(667, 171)
         Me.GroupBox56.TabIndex = 291
         Me.GroupBox56.TabStop = False
+        '
+        'GROUNDS_TOMESCheckBox
+        '
+        Me.GROUNDS_TOMESCheckBox.AutoSize = True
+        Me.GROUNDS_TOMESCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.GROUNDS_TOMES
+        Me.GROUNDS_TOMESCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.GROUNDS_TOMESCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "GROUNDS_TOMES", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.GROUNDS_TOMESCheckBox.Location = New System.Drawing.Point(186, 138)
+        Me.GROUNDS_TOMESCheckBox.Name = "GROUNDS_TOMESCheckBox"
+        Me.GROUNDS_TOMESCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.GROUNDS_TOMESCheckBox.TabIndex = 232
+        Me.GROUNDS_TOMESCheckBox.UseVisualStyleBackColor = True
+        '
+        'LOW_LEVEL_REGIMECheckBox
+        '
+        Me.LOW_LEVEL_REGIMECheckBox.AutoSize = True
+        Me.LOW_LEVEL_REGIMECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.LOW_LEVEL_REGIME
+        Me.LOW_LEVEL_REGIMECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "LOW_LEVEL_REGIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LOW_LEVEL_REGIMECheckBox.Location = New System.Drawing.Point(186, 99)
+        Me.LOW_LEVEL_REGIMECheckBox.Name = "LOW_LEVEL_REGIMECheckBox"
+        Me.LOW_LEVEL_REGIMECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.LOW_LEVEL_REGIMECheckBox.TabIndex = 231
+        Me.LOW_LEVEL_REGIMECheckBox.UseVisualStyleBackColor = True
+        '
+        'FIELD_MANUALSCheckBox
+        '
+        Me.FIELD_MANUALSCheckBox.AutoSize = True
+        Me.FIELD_MANUALSCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.FIELD_MANUALS
+        Me.FIELD_MANUALSCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.FIELD_MANUALSCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "FIELD_MANUALS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.FIELD_MANUALSCheckBox.Location = New System.Drawing.Point(186, 73)
+        Me.FIELD_MANUALSCheckBox.Name = "FIELD_MANUALSCheckBox"
+        Me.FIELD_MANUALSCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.FIELD_MANUALSCheckBox.TabIndex = 230
+        Me.FIELD_MANUALSCheckBox.UseVisualStyleBackColor = True
+        '
+        'REGIME_WAITCheckBox
+        '
+        Me.REGIME_WAITCheckBox.AutoSize = True
+        Me.REGIME_WAITCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.REGIME_WAIT
+        Me.REGIME_WAITCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.REGIME_WAITCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "REGIME_WAIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.REGIME_WAITCheckBox.Location = New System.Drawing.Point(186, 47)
+        Me.REGIME_WAITCheckBox.Name = "REGIME_WAITCheckBox"
+        Me.REGIME_WAITCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.REGIME_WAITCheckBox.TabIndex = 229
+        Me.REGIME_WAITCheckBox.UseVisualStyleBackColor = True
         '
         'TextBox275
         '
@@ -5643,6 +6508,224 @@ Partial Class ConfigForm
         Me.GroupBox58.Size = New System.Drawing.Size(666, 648)
         Me.GroupBox58.TabIndex = 318
         Me.GroupBox58.TabStop = False
+        '
+        'USE_OLD_CURE_FORMULACheckBox
+        '
+        Me.USE_OLD_CURE_FORMULACheckBox.AutoSize = True
+        Me.USE_OLD_CURE_FORMULACheckBox.Checked = Global.DSP_Control.My.MySettings.Default.USE_OLD_CURE_FORMULA
+        Me.USE_OLD_CURE_FORMULACheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "USE_OLD_CURE_FORMULA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.USE_OLD_CURE_FORMULACheckBox.Location = New System.Drawing.Point(204, 607)
+        Me.USE_OLD_CURE_FORMULACheckBox.Name = "USE_OLD_CURE_FORMULACheckBox"
+        Me.USE_OLD_CURE_FORMULACheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.USE_OLD_CURE_FORMULACheckBox.TabIndex = 334
+        Me.USE_OLD_CURE_FORMULACheckBox.UseVisualStyleBackColor = True
+        '
+        'BARSTATUS_OVERWRITECheckBox
+        '
+        Me.BARSTATUS_OVERWRITECheckBox.AutoSize = True
+        Me.BARSTATUS_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARSTATUS_OVERWRITE
+        Me.BARSTATUS_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.BARSTATUS_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARSTATUS_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARSTATUS_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 177)
+        Me.BARSTATUS_OVERWRITECheckBox.Name = "BARSTATUS_OVERWRITECheckBox"
+        Me.BARSTATUS_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BARSTATUS_OVERWRITECheckBox.TabIndex = 333
+        Me.BARSTATUS_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'BARELEMENT_OVERWRITECheckBox
+        '
+        Me.BARELEMENT_OVERWRITECheckBox.AutoSize = True
+        Me.BARELEMENT_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARELEMENT_OVERWRITE
+        Me.BARELEMENT_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.BARELEMENT_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARELEMENT_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARELEMENT_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 151)
+        Me.BARELEMENT_OVERWRITECheckBox.Name = "BARELEMENT_OVERWRITECheckBox"
+        Me.BARELEMENT_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BARELEMENT_OVERWRITECheckBox.TabIndex = 332
+        Me.BARELEMENT_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'BIO_OVERWRITECheckBox
+        '
+        Me.BIO_OVERWRITECheckBox.AutoSize = True
+        Me.BIO_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BIO_OVERWRITE
+        Me.BIO_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BIO_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BIO_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 125)
+        Me.BIO_OVERWRITECheckBox.Name = "BIO_OVERWRITECheckBox"
+        Me.BIO_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BIO_OVERWRITECheckBox.TabIndex = 331
+        Me.BIO_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'DIA_OVERWRITECheckBox
+        '
+        Me.DIA_OVERWRITECheckBox.AutoSize = True
+        Me.DIA_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DIA_OVERWRITE
+        Me.DIA_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.DIA_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DIA_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DIA_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 99)
+        Me.DIA_OVERWRITECheckBox.Name = "DIA_OVERWRITECheckBox"
+        Me.DIA_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DIA_OVERWRITECheckBox.TabIndex = 330
+        Me.DIA_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'JUICE_OVERWRITECheckBox
+        '
+        Me.JUICE_OVERWRITECheckBox.AutoSize = True
+        Me.JUICE_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JUICE_OVERWRITE
+        Me.JUICE_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.JUICE_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JUICE_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JUICE_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 73)
+        Me.JUICE_OVERWRITECheckBox.Name = "JUICE_OVERWRITECheckBox"
+        Me.JUICE_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.JUICE_OVERWRITECheckBox.TabIndex = 329
+        Me.JUICE_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'MILK_OVERWRITECheckBox
+        '
+        Me.MILK_OVERWRITECheckBox.AutoSize = True
+        Me.MILK_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.MILK_OVERWRITE
+        Me.MILK_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.MILK_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "MILK_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.MILK_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 48)
+        Me.MILK_OVERWRITECheckBox.Name = "MILK_OVERWRITECheckBox"
+        Me.MILK_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MILK_OVERWRITECheckBox.TabIndex = 328
+        Me.MILK_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        '
+        'SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown
+        '
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SNEAK_INVIS_DURATION_MULTIPLIER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Location = New System.Drawing.Point(204, 578)
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Name = "SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown"
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.TabIndex = 327
+        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SNEAK_INVIS_DURATION_MULTIPLIER
+        '
+        'ABSORB_SPELL_TICKNumericUpDown
+        '
+        Me.ABSORB_SPELL_TICKNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_TICK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ABSORB_SPELL_TICKNumericUpDown.Location = New System.Drawing.Point(204, 552)
+        Me.ABSORB_SPELL_TICKNumericUpDown.Name = "ABSORB_SPELL_TICKNumericUpDown"
+        Me.ABSORB_SPELL_TICKNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ABSORB_SPELL_TICKNumericUpDown.TabIndex = 326
+        Me.ABSORB_SPELL_TICKNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_TICK
+        '
+        'ABSORB_SPELL_AMOUNTNumericUpDown
+        '
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_AMOUNT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Location = New System.Drawing.Point(204, 512)
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Name = "ABSORB_SPELL_AMOUNTNumericUpDown"
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.TabIndex = 325
+        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_AMOUNT
+        '
+        'AQUAVEIL_INTERR_RATENumericUpDown
+        '
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AQUAVEIL_INTERR_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Location = New System.Drawing.Point(204, 486)
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Name = "AQUAVEIL_INTERR_RATENumericUpDown"
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.TabIndex = 324
+        Me.AQUAVEIL_INTERR_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AQUAVEIL_INTERR_RATE
+        '
+        'KLIMAFORM_MACCNumericUpDown
+        '
+        Me.KLIMAFORM_MACCNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "KLIMAFORM_MACC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.KLIMAFORM_MACCNumericUpDown.Location = New System.Drawing.Point(204, 460)
+        Me.KLIMAFORM_MACCNumericUpDown.Name = "KLIMAFORM_MACCNumericUpDown"
+        Me.KLIMAFORM_MACCNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.KLIMAFORM_MACCNumericUpDown.TabIndex = 323
+        Me.KLIMAFORM_MACCNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.KLIMAFORM_MACC
+        '
+        'STORM_DURATIONNumericUpDown
+        '
+        Me.STORM_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STORM_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.STORM_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 434)
+        Me.STORM_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.STORM_DURATIONNumericUpDown.Name = "STORM_DURATIONNumericUpDown"
+        Me.STORM_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.STORM_DURATIONNumericUpDown.TabIndex = 322
+        Me.STORM_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STORM_DURATION
+        '
+        'ELEMENTAL_DEBUFF_DURATIONNumericUpDown
+        '
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ELEMENTAL_DEBUFF_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 408)
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Name = "ELEMENTAL_DEBUFF_DURATIONNumericUpDown"
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.TabIndex = 321
+        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ELEMENTAL_DEBUFF_DURATION
+        '
+        'SPIKE_EFFECT_DURATIONNumericUpDown
+        '
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SPIKE_EFFECT_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 382)
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Name = "SPIKE_EFFECT_DURATIONNumericUpDown"
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.TabIndex = 320
+        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SPIKE_EFFECT_DURATION
+        '
+        'ENSPELL_DURATIONNumericUpDown
+        '
+        Me.ENSPELL_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENSPELL_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ENSPELL_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 356)
+        Me.ENSPELL_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.ENSPELL_DURATIONNumericUpDown.Name = "ENSPELL_DURATIONNumericUpDown"
+        Me.ENSPELL_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ENSPELL_DURATIONNumericUpDown.TabIndex = 319
+        Me.ENSPELL_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENSPELL_DURATION
+        '
+        'BLINK_SHADOWSNumericUpDown
+        '
+        Me.BLINK_SHADOWSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BLINK_SHADOWS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BLINK_SHADOWSNumericUpDown.Location = New System.Drawing.Point(204, 330)
+        Me.BLINK_SHADOWSNumericUpDown.Name = "BLINK_SHADOWSNumericUpDown"
+        Me.BLINK_SHADOWSNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BLINK_SHADOWSNumericUpDown.TabIndex = 318
+        Me.BLINK_SHADOWSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BLINK_SHADOWS
+        '
+        'STONESKIN_CAPNumericUpDown
+        '
+        Me.STONESKIN_CAPNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STONESKIN_CAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.STONESKIN_CAPNumericUpDown.Location = New System.Drawing.Point(204, 304)
+        Me.STONESKIN_CAPNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.STONESKIN_CAPNumericUpDown.Name = "STONESKIN_CAPNumericUpDown"
+        Me.STONESKIN_CAPNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.STONESKIN_CAPNumericUpDown.TabIndex = 317
+        Me.STONESKIN_CAPNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STONESKIN_CAP
+        '
+        'ENHANCING_SONG_DURATIONNumericUpDown
+        '
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENHANCING_SONG_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 279)
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Name = "ENHANCING_SONG_DURATIONNumericUpDown"
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.TabIndex = 316
+        Me.ENHANCING_SONG_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENHANCING_SONG_DURATION
+        '
+        'BARD_INSTRUMENT_LIMITNumericUpDown
+        '
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_INSTRUMENT_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 241)
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {32, 0, 0, 0})
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Name = "BARD_INSTRUMENT_LIMITNumericUpDown"
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.TabIndex = 315
+        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_INSTRUMENT_LIMIT
+        '
+        'BARD_SONG_LIMITNumericUpDown
+        '
+        Me.BARD_SONG_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_SONG_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BARD_SONG_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 201)
+        Me.BARD_SONG_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
+        Me.BARD_SONG_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.BARD_SONG_LIMITNumericUpDown.Name = "BARD_SONG_LIMITNumericUpDown"
+        Me.BARD_SONG_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
+        Me.BARD_SONG_LIMITNumericUpDown.TabIndex = 314
+        Me.BARD_SONG_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_SONG_LIMIT
         '
         'TextBox320
         '
@@ -6075,6 +7158,14 @@ Partial Class ConfigForm
         '
         'GroupBox60
         '
+        Me.GroupBox60.Controls.Add(Me.HOMEPOINT_TELEPORTCheckBox)
+        Me.GroupBox60.Controls.Add(Me.HOMEPOINT_HEALCheckBox)
+        Me.GroupBox60.Controls.Add(Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox)
+        Me.GroupBox60.Controls.Add(Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox)
+        Me.GroupBox60.Controls.Add(Me.NUMBER_OF_DM_EARRINGSNumericUpDown)
+        Me.GroupBox60.Controls.Add(Me.TIMEZONE_OFFSETNumericUpDown)
+        Me.GroupBox60.Controls.Add(Me.LANTERNS_STAY_LITNumericUpDown)
+        Me.GroupBox60.Controls.Add(Me.RIVERNE_PORTERSNumericUpDown)
         Me.GroupBox60.Controls.Add(Me.ENABLE_COP_ZONE_CAPCheckBox)
         Me.GroupBox60.Controls.Add(Me.TextBox363)
         Me.GroupBox60.Controls.Add(Me.TextBox375)
@@ -6101,13 +7192,99 @@ Partial Class ConfigForm
         Me.GroupBox60.TabIndex = 322
         Me.GroupBox60.TabStop = False
         '
+        'HOMEPOINT_TELEPORTCheckBox
+        '
+        Me.HOMEPOINT_TELEPORTCheckBox.AutoSize = True
+        Me.HOMEPOINT_TELEPORTCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.HOMEPOINT_TELEPORT
+        Me.HOMEPOINT_TELEPORTCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "HOMEPOINT_TELEPORT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HOMEPOINT_TELEPORTCheckBox.Location = New System.Drawing.Point(224, 268)
+        Me.HOMEPOINT_TELEPORTCheckBox.Name = "HOMEPOINT_TELEPORTCheckBox"
+        Me.HOMEPOINT_TELEPORTCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.HOMEPOINT_TELEPORTCheckBox.TabIndex = 335
+        Me.HOMEPOINT_TELEPORTCheckBox.UseVisualStyleBackColor = True
+        '
+        'HOMEPOINT_HEALCheckBox
+        '
+        Me.HOMEPOINT_HEALCheckBox.AutoSize = True
+        Me.HOMEPOINT_HEALCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.HOMEPOINT_HEAL
+        Me.HOMEPOINT_HEALCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "HOMEPOINT_HEAL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HOMEPOINT_HEALCheckBox.Location = New System.Drawing.Point(225, 47)
+        Me.HOMEPOINT_HEALCheckBox.Name = "HOMEPOINT_HEALCheckBox"
+        Me.HOMEPOINT_HEALCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.HOMEPOINT_HEALCheckBox.TabIndex = 334
+        Me.HOMEPOINT_HEALCheckBox.UseVisualStyleBackColor = True
+        '
+        'BYPASS_EXP_RING_ONE_PER_WEEKCheckBox
+        '
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.AutoSize = True
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BYPASS_EXP_RING_ONE_PER_WEEK
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BYPASS_EXP_RING_ONE_PER_WEEK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Location = New System.Drawing.Point(225, 203)
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Name = "BYPASS_EXP_RING_ONE_PER_WEEKCheckBox"
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.TabIndex = 333
+        Me.BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.UseVisualStyleBackColor = True
+        '
+        'ALLOW_MULTIPLE_EXP_RINGSCheckBox
+        '
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.AutoSize = True
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.ALLOW_MULTIPLE_EXP_RINGS
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "ALLOW_MULTIPLE_EXP_RINGS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.Location = New System.Drawing.Point(225, 177)
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.Name = "ALLOW_MULTIPLE_EXP_RINGSCheckBox"
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.TabIndex = 332
+        Me.ALLOW_MULTIPLE_EXP_RINGSCheckBox.UseVisualStyleBackColor = True
+        '
+        'NUMBER_OF_DM_EARRINGSNumericUpDown
+        '
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "NUMBER_OF_DM_EARRINGS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.Location = New System.Drawing.Point(225, 227)
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.Name = "NUMBER_OF_DM_EARRINGSNumericUpDown"
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.Size = New System.Drawing.Size(74, 20)
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.TabIndex = 331
+        Me.NUMBER_OF_DM_EARRINGSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.NUMBER_OF_DM_EARRINGS
+        '
+        'TIMEZONE_OFFSETNumericUpDown
+        '
+        Me.TIMEZONE_OFFSETNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "TIMEZONE_OFFSET", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TIMEZONE_OFFSETNumericUpDown.DecimalPlaces = 1
+        Me.TIMEZONE_OFFSETNumericUpDown.Increment = New Decimal(New Integer() {5, 0, 0, 65536})
+        Me.TIMEZONE_OFFSETNumericUpDown.Location = New System.Drawing.Point(225, 149)
+        Me.TIMEZONE_OFFSETNumericUpDown.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
+        Me.TIMEZONE_OFFSETNumericUpDown.Minimum = New Decimal(New Integer() {11, 0, 0, -2147483648})
+        Me.TIMEZONE_OFFSETNumericUpDown.Name = "TIMEZONE_OFFSETNumericUpDown"
+        Me.TIMEZONE_OFFSETNumericUpDown.Size = New System.Drawing.Size(74, 20)
+        Me.TIMEZONE_OFFSETNumericUpDown.TabIndex = 330
+        Me.TIMEZONE_OFFSETNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.TIMEZONE_OFFSET
+        '
+        'LANTERNS_STAY_LITNumericUpDown
+        '
+        Me.LANTERNS_STAY_LITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LANTERNS_STAY_LIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LANTERNS_STAY_LITNumericUpDown.Location = New System.Drawing.Point(225, 97)
+        Me.LANTERNS_STAY_LITNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.LANTERNS_STAY_LITNumericUpDown.Name = "LANTERNS_STAY_LITNumericUpDown"
+        Me.LANTERNS_STAY_LITNumericUpDown.Size = New System.Drawing.Size(74, 20)
+        Me.LANTERNS_STAY_LITNumericUpDown.TabIndex = 329
+        Me.LANTERNS_STAY_LITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LANTERNS_STAY_LIT
+        '
+        'RIVERNE_PORTERSNumericUpDown
+        '
+        Me.RIVERNE_PORTERSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "RIVERNE_PORTERS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RIVERNE_PORTERSNumericUpDown.Location = New System.Drawing.Point(225, 71)
+        Me.RIVERNE_PORTERSNumericUpDown.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.RIVERNE_PORTERSNumericUpDown.Name = "RIVERNE_PORTERSNumericUpDown"
+        Me.RIVERNE_PORTERSNumericUpDown.Size = New System.Drawing.Size(74, 20)
+        Me.RIVERNE_PORTERSNumericUpDown.TabIndex = 328
+        Me.RIVERNE_PORTERSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.RIVERNE_PORTERS
+        '
         'ENABLE_COP_ZONE_CAPCheckBox
         '
         Me.ENABLE_COP_ZONE_CAPCheckBox.AutoSize = True
         Me.ENABLE_COP_ZONE_CAPCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.ENABLE_COP_ZONE_CAP
         Me.ENABLE_COP_ZONE_CAPCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
         Me.ENABLE_COP_ZONE_CAPCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "ENABLE_COP_ZONE_CAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ENABLE_COP_ZONE_CAPCheckBox.Location = New System.Drawing.Point(226, 125)
+        Me.ENABLE_COP_ZONE_CAPCheckBox.Location = New System.Drawing.Point(225, 126)
         Me.ENABLE_COP_ZONE_CAPCheckBox.Name = "ENABLE_COP_ZONE_CAPCheckBox"
         Me.ENABLE_COP_ZONE_CAPCheckBox.Size = New System.Drawing.Size(15, 14)
         Me.ENABLE_COP_ZONE_CAPCheckBox.TabIndex = 327
@@ -6290,6 +7467,18 @@ Partial Class ConfigForm
         '
         'GroupBox59
         '
+        Me.GroupBox59.Controls.Add(Me.HALLOWEEN_YEAR_ROUNDCheckBox)
+        Me.GroupBox59.Controls.Add(Me.HALLOWEEN_2005CheckBox)
+        Me.GroupBox59.Controls.Add(Me.HALLOWEENCheckBox)
+        Me.GroupBox59.Controls.Add(Me.CHRISTMASCheckBox)
+        Me.GroupBox59.Controls.Add(Me.SUNBREEZE_2011CheckBox)
+        Me.GroupBox59.Controls.Add(Me.SUNBREEZE_2009CheckBox)
+        Me.GroupBox59.Controls.Add(Me.SUMMERFEST_2004CheckBox)
+        Me.GroupBox59.Controls.Add(Me.JINX_MODE_2012CheckBox)
+        Me.GroupBox59.Controls.Add(Me.JINX_MODE_2008CheckBox)
+        Me.GroupBox59.Controls.Add(Me.JINX_MODE_2005CheckBox)
+        Me.GroupBox59.Controls.Add(Me.EXPLORER_MOOGLECheckBox)
+        Me.GroupBox59.Controls.Add(Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown)
         Me.GroupBox59.Controls.Add(Me.TextBox351)
         Me.GroupBox59.Controls.Add(Me.TextBox338)
         Me.GroupBox59.Controls.Add(Me.TextBox352)
@@ -6319,6 +7508,137 @@ Partial Class ConfigForm
         Me.GroupBox59.Size = New System.Drawing.Size(667, 371)
         Me.GroupBox59.TabIndex = 323
         Me.GroupBox59.TabStop = False
+        '
+        'HALLOWEEN_YEAR_ROUNDCheckBox
+        '
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.AutoSize = True
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.HALLOWEEN_YEAR_ROUND
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "HALLOWEEN_YEAR_ROUND", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.Location = New System.Drawing.Point(201, 345)
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.Name = "HALLOWEEN_YEAR_ROUNDCheckBox"
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.TabIndex = 318
+        Me.HALLOWEEN_YEAR_ROUNDCheckBox.UseVisualStyleBackColor = True
+        '
+        'HALLOWEEN_2005CheckBox
+        '
+        Me.HALLOWEEN_2005CheckBox.AutoSize = True
+        Me.HALLOWEEN_2005CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.HALLOWEEN_2005
+        Me.HALLOWEEN_2005CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "HALLOWEEN_2005", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HALLOWEEN_2005CheckBox.Location = New System.Drawing.Point(201, 307)
+        Me.HALLOWEEN_2005CheckBox.Name = "HALLOWEEN_2005CheckBox"
+        Me.HALLOWEEN_2005CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.HALLOWEEN_2005CheckBox.TabIndex = 317
+        Me.HALLOWEEN_2005CheckBox.UseVisualStyleBackColor = True
+        '
+        'HALLOWEENCheckBox
+        '
+        Me.HALLOWEENCheckBox.AutoSize = True
+        Me.HALLOWEENCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.HALLOWEEN
+        Me.HALLOWEENCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "HALLOWEEN", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.HALLOWEENCheckBox.Location = New System.Drawing.Point(201, 281)
+        Me.HALLOWEENCheckBox.Name = "HALLOWEENCheckBox"
+        Me.HALLOWEENCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.HALLOWEENCheckBox.TabIndex = 316
+        Me.HALLOWEENCheckBox.UseVisualStyleBackColor = True
+        '
+        'CHRISTMASCheckBox
+        '
+        Me.CHRISTMASCheckBox.AutoSize = True
+        Me.CHRISTMASCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.CHRISTMAS
+        Me.CHRISTMASCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "CHRISTMAS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CHRISTMASCheckBox.Location = New System.Drawing.Point(201, 255)
+        Me.CHRISTMASCheckBox.Name = "CHRISTMASCheckBox"
+        Me.CHRISTMASCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.CHRISTMASCheckBox.TabIndex = 315
+        Me.CHRISTMASCheckBox.UseVisualStyleBackColor = True
+        '
+        'SUNBREEZE_2011CheckBox
+        '
+        Me.SUNBREEZE_2011CheckBox.AutoSize = True
+        Me.SUNBREEZE_2011CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.SUNBREEZE_2011
+        Me.SUNBREEZE_2011CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "SUNBREEZE_2011", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SUNBREEZE_2011CheckBox.Location = New System.Drawing.Point(201, 229)
+        Me.SUNBREEZE_2011CheckBox.Name = "SUNBREEZE_2011CheckBox"
+        Me.SUNBREEZE_2011CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.SUNBREEZE_2011CheckBox.TabIndex = 314
+        Me.SUNBREEZE_2011CheckBox.UseVisualStyleBackColor = True
+        '
+        'SUNBREEZE_2009CheckBox
+        '
+        Me.SUNBREEZE_2009CheckBox.AutoSize = True
+        Me.SUNBREEZE_2009CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.SUNBREEZE_2009
+        Me.SUNBREEZE_2009CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "SUNBREEZE_2009", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SUNBREEZE_2009CheckBox.Location = New System.Drawing.Point(201, 204)
+        Me.SUNBREEZE_2009CheckBox.Name = "SUNBREEZE_2009CheckBox"
+        Me.SUNBREEZE_2009CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.SUNBREEZE_2009CheckBox.TabIndex = 313
+        Me.SUNBREEZE_2009CheckBox.UseVisualStyleBackColor = True
+        '
+        'SUMMERFEST_2004CheckBox
+        '
+        Me.SUMMERFEST_2004CheckBox.AutoSize = True
+        Me.SUMMERFEST_2004CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.SUMMERFEST_2004
+        Me.SUMMERFEST_2004CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "SUMMERFEST_2004", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SUMMERFEST_2004CheckBox.Location = New System.Drawing.Point(201, 177)
+        Me.SUMMERFEST_2004CheckBox.Name = "SUMMERFEST_2004CheckBox"
+        Me.SUMMERFEST_2004CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.SUMMERFEST_2004CheckBox.TabIndex = 312
+        Me.SUMMERFEST_2004CheckBox.UseVisualStyleBackColor = True
+        '
+        'JINX_MODE_2012CheckBox
+        '
+        Me.JINX_MODE_2012CheckBox.AutoSize = True
+        Me.JINX_MODE_2012CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JINX_MODE_2012
+        Me.JINX_MODE_2012CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JINX_MODE_2012", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JINX_MODE_2012CheckBox.Location = New System.Drawing.Point(201, 151)
+        Me.JINX_MODE_2012CheckBox.Name = "JINX_MODE_2012CheckBox"
+        Me.JINX_MODE_2012CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.JINX_MODE_2012CheckBox.TabIndex = 311
+        Me.JINX_MODE_2012CheckBox.UseVisualStyleBackColor = True
+        '
+        'JINX_MODE_2008CheckBox
+        '
+        Me.JINX_MODE_2008CheckBox.AutoSize = True
+        Me.JINX_MODE_2008CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JINX_MODE_2008
+        Me.JINX_MODE_2008CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JINX_MODE_2008", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JINX_MODE_2008CheckBox.Location = New System.Drawing.Point(201, 125)
+        Me.JINX_MODE_2008CheckBox.Name = "JINX_MODE_2008CheckBox"
+        Me.JINX_MODE_2008CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.JINX_MODE_2008CheckBox.TabIndex = 310
+        Me.JINX_MODE_2008CheckBox.UseVisualStyleBackColor = True
+        '
+        'JINX_MODE_2005CheckBox
+        '
+        Me.JINX_MODE_2005CheckBox.AutoSize = True
+        Me.JINX_MODE_2005CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JINX_MODE_2005
+        Me.JINX_MODE_2005CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JINX_MODE_2005", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.JINX_MODE_2005CheckBox.Location = New System.Drawing.Point(201, 99)
+        Me.JINX_MODE_2005CheckBox.Name = "JINX_MODE_2005CheckBox"
+        Me.JINX_MODE_2005CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.JINX_MODE_2005CheckBox.TabIndex = 309
+        Me.JINX_MODE_2005CheckBox.UseVisualStyleBackColor = True
+        '
+        'EXPLORER_MOOGLECheckBox
+        '
+        Me.EXPLORER_MOOGLECheckBox.AutoSize = True
+        Me.EXPLORER_MOOGLECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.EXPLORER_MOOGLE
+        Me.EXPLORER_MOOGLECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.EXPLORER_MOOGLECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "EXPLORER_MOOGLE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.EXPLORER_MOOGLECheckBox.Location = New System.Drawing.Point(201, 47)
+        Me.EXPLORER_MOOGLECheckBox.Name = "EXPLORER_MOOGLECheckBox"
+        Me.EXPLORER_MOOGLECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.EXPLORER_MOOGLECheckBox.TabIndex = 308
+        Me.EXPLORER_MOOGLECheckBox.UseVisualStyleBackColor = True
+        '
+        'EXPLORER_MOOGLE_LEVELCAPNumericUpDown
+        '
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "EXPLORER_MOOGLE_LEVELCAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Location = New System.Drawing.Point(201, 71)
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Name = "EXPLORER_MOOGLE_LEVELCAPNumericUpDown"
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.TabIndex = 307
+        Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.EXPLORER_MOOGLE_LEVELCAP
         '
         'TextBox351
         '
@@ -6607,6 +7927,8 @@ Partial Class ConfigForm
         '
         'GroupBox61
         '
+        Me.GroupBox61.Controls.Add(Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox)
+        Me.GroupBox61.Controls.Add(Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown)
         Me.GroupBox61.Controls.Add(Me.TextBox382)
         Me.GroupBox61.Controls.Add(Me.TextBox386)
         Me.GroupBox61.Controls.Add(Me.TextBox385)
@@ -6617,6 +7939,26 @@ Partial Class ConfigForm
         Me.GroupBox61.Size = New System.Drawing.Size(667, 100)
         Me.GroupBox61.TabIndex = 328
         Me.GroupBox61.TabStop = False
+        '
+        'DIMENSIONAL_PORTAL_UNLOCKCheckBox
+        '
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.AutoSize = True
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DIMENSIONAL_PORTAL_UNLOCK
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DIMENSIONAL_PORTAL_UNLOCK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.Location = New System.Drawing.Point(201, 73)
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.Name = "DIMENSIONAL_PORTAL_UNLOCKCheckBox"
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.TabIndex = 316
+        Me.DIMENSIONAL_PORTAL_UNLOCKCheckBox.UseVisualStyleBackColor = True
+        '
+        'BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown
+        '
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BETWEEN_2COSMOCLEANSE_WAIT_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Location = New System.Drawing.Point(247, 45)
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Name = "BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown"
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Size = New System.Drawing.Size(100, 20)
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.TabIndex = 315
+        Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BETWEEN_2COSMOCLEANSE_WAIT_TIME
         '
         'TextBox382
         '
@@ -6955,223 +8297,245 @@ Partial Class ConfigForm
         Me.no_auction_limitsCheckBox.Text = "Unlimited AH submissions"
         Me.no_auction_limitsCheckBox.UseVisualStyleBackColor = True
         '
-        'BARD_SONG_LIMITNumericUpDown
+        'LandKingSystem_HQNumericUpDown
         '
-        Me.BARD_SONG_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_SONG_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BARD_SONG_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 201)
-        Me.BARD_SONG_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
-        Me.BARD_SONG_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.BARD_SONG_LIMITNumericUpDown.Name = "BARD_SONG_LIMITNumericUpDown"
-        Me.BARD_SONG_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.BARD_SONG_LIMITNumericUpDown.TabIndex = 314
-        Me.BARD_SONG_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_SONG_LIMIT
+        Me.LandKingSystem_HQNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LandKingSystem_HQ", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LandKingSystem_HQNumericUpDown.Location = New System.Drawing.Point(201, 89)
+        Me.LandKingSystem_HQNumericUpDown.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.LandKingSystem_HQNumericUpDown.Name = "LandKingSystem_HQNumericUpDown"
+        Me.LandKingSystem_HQNumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.LandKingSystem_HQNumericUpDown.TabIndex = 179
+        Me.LandKingSystem_HQNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LandKingSystem_HQ
         '
-        'BARD_INSTRUMENT_LIMITNumericUpDown
+        'LandKingSystem_NQNumericUpDown
         '
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BARD_INSTRUMENT_LIMIT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Location = New System.Drawing.Point(204, 241)
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Maximum = New Decimal(New Integer() {32, 0, 0, 0})
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Name = "BARD_INSTRUMENT_LIMITNumericUpDown"
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.TabIndex = 315
-        Me.BARD_INSTRUMENT_LIMITNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BARD_INSTRUMENT_LIMIT
+        Me.LandKingSystem_NQNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "LandKingSystem_NQ", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.LandKingSystem_NQNumericUpDown.Location = New System.Drawing.Point(201, 63)
+        Me.LandKingSystem_NQNumericUpDown.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.LandKingSystem_NQNumericUpDown.Name = "LandKingSystem_NQNumericUpDown"
+        Me.LandKingSystem_NQNumericUpDown.Size = New System.Drawing.Size(120, 20)
+        Me.LandKingSystem_NQNumericUpDown.TabIndex = 178
+        Me.LandKingSystem_NQNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.LandKingSystem_NQ
         '
-        'ENHANCING_SONG_DURATIONNumericUpDown
+        'NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown
         '
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENHANCING_SONG_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 279)
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.Name = "ENHANCING_SONG_DURATIONNumericUpDown"
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.TabIndex = 316
-        Me.ENHANCING_SONG_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENHANCING_SONG_DURATION
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "NORMAL_MOB_MAX_LEVEL_RANGE_MAX", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Location = New System.Drawing.Point(241, 123)
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Name = "NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown"
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.TabIndex = 147
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.NORMAL_MOB_MAX_LEVEL_RANGE_MAX
         '
-        'STONESKIN_CAPNumericUpDown
+        'NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown
         '
-        Me.STONESKIN_CAPNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STONESKIN_CAP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.STONESKIN_CAPNumericUpDown.Location = New System.Drawing.Point(204, 304)
-        Me.STONESKIN_CAPNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.STONESKIN_CAPNumericUpDown.Name = "STONESKIN_CAPNumericUpDown"
-        Me.STONESKIN_CAPNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.STONESKIN_CAPNumericUpDown.TabIndex = 317
-        Me.STONESKIN_CAPNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STONESKIN_CAP
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "NORMAL_MOB_MAX_LEVEL_RANGE_MIN", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Location = New System.Drawing.Point(241, 97)
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Name = "NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown"
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.TabIndex = 146
+        Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.NORMAL_MOB_MAX_LEVEL_RANGE_MIN
         '
-        'BLINK_SHADOWSNumericUpDown
+        'WEAPON_SKILL_POINTSNumericUpDown
         '
-        Me.BLINK_SHADOWSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BLINK_SHADOWS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BLINK_SHADOWSNumericUpDown.Location = New System.Drawing.Point(204, 330)
-        Me.BLINK_SHADOWSNumericUpDown.Name = "BLINK_SHADOWSNumericUpDown"
-        Me.BLINK_SHADOWSNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.BLINK_SHADOWSNumericUpDown.TabIndex = 318
-        Me.BLINK_SHADOWSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BLINK_SHADOWS
+        Me.WEAPON_SKILL_POINTSNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WEAPON_SKILL_POINTS", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WEAPON_SKILL_POINTSNumericUpDown.DecimalPlaces = 3
+        Me.WEAPON_SKILL_POINTSNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.WEAPON_SKILL_POINTSNumericUpDown.Location = New System.Drawing.Point(204, 175)
+        Me.WEAPON_SKILL_POINTSNumericUpDown.Name = "WEAPON_SKILL_POINTSNumericUpDown"
+        Me.WEAPON_SKILL_POINTSNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.WEAPON_SKILL_POINTSNumericUpDown.TabIndex = 172
+        Me.WEAPON_SKILL_POINTSNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WEAPON_SKILL_POINTS
         '
-        'ENSPELL_DURATIONNumericUpDown
+        'WEAPON_SKILL_POWERNumericUpDown
         '
-        Me.ENSPELL_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ENSPELL_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ENSPELL_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 356)
-        Me.ENSPELL_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.ENSPELL_DURATIONNumericUpDown.Name = "ENSPELL_DURATIONNumericUpDown"
-        Me.ENSPELL_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.ENSPELL_DURATIONNumericUpDown.TabIndex = 319
-        Me.ENSPELL_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ENSPELL_DURATION
+        Me.WEAPON_SKILL_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WEAPON_SKILL_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WEAPON_SKILL_POWERNumericUpDown.DecimalPlaces = 3
+        Me.WEAPON_SKILL_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.WEAPON_SKILL_POWERNumericUpDown.Location = New System.Drawing.Point(204, 149)
+        Me.WEAPON_SKILL_POWERNumericUpDown.Name = "WEAPON_SKILL_POWERNumericUpDown"
+        Me.WEAPON_SKILL_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.WEAPON_SKILL_POWERNumericUpDown.TabIndex = 171
+        Me.WEAPON_SKILL_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WEAPON_SKILL_POWER
         '
-        'SPIKE_EFFECT_DURATIONNumericUpDown
+        'ITEM_POWERNumericUpDown
         '
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SPIKE_EFFECT_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 382)
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Name = "SPIKE_EFFECT_DURATIONNumericUpDown"
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.TabIndex = 320
-        Me.SPIKE_EFFECT_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SPIKE_EFFECT_DURATION
+        Me.ITEM_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ITEM_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.ITEM_POWERNumericUpDown.DecimalPlaces = 3
+        Me.ITEM_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.ITEM_POWERNumericUpDown.Location = New System.Drawing.Point(204, 123)
+        Me.ITEM_POWERNumericUpDown.Name = "ITEM_POWERNumericUpDown"
+        Me.ITEM_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.ITEM_POWERNumericUpDown.TabIndex = 170
+        Me.ITEM_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ITEM_POWER
         '
-        'ELEMENTAL_DEBUFF_DURATIONNumericUpDown
+        'DRAIN_POWERNumericUpDown
         '
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ELEMENTAL_DEBUFF_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 408)
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Name = "ELEMENTAL_DEBUFF_DURATIONNumericUpDown"
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.TabIndex = 321
-        Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ELEMENTAL_DEBUFF_DURATION
+        Me.DRAIN_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "DRAIN_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DRAIN_POWERNumericUpDown.DecimalPlaces = 3
+        Me.DRAIN_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.DRAIN_POWERNumericUpDown.Location = New System.Drawing.Point(204, 97)
+        Me.DRAIN_POWERNumericUpDown.Name = "DRAIN_POWERNumericUpDown"
+        Me.DRAIN_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.DRAIN_POWERNumericUpDown.TabIndex = 169
+        Me.DRAIN_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.DRAIN_POWER
         '
-        'STORM_DURATIONNumericUpDown
+        'BLUE_POWERNumericUpDown
         '
-        Me.STORM_DURATIONNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "STORM_DURATION", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.STORM_DURATIONNumericUpDown.Location = New System.Drawing.Point(204, 434)
-        Me.STORM_DURATIONNumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.STORM_DURATIONNumericUpDown.Name = "STORM_DURATIONNumericUpDown"
-        Me.STORM_DURATIONNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.STORM_DURATIONNumericUpDown.TabIndex = 322
-        Me.STORM_DURATIONNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.STORM_DURATION
+        Me.BLUE_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "BLUE_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.BLUE_POWERNumericUpDown.DecimalPlaces = 3
+        Me.BLUE_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.BLUE_POWERNumericUpDown.Location = New System.Drawing.Point(204, 71)
+        Me.BLUE_POWERNumericUpDown.Name = "BLUE_POWERNumericUpDown"
+        Me.BLUE_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.BLUE_POWERNumericUpDown.TabIndex = 168
+        Me.BLUE_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.BLUE_POWER
         '
-        'KLIMAFORM_MACCNumericUpDown
+        'SPELL_POWERNumericUpDown
         '
-        Me.KLIMAFORM_MACCNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "KLIMAFORM_MACC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.KLIMAFORM_MACCNumericUpDown.Location = New System.Drawing.Point(204, 460)
-        Me.KLIMAFORM_MACCNumericUpDown.Name = "KLIMAFORM_MACCNumericUpDown"
-        Me.KLIMAFORM_MACCNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.KLIMAFORM_MACCNumericUpDown.TabIndex = 323
-        Me.KLIMAFORM_MACCNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.KLIMAFORM_MACC
+        Me.SPELL_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SPELL_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.SPELL_POWERNumericUpDown.DecimalPlaces = 3
+        Me.SPELL_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.SPELL_POWERNumericUpDown.Location = New System.Drawing.Point(204, 45)
+        Me.SPELL_POWERNumericUpDown.Name = "SPELL_POWERNumericUpDown"
+        Me.SPELL_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.SPELL_POWERNumericUpDown.TabIndex = 167
+        Me.SPELL_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SPELL_POWER
         '
-        'AQUAVEIL_INTERR_RATENumericUpDown
+        'CURE_POWERNumericUpDown
         '
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AQUAVEIL_INTERR_RATE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.Location = New System.Drawing.Point(204, 486)
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.Name = "AQUAVEIL_INTERR_RATENumericUpDown"
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.TabIndex = 324
-        Me.AQUAVEIL_INTERR_RATENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AQUAVEIL_INTERR_RATE
+        Me.CURE_POWERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "CURE_POWER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CURE_POWERNumericUpDown.DecimalPlaces = 3
+        Me.CURE_POWERNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 196608})
+        Me.CURE_POWERNumericUpDown.Location = New System.Drawing.Point(177, 19)
+        Me.CURE_POWERNumericUpDown.Name = "CURE_POWERNumericUpDown"
+        Me.CURE_POWERNumericUpDown.Size = New System.Drawing.Size(73, 20)
+        Me.CURE_POWERNumericUpDown.TabIndex = 166
+        Me.CURE_POWERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.CURE_POWER
         '
-        'ABSORB_SPELL_AMOUNTNumericUpDown
+        'FrigiciteDurationNumericUpDown
         '
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_AMOUNT", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Location = New System.Drawing.Point(204, 512)
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Name = "ABSORB_SPELL_AMOUNTNumericUpDown"
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.TabIndex = 325
-        Me.ABSORB_SPELL_AMOUNTNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_AMOUNT
+        Me.FrigiciteDurationNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "FrigiciteDuration", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.FrigiciteDurationNumericUpDown.Location = New System.Drawing.Point(201, 371)
+        Me.FrigiciteDurationNumericUpDown.Name = "FrigiciteDurationNumericUpDown"
+        Me.FrigiciteDurationNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.FrigiciteDurationNumericUpDown.TabIndex = 245
+        Me.FrigiciteDurationNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.FrigiciteDuration
         '
-        'ABSORB_SPELL_TICKNumericUpDown
+        'QM_RESET_TIMENumericUpDown
         '
-        Me.ABSORB_SPELL_TICKNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "ABSORB_SPELL_TICK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.ABSORB_SPELL_TICKNumericUpDown.Location = New System.Drawing.Point(204, 552)
-        Me.ABSORB_SPELL_TICKNumericUpDown.Name = "ABSORB_SPELL_TICKNumericUpDown"
-        Me.ABSORB_SPELL_TICKNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.ABSORB_SPELL_TICKNumericUpDown.TabIndex = 326
-        Me.ABSORB_SPELL_TICKNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.ABSORB_SPELL_TICK
+        Me.QM_RESET_TIMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "QM_RESET_TIME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.QM_RESET_TIMENumericUpDown.Location = New System.Drawing.Point(201, 279)
+        Me.QM_RESET_TIMENumericUpDown.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.QM_RESET_TIMENumericUpDown.Name = "QM_RESET_TIMENumericUpDown"
+        Me.QM_RESET_TIMENumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.QM_RESET_TIMENumericUpDown.TabIndex = 244
+        Me.QM_RESET_TIMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.QM_RESET_TIME
         '
-        'SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown
+        'AF3_FAMENumericUpDown
         '
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "SNEAK_INVIS_DURATION_MULTIPLIER", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Location = New System.Drawing.Point(204, 578)
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Name = "SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown"
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Size = New System.Drawing.Size(76, 20)
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.TabIndex = 327
-        Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.SNEAK_INVIS_DURATION_MULTIPLIER
+        Me.AF3_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF3_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF3_FAMENumericUpDown.Location = New System.Drawing.Point(201, 227)
+        Me.AF3_FAMENumericUpDown.Name = "AF3_FAMENumericUpDown"
+        Me.AF3_FAMENumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF3_FAMENumericUpDown.TabIndex = 243
+        Me.AF3_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF3_FAME
         '
-        'MILK_OVERWRITECheckBox
+        'AF2_FAMENumericUpDown
         '
-        Me.MILK_OVERWRITECheckBox.AutoSize = True
-        Me.MILK_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.MILK_OVERWRITE
-        Me.MILK_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.MILK_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "MILK_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.MILK_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 48)
-        Me.MILK_OVERWRITECheckBox.Name = "MILK_OVERWRITECheckBox"
-        Me.MILK_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.MILK_OVERWRITECheckBox.TabIndex = 328
-        Me.MILK_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.AF2_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF2_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF2_FAMENumericUpDown.Location = New System.Drawing.Point(201, 201)
+        Me.AF2_FAMENumericUpDown.Name = "AF2_FAMENumericUpDown"
+        Me.AF2_FAMENumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF2_FAMENumericUpDown.TabIndex = 242
+        Me.AF2_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF2_FAME
         '
-        'JUICE_OVERWRITECheckBox
+        'AF1_FAMENumericUpDown
         '
-        Me.JUICE_OVERWRITECheckBox.AutoSize = True
-        Me.JUICE_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.JUICE_OVERWRITE
-        Me.JUICE_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.JUICE_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "JUICE_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.JUICE_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 73)
-        Me.JUICE_OVERWRITECheckBox.Name = "JUICE_OVERWRITECheckBox"
-        Me.JUICE_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.JUICE_OVERWRITECheckBox.TabIndex = 329
-        Me.JUICE_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.AF1_FAMENumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF1_FAME", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF1_FAMENumericUpDown.Location = New System.Drawing.Point(201, 175)
+        Me.AF1_FAMENumericUpDown.Name = "AF1_FAMENumericUpDown"
+        Me.AF1_FAMENumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF1_FAMENumericUpDown.TabIndex = 241
+        Me.AF1_FAMENumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF1_FAME
         '
-        'DIA_OVERWRITECheckBox
+        'AF3_QUEST_LEVELNumericUpDown
         '
-        Me.DIA_OVERWRITECheckBox.AutoSize = True
-        Me.DIA_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DIA_OVERWRITE
-        Me.DIA_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.DIA_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DIA_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.DIA_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 99)
-        Me.DIA_OVERWRITECheckBox.Name = "DIA_OVERWRITECheckBox"
-        Me.DIA_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.DIA_OVERWRITECheckBox.TabIndex = 330
-        Me.DIA_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.AF3_QUEST_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF3_QUEST_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF3_QUEST_LEVELNumericUpDown.Location = New System.Drawing.Point(201, 149)
+        Me.AF3_QUEST_LEVELNumericUpDown.Name = "AF3_QUEST_LEVELNumericUpDown"
+        Me.AF3_QUEST_LEVELNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF3_QUEST_LEVELNumericUpDown.TabIndex = 240
+        Me.AF3_QUEST_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF3_QUEST_LEVEL
         '
-        'BIO_OVERWRITECheckBox
+        'AF2_QUEST_LEVELNumericUpDown
         '
-        Me.BIO_OVERWRITECheckBox.AutoSize = True
-        Me.BIO_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BIO_OVERWRITE
-        Me.BIO_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BIO_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BIO_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 125)
-        Me.BIO_OVERWRITECheckBox.Name = "BIO_OVERWRITECheckBox"
-        Me.BIO_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.BIO_OVERWRITECheckBox.TabIndex = 331
-        Me.BIO_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.AF2_QUEST_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF2_QUEST_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF2_QUEST_LEVELNumericUpDown.Location = New System.Drawing.Point(201, 123)
+        Me.AF2_QUEST_LEVELNumericUpDown.Name = "AF2_QUEST_LEVELNumericUpDown"
+        Me.AF2_QUEST_LEVELNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF2_QUEST_LEVELNumericUpDown.TabIndex = 239
+        Me.AF2_QUEST_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF2_QUEST_LEVEL
         '
-        'BARELEMENT_OVERWRITECheckBox
+        'AF1_QUEST_LEVELNumericUpDown
         '
-        Me.BARELEMENT_OVERWRITECheckBox.AutoSize = True
-        Me.BARELEMENT_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARELEMENT_OVERWRITE
-        Me.BARELEMENT_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.BARELEMENT_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARELEMENT_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BARELEMENT_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 151)
-        Me.BARELEMENT_OVERWRITECheckBox.Name = "BARELEMENT_OVERWRITECheckBox"
-        Me.BARELEMENT_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.BARELEMENT_OVERWRITECheckBox.TabIndex = 332
-        Me.BARELEMENT_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.AF1_QUEST_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "AF1_QUEST_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.AF1_QUEST_LEVELNumericUpDown.Location = New System.Drawing.Point(201, 97)
+        Me.AF1_QUEST_LEVELNumericUpDown.Name = "AF1_QUEST_LEVELNumericUpDown"
+        Me.AF1_QUEST_LEVELNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.AF1_QUEST_LEVELNumericUpDown.TabIndex = 238
+        Me.AF1_QUEST_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.AF1_QUEST_LEVEL
         '
-        'BARSTATUS_OVERWRITECheckBox
+        'WSNM_SKILL_LEVELNumericUpDown
         '
-        Me.BARSTATUS_OVERWRITECheckBox.AutoSize = True
-        Me.BARSTATUS_OVERWRITECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.BARSTATUS_OVERWRITE
-        Me.BARSTATUS_OVERWRITECheckBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.BARSTATUS_OVERWRITECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "BARSTATUS_OVERWRITE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.BARSTATUS_OVERWRITECheckBox.Location = New System.Drawing.Point(204, 177)
-        Me.BARSTATUS_OVERWRITECheckBox.Name = "BARSTATUS_OVERWRITECheckBox"
-        Me.BARSTATUS_OVERWRITECheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.BARSTATUS_OVERWRITECheckBox.TabIndex = 333
-        Me.BARSTATUS_OVERWRITECheckBox.UseVisualStyleBackColor = True
+        Me.WSNM_SKILL_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WSNM_SKILL_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WSNM_SKILL_LEVELNumericUpDown.Location = New System.Drawing.Point(201, 71)
+        Me.WSNM_SKILL_LEVELNumericUpDown.Maximum = New Decimal(New Integer() {400, 0, 0, 0})
+        Me.WSNM_SKILL_LEVELNumericUpDown.Name = "WSNM_SKILL_LEVELNumericUpDown"
+        Me.WSNM_SKILL_LEVELNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.WSNM_SKILL_LEVELNumericUpDown.TabIndex = 237
+        Me.WSNM_SKILL_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WSNM_SKILL_LEVEL
         '
-        'USE_OLD_CURE_FORMULACheckBox
+        'WSNM_LEVELNumericUpDown
         '
-        Me.USE_OLD_CURE_FORMULACheckBox.AutoSize = True
-        Me.USE_OLD_CURE_FORMULACheckBox.Checked = Global.DSP_Control.My.MySettings.Default.USE_OLD_CURE_FORMULA
-        Me.USE_OLD_CURE_FORMULACheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "USE_OLD_CURE_FORMULA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.USE_OLD_CURE_FORMULACheckBox.Location = New System.Drawing.Point(204, 606)
-        Me.USE_OLD_CURE_FORMULACheckBox.Name = "USE_OLD_CURE_FORMULACheckBox"
-        Me.USE_OLD_CURE_FORMULACheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.USE_OLD_CURE_FORMULACheckBox.TabIndex = 334
-        Me.USE_OLD_CURE_FORMULACheckBox.UseVisualStyleBackColor = True
+        Me.WSNM_LEVELNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.DSP_Control.My.MySettings.Default, "WSNM_LEVEL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.WSNM_LEVELNumericUpDown.Location = New System.Drawing.Point(201, 45)
+        Me.WSNM_LEVELNumericUpDown.Name = "WSNM_LEVELNumericUpDown"
+        Me.WSNM_LEVELNumericUpDown.Size = New System.Drawing.Size(82, 20)
+        Me.WSNM_LEVELNumericUpDown.TabIndex = 236
+        Me.WSNM_LEVELNumericUpDown.Value = Global.DSP_Control.My.MySettings.Default.WSNM_LEVEL
+        '
+        'OldSchoolG2CheckBox
+        '
+        Me.OldSchoolG2CheckBox.AutoSize = True
+        Me.OldSchoolG2CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.OldSchoolG2
+        Me.OldSchoolG2CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "OldSchoolG2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.OldSchoolG2CheckBox.Location = New System.Drawing.Point(201, 347)
+        Me.OldSchoolG2CheckBox.Name = "OldSchoolG2CheckBox"
+        Me.OldSchoolG2CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.OldSchoolG2CheckBox.TabIndex = 248
+        Me.OldSchoolG2CheckBox.UseVisualStyleBackColor = True
+        '
+        'OldSchoolG1CheckBox
+        '
+        Me.OldSchoolG1CheckBox.AutoSize = True
+        Me.OldSchoolG1CheckBox.Checked = Global.DSP_Control.My.MySettings.Default.OldSchoolG1
+        Me.OldSchoolG1CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "OldSchoolG1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.OldSchoolG1CheckBox.Location = New System.Drawing.Point(201, 321)
+        Me.OldSchoolG1CheckBox.Name = "OldSchoolG1CheckBox"
+        Me.OldSchoolG1CheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.OldSchoolG1CheckBox.TabIndex = 247
+        Me.OldSchoolG1CheckBox.UseVisualStyleBackColor = True
+        '
+        'DEBUG_MODECheckBox
+        '
+        Me.DEBUG_MODECheckBox.AutoSize = True
+        Me.DEBUG_MODECheckBox.Checked = Global.DSP_Control.My.MySettings.Default.DEBUG_MODE
+        Me.DEBUG_MODECheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.DSP_Control.My.MySettings.Default, "DEBUG_MODE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.DEBUG_MODECheckBox.Location = New System.Drawing.Point(201, 255)
+        Me.DEBUG_MODECheckBox.Name = "DEBUG_MODECheckBox"
+        Me.DEBUG_MODECheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DEBUG_MODECheckBox.TabIndex = 246
+        Me.DEBUG_MODECheckBox.UseVisualStyleBackColor = True
         '
         'ConfigForm
         '
@@ -7334,49 +8698,117 @@ Partial Class ConfigForm
         Me.Panel4.ResumeLayout(False)
         Me.GroupBox47.ResumeLayout(False)
         Me.GroupBox47.PerformLayout()
+        CType(Me.TABS_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EXP_RATEFOVNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GIL_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SHOP_PRICENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JEUNO_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NORG_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WIN_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BAS_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SAN_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox46.ResumeLayout(False)
         Me.GroupBox46.PerformLayout()
+        CType(Me.MAX_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.INITIAL_LEVEL_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UNLOCK_OUTPOST_WARPSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ADVANCED_JOB_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SUBJOB_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.START_INVENTORYNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.START_GILNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage7.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
         Me.GroupBox50.ResumeLayout(False)
         Me.GroupBox50.PerformLayout()
         Me.GroupBox49.ResumeLayout(False)
         Me.GroupBox49.PerformLayout()
+        CType(Me.WOODWORKING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SMITHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GOLDSMITHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CLOTHCRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LEATHERCRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BONECRAFT_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ALCHEMY_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.COOKING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FISHING_GUILD_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage11.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.GroupBox51.ResumeLayout(False)
         Me.GroupBox51.PerformLayout()
+        CType(Me.LOGGING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MINING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EXCAVATION_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HARVESTING_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MINING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LOGGING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EXCAVATION_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HARVESTING_BREAK_CHANCENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox53.ResumeLayout(False)
         Me.GroupBox53.PerformLayout()
         Me.GroupBox52.ResumeLayout(False)
         Me.GroupBox52.PerformLayout()
+        CType(Me.CHEST_MIN_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CHEST_MAX_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.COFFER_MIN_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.COFFER_MAX_ILLUSION_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage12.ResumeLayout(False)
         Me.Panel13.ResumeLayout(False)
         Me.GroupBox55.ResumeLayout(False)
         Me.GroupBox55.PerformLayout()
         Me.GroupBox54.ResumeLayout(False)
         Me.GroupBox54.PerformLayout()
+        CType(Me.RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CURRENCY_EXCHANGE_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TIMELESS_HOURGLASS_COSTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DYNA_LEVEL_MINNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BETWEEN_2DYNA_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage13.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
         Me.GroupBox57.ResumeLayout(False)
         Me.GroupBox57.PerformLayout()
+        CType(Me.KILLER_EFFECTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CIRCLE_KILLER_EFFECTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CIRCLE_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STATUS_RESIST_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SCAVENGE_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox56.ResumeLayout(False)
         Me.GroupBox56.PerformLayout()
         Me.TabPage14.ResumeLayout(False)
         Me.Panel15.ResumeLayout(False)
         Me.GroupBox58.ResumeLayout(False)
         Me.GroupBox58.PerformLayout()
+        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage16.ResumeLayout(False)
         Me.GroupBox60.ResumeLayout(False)
         Me.GroupBox60.PerformLayout()
+        CType(Me.NUMBER_OF_DM_EARRINGSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TIMEZONE_OFFSETNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LANTERNS_STAY_LITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RIVERNE_PORTERSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox59.ResumeLayout(False)
         Me.GroupBox59.PerformLayout()
+        CType(Me.EXPLORER_MOOGLE_LEVELCAPNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage17.ResumeLayout(False)
         Me.GroupBox62.ResumeLayout(False)
         Me.GroupBox62.PerformLayout()
         CType(Me.VISITANT_BONUSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox61.ResumeLayout(False)
         Me.GroupBox61.PerformLayout()
+        CType(Me.BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.DatabaseSettingsTabPage.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
@@ -7390,20 +8822,27 @@ Partial Class ConfigForm
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.BlueSpellGaplevelLearnNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BARD_SONG_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BARD_INSTRUMENT_LIMITNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ENHANCING_SONG_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.STONESKIN_CAPNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BLINK_SHADOWSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ENSPELL_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SPIKE_EFFECT_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ELEMENTAL_DEBUFF_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.STORM_DURATIONNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KLIMAFORM_MACCNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AQUAVEIL_INTERR_RATENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ABSORB_SPELL_AMOUNTNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ABSORB_SPELL_TICKNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SNEAK_INVIS_DURATION_MULTIPLIERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LandKingSystem_HQNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LandKingSystem_NQNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WEAPON_SKILL_POINTSNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WEAPON_SKILL_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ITEM_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DRAIN_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BLUE_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SPELL_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CURE_POWERNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FrigiciteDurationNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QM_RESET_TIMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF3_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF2_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF1_FAMENumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF3_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF2_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AF1_QUEST_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WSNM_SKILL_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WSNM_LEVELNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -8019,4 +9458,106 @@ Partial Class ConfigForm
     Friend WithEvents BARELEMENT_OVERWRITECheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents BARSTATUS_OVERWRITECheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents USE_OLD_CURE_FORMULACheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents SAN_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BAS_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents WIN_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NORG_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents JEUNO_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents START_GILNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents START_INVENTORYNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SUBJOB_QUEST_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ADVANCED_JOB_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents UNLOCK_OUTPOST_WARPSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents INITIAL_LEVEL_CAPNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ALL_MAPSCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents OPENING_CUTSCENE_ENABLECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents MAX_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents EXPLORER_MOOGLE_LEVELCAPNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents EXPLORER_MOOGLECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents JINX_MODE_2005CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents JINX_MODE_2008CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents JINX_MODE_2012CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents SUMMERFEST_2004CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents SUNBREEZE_2009CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents SUNBREEZE_2011CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents CHRISTMASCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents HALLOWEENCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents HALLOWEEN_2005CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents HALLOWEEN_YEAR_ROUNDCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents SCAVENGE_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents STATUS_RESIST_MULTIPLIERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CIRCLE_DURATIONNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CIRCLE_KILLER_EFFECTNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents KILLER_EFFECTNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CHEST_MIN_ILLUSION_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CHEST_MAX_ILLUSION_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents COFFER_MIN_ILLUSION_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents COFFER_MAX_ILLUSION_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents GIL_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SHOP_PRICENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LANTERNS_STAY_LITNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents RIVERNE_PORTERSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NUMBER_OF_DM_EARRINGSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents TIMEZONE_OFFSETNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ALLOW_MULTIPLE_EXP_RINGSCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents BYPASS_EXP_RING_ONE_PER_WEEKCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents HOMEPOINT_HEALCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents HOMEPOINT_TELEPORTCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents FREE_COP_DYNAMISCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents RELIC_3RD_UPGRADE_WAIT_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents RELIC_2ND_UPGRADE_WAIT_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CURRENCY_EXCHANGE_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents TIMELESS_HOURGLASS_COSTNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents DYNA_LEVEL_MINNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BETWEEN_2DYNA_WAIT_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents TABS_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents EXP_RATEFOVNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents GROUNDS_TOMESCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents LOW_LEVEL_REGIMECheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents FIELD_MANUALSCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents REGIME_WAITCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents DIMENSIONAL_PORTAL_UNLOCKCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents DISABLE_GUILD_CONTRACTSCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents WOODWORKING_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SMITHING_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents GOLDSMITHING_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CLOTHCRAFT_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LEATHERCRAFT_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BONECRAFT_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ALCHEMY_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents COOKING_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents FISHING_GUILD_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LOGGING_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents MINING_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents EXCAVATION_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents HARVESTING_RATENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents MINING_BREAK_CHANCENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LOGGING_BREAK_CHANCENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents EXCAVATION_BREAK_CHANCENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents HARVESTING_BREAK_CHANCENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LandKingSystem_HQNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LandKingSystem_NQNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NORMAL_MOB_MAX_LEVEL_RANGE_MAXNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NORMAL_MOB_MAX_LEVEL_RANGE_MINNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents WEAPON_SKILL_POINTSNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents WEAPON_SKILL_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ITEM_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents DRAIN_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents BLUE_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents SPELL_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CURE_POWERNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents FrigiciteDurationNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents QM_RESET_TIMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF3_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF2_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF1_FAMENumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF3_QUEST_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF2_QUEST_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents AF1_QUEST_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents WSNM_SKILL_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents WSNM_LEVELNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents OldSchoolG2CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents OldSchoolG1CheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents DEBUG_MODECheckBox As System.Windows.Forms.CheckBox
 End Class

@@ -6,7 +6,7 @@ Public Class DSPControlForm
     Dim GameLogsLocation = My.Settings.DSPPath + "\log\map-server.log"
 
     Private Sub DSPControlForm_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        Dim FormClosing As Integer = MessageBox.Show("Are you sure you want to close me? The servers will also close", "Server status in peril!", MessageBoxButtons.YesNo)
+        Dim FormClosing As Integer = MessageBox.Show("Are you sure you want to close me? The servers will also close!", "Server status in peril!", MessageBoxButtons.YesNo)
         If FormClosing = DialogResult.Yes Then
             Dim myDSPConnectProcess() As Process = System.Diagnostics.Process.GetProcessesByName("DSConnect-server")
             Dim myDSPGameProcess() As Process = System.Diagnostics.Process.GetProcessesByName("DSGame-server")
@@ -54,25 +54,6 @@ Public Class DSPControlForm
             PathLocationsListBox.Activate()
             PathLocationsListBox.Show()
         End If
-    End Sub
-
-    Private Sub FieldsOfValorSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FieldsOfValorSettingsToolStripMenuItem.Click
-        FOVSettings.Activate()
-        FOVSettings.Show()
-    End Sub
-
-    Private Sub FieldsOfValorSettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FieldsOfValorSettingsToolStripMenuItem1.Click
-        FieldsOfValorSettingsToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub DatabaseEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DatabaseEditorToolStripMenuItem.Click
-        ConfigFormdatabase.Activate()
-        ConfigFormdatabase.Show()
-    End Sub
-
-    Private Sub ExpansionSelectorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExpansionSelectorToolStripMenuItem.Click
-        ConfigFormExpansions.Activate()
-        ConfigFormExpansions.Show()
     End Sub
 
     Private Sub LaunchAshitaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaunchAshitaToolStripMenuItem.Click
@@ -160,165 +141,14 @@ Public Class DSPControlForm
         StartServer_Click(sender, e)
     End Sub
 
-    Private Sub LoginConfigEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginConfigEditorToolStripMenuItem.Click
-        ConfigFormLogin.Activate()
-        ConfigFormLogin.Show()
-    End Sub
-
-    Private Sub MapConfigEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MapConfigEditorToolStripMenuItem.Click
-        ConfigFormMap.Activate()
-        ConfigFormMap.Show()
-    End Sub
-
-    Private Sub CharacterSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterSettingsToolStripMenuItem.Click
-        CharacterSettingsForm.Activate()
-        CharacterSettingsForm.Show()
-    End Sub
-
-    Private Sub MonsterSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonsterSettingsToolStripMenuItem.Click
-        MonsterSettingsForm.Activate()
-        MonsterSettingsForm.Show()
-    End Sub
-
-    Private Sub AuditSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AuditSettingsToolStripMenuItem.Click
-        AuditSettings.Activate()
-        AuditSettings.Show()
-    End Sub
-
-    Private Sub CraftingSkillupSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CraftingSkillupSettingsToolStripMenuItem.Click
-        CraftingandSkillupsettings.Activate()
-        CraftingandSkillupsettings.Show()
-    End Sub
-
-    Private Sub ExperienceRatesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExperienceRatesToolStripMenuItem.Click
-        ExperienceRates.Activate()
-        ExperienceRates.Show()
-    End Sub
-
-    Private Sub PlayerMultipliersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerMultipliersToolStripMenuItem.Click
-        PlayerMultipliers.Activate()
-        PlayerMultipliers.Show()
-    End Sub
-
-    Private Sub StartingPlayerSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StartingPlayerSettingsToolStripMenuItem.Click
-        StartingPlayerSettings.Activate()
-        StartingPlayerSettings.Show()
-    End Sub
-
-    Private Sub MonsterMultipliersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonsterMultipliersToolStripMenuItem.Click
-        MonsterMultipliers.Activate()
-        MonsterMultipliers.Show()
-    End Sub
-
-    Private Sub SettingsConfigEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsConfigEditorToolStripMenuItem.Click
-        ConfigFormSettings.Activate()
-        ConfigFormSettings.Show()
-    End Sub
-
-    Private Sub SearchConfigEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchConfigEditorToolStripMenuItem.Click
-        ConfigFormSearch.Activate()
-        ConfigFormSearch.Show()
-    End Sub
-
-    Private Sub CharacterSettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CharacterSettingsToolStripMenuItem1.Click
-        CharacterSettingsToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub CraftingSkillupSettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CraftingSkillupSettingsToolStripMenuItem1.Click
-        CraftingSkillupSettingsToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub ExperienceRatesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ExperienceRatesToolStripMenuItem1.Click
-        ExperienceRatesToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub PlayerMultipliersToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PlayerMultipliersToolStripMenuItem1.Click
-        PlayerMultipliersToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub StartingPlayerSettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles StartingPlayerSettingsToolStripMenuItem1.Click
-        StartingPlayerSettingsToolStripMenuItem_Click(sender, e)
-    End Sub
-
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         AboutBox.Activate()
         AboutBox.Show()
-    End Sub
-
-    Private Sub GuildPointsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GuildPointsToolStripMenuItem.Click
-        GuildPointssetting.Activate()
-        GuildPointssetting.Show()
-    End Sub
-
-    Private Sub MaterialCollectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MaterialCollectionToolStripMenuItem.Click
-        MaterialCollectingsettings.Activate()
-        MaterialCollectingsettings.Show()
-    End Sub
-
-    Private Sub GuildPointsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles GuildPointsToolStripMenuItem1.Click
-        GuildPointsToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub MaterialCollectionToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MaterialCollectionToolStripMenuItem1.Click
-        MaterialCollectionToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub MonsterSettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MonsterSettingsToolStripMenuItem1.Click
-        MonsterSettingsToolStripMenuItem_Click(sender, e)
-    End Sub
-
-    Private Sub FameGainMultipliersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FameGainMultipliersToolStripMenuItem.Click
-        FameGainMultipliers.Activate()
-        FameGainMultipliers.Show()
-    End Sub
-
-    Private Sub SpellWeaponPowerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpellWeaponPowerToolStripMenuItem.Click
-        Spell_WeaponPower.Activate()
-        Spell_WeaponPower.Show()
-    End Sub
-
-    Private Sub AbysseaSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AbysseaSettingsToolStripMenuItem.Click
-        AbysseaSettings.Activate()
-        AbysseaSettings.Show()
-    End Sub
-
-    Private Sub CofferChestSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CofferChestSettingsToolStripMenuItem.Click
-        Coffer_ChestSettings.Activate()
-        Coffer_ChestSettings.Show()
-    End Sub
-
-    Private Sub DynamisSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DynamisSettingsToolStripMenuItem.Click
-        DynamisSettings.Activate()
-        DynamisSettings.Show()
-    End Sub
-
-    Private Sub QuestMissionSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuestMissionSettingsToolStripMenuItem.Click
-        Quest_MissionSettings.Activate()
-        Quest_MissionSettings.Show()
-    End Sub
-
-    Private Sub LimbusSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LimbusSettingsToolStripMenuItem.Click
-        LimbusSettings.Activate()
-        LimbusSettings.Show()
-    End Sub
-
-    Private Sub JobAbilityTraitSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JobAbilityTraitSettingsToolStripMenuItem.Click
-        Ability_TraitSettings.Activate()
-        Ability_TraitSettings.Show()
-    End Sub
-
-    Private Sub SpellSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpellSettingsToolStripMenuItem.Click
-        SpellSettings.Activate()
-        SpellSettings.Show()
-    End Sub
-
-    Private Sub CelebrationSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CelebrationSettingsToolStripMenuItem.Click
-        CelebrationsSettings.Activate()
-        CelebrationsSettings.Show()
     End Sub
 
     Private Sub ConfigurationEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfigurationEditorToolStripMenuItem.Click
         ConfigForm.Activate()
         ConfigForm.Show()
     End Sub
+
 End Class
