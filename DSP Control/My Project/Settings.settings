@@ -623,5 +623,8 @@
     <Setting Name="LoginExpansionControl" Type="System.Decimal" Scope="Application">
       <Value Profile="(Default)">2</Value>
     </Setting>
+    <Setting Name="POLPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

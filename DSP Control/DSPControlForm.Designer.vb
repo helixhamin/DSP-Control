@@ -41,6 +41,7 @@ Partial Class DSPControlForm
         Me.RestartServer = New System.Windows.Forms.Button()
         Me.StopServer = New System.Windows.Forms.Button()
         Me.StartServer = New System.Windows.Forms.Button()
+        Me.LaunchPOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +59,7 @@ Partial Class DSPControlForm
         '
         'ToolsToolStripMenuItem
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaunchAshitaToolStripMenuItem})
+        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaunchAshitaToolStripMenuItem, Me.LaunchPOLToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
         Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.ToolsToolStripMenuItem.Text = "Tools"
@@ -66,7 +67,7 @@ Partial Class DSPControlForm
         'LaunchAshitaToolStripMenuItem
         '
         Me.LaunchAshitaToolStripMenuItem.Name = "LaunchAshitaToolStripMenuItem"
-        Me.LaunchAshitaToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.LaunchAshitaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LaunchAshitaToolStripMenuItem.Text = "Launch Ashita"
         '
         'ViewToolStripMenuItem
@@ -124,7 +125,7 @@ Partial Class DSPControlForm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'PictureBox1
@@ -184,6 +185,12 @@ Partial Class DSPControlForm
         Me.StartServer.Text = "Start Servers"
         Me.StartServer.UseVisualStyleBackColor = True
         '
+        'LaunchPOLToolStripMenuItem
+        '
+        Me.LaunchPOLToolStripMenuItem.Name = "LaunchPOLToolStripMenuItem"
+        Me.LaunchPOLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LaunchPOLToolStripMenuItem.Text = "Launch POL"
+        '
         'DSPControlForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,5 +234,6 @@ Partial Class DSPControlForm
     Friend WithEvents ViewGameLogsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ServerSetupToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfigurationEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LaunchPOLToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

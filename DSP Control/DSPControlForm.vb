@@ -151,4 +151,24 @@ Public Class DSPControlForm
         ConfigForm.Show()
     End Sub
 
+    Private Sub LaunchPOLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaunchPOLToolStripMenuItem.Click
+
+        Dim proc As New ProcessStartInfo()
+        Dim POLRunningVerification() As Process
+
+        If My.Settings.POLPath.Length < 2 Then
+            MsgBox("Please set your POL Path first.")
+            PathLocationsListBox.Activate()
+            PathLocationsListBox.Show()
+        Else
+            POLRunningVerification = Process.GetProcessesByName("pol")
+            If POLRunningVerification.Count > 0 Then
+                MsgBox("pol is already running", vbExclamation)
+            Else
+                proc.WorkingDirectory = My.Settings.POLPath
+                proc.FileName = "pol.exe"
+                Process.Start(proc)
+            End If
+        End If
+    End Sub
 End Class
