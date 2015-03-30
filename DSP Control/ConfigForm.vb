@@ -260,6 +260,7 @@ Public Class ConfigForm
         HALLOWEENCheckBox.Checked = My.Settings.HALLOWEEN
         HALLOWEEN_2005CheckBox.Checked = My.Settings.HALLOWEEN_2005
         HALLOWEEN_YEAR_ROUNDCheckBox.Checked = My.Settings.HALLOWEEN_YEAR_ROUND
+
         HOMEPOINT_HEALCheckBox.Checked = My.Settings.HOMEPOINT_HEAL
         RIVERNE_PORTERSNumericUpDown.Text = My.Settings.RIVERNE_PORTERS
         LANTERNS_STAY_LITNumericUpDown.Text = My.Settings.LANTERNS_STAY_LIT
@@ -269,7 +270,8 @@ Public Class ConfigForm
         BYPASS_EXP_RING_ONE_PER_WEEKCheckBox.Checked = My.Settings.BYPASS_EXP_RING_ONE_PER_WEEK
         NUMBER_OF_DM_EARRINGSNumericUpDown.Text = My.Settings.NUMBER_OF_DM_EARRINGS
         HOMEPOINT_TELEPORTCheckBox.Checked = My.Settings.HOMEPOINT_TELEPORT
-
+        DIG_ABUNDANCE_BONUSNumericUpDown.Text = My.Settings.DIG_ABUNDANCE_BONUS
+        DIG_FATIGUECheckBox.Checked = My.Settings.DIG_FATIGUE
         BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Text = My.Settings.BETWEEN_2COSMOCLEANSE_WAIT_TIME
         DIMENSIONAL_PORTAL_UNLOCKCheckBox.Checked = My.Settings.DIMENSIONAL_PORTAL_UNLOCK
         VISITANT_BONUSNumericUpDown.Text = My.Settings.VISITANT_BONUS
@@ -2681,11 +2683,7 @@ Public Class ConfigForm
     Private Sub ApplySettingPage8Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage8Button.Click
 
         Dim EXPLORER_MOOGLE_LEVELCAPOutputLines As New List(Of String)()
-        Dim RIVERNE_PORTERSOutputLines As New List(Of String)()
-        Dim LANTERNS_STAY_LITOutputLines As New List(Of String)()
-        Dim TIMEZONE_OFFSETOutputLines As New List(Of String)()
-        Dim NUMBER_OF_DM_EARRINGSOutputLines As New List(Of String)()
-
+        
         If EXPLORER_MOOGLECheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("EXPLORER_MOOGLE = 0; -- Enables Explorer Moogle teleports", "EXPLORER_MOOGLE = 1; -- Enables Explorer Moogle teleports"), False)
         Else
@@ -2765,6 +2763,18 @@ Public Class ConfigForm
         Else
             My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HALLOWEEN_YEAR_ROUND = 1; -- Set to 1 to have Harvest Festival initialize outside of normal times.", "HALLOWEEN_YEAR_ROUND = 0; -- Set to 1 to have Harvest Festival initialize outside of normal times."), False)
         End If
+
+    End Sub
+
+    Private Sub ApplySettingPage9Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage9Button.Click
+
+        Dim RIVERNE_PORTERSOutputLines As New List(Of String)()
+        Dim LANTERNS_STAY_LITOutputLines As New List(Of String)()
+        Dim TIMEZONE_OFFSETOutputLines As New List(Of String)()
+        Dim NUMBER_OF_DM_EARRINGSOutputLines As New List(Of String)()
+        Dim DIG_ABUNDANCE_BONUSOutputLines As New List(Of String)()
+        Dim BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines As New List(Of String)()
+        Dim VISITANT_BONUSOutputLines As New List(Of String)()
 
         If HOMEPOINT_HEALCheckBox.Checked = True Then
             My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_HEAL = 0; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games.", "HOMEPOINT_HEAL = 1; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games."), False)
@@ -2847,17 +2857,30 @@ Public Class ConfigForm
         End If
 
         If HOMEPOINT_TELEPORTCheckBox.Checked = True Then
-            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT =0; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT =1; -- Enables the homepoint teleport system"), False)
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT = 0; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT = 1; -- Enables the homepoint teleport system"), False)
         Else
-            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT =1; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT =0; -- Enables the homepoint teleport system"), False)
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("HOMEPOINT_TELEPORT = 1; -- Enables the homepoint teleport system", "HOMEPOINT_TELEPORT = 0; -- Enables the homepoint teleport system"), False)
         End If
 
-    End Sub
+        If DIG_ABUNDANCE_BONUSNumericUpDown.Text.Length < 1 Then
+        Else
+            For Each line As String In System.IO.File.ReadAllLines(SettingsFile)
+                Dim DIG_ABUNDANCE_BONUSMatch As Boolean
+                DIG_ABUNDANCE_BONUSMatch = line.Contains("DIG_ABUNDANCE_BONUS")
+                If DIG_ABUNDANCE_BONUSMatch Then
+                    DIG_ABUNDANCE_BONUSOutputLines.Add("DIG_ABUNDANCE_BONUS = " + DIG_ABUNDANCE_BONUSNumericUpDown.Text + "; -- Increase chance of digging up an item (450  = item digup chance +45)")
+                Else
+                    DIG_ABUNDANCE_BONUSOutputLines.Add(line)
+                End If
+            Next
+            System.IO.File.WriteAllLines(SettingsFile, DIG_ABUNDANCE_BONUSOutputLines.ToArray(), Encoding.UTF8)
+        End If
 
-    Private Sub ApplySettingPage9Button_Click(sender As Object, e As EventArgs) Handles ApplySettingPage9Button.Click
-
-        Dim BETWEEN_2COSMOCLEANSE_WAIT_TIMEOutputLines As New List(Of String)()
-        Dim VISITANT_BONUSOutputLines As New List(Of String)()
+        If DIG_FATIGUECheckBox.Checked = True Then
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIG_FATIGUE = 0; -- Set to 0 to disable Dig Fatigue", "DIG_FATIGUE = 1; -- Set to 0 to disable Dig Fatigue"), False)
+        Else
+            My.Computer.FileSystem.WriteAllText(SettingsFile, My.Computer.FileSystem.ReadAllText(SettingsFile).Replace("DIG_FATIGUE = 1; -- Set to 0 to disable Dig Fatigue", "DIG_FATIGUE = 0; -- Set to 0 to disable Dig Fatigue"), False)
+        End If
 
         If BETWEEN_2COSMOCLEANSE_WAIT_TIMENumericUpDown.Text.Length < 1 Then
         Else
